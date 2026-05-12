@@ -1,0 +1,193 @@
+{
+  "image_path": "res://assets/scene_imgs/hospital.png",
+  "annotations": {
+	"patient room": {
+	  "pos": [
+		[
+		  2476,
+		  489
+		]
+	  ],
+	  "chinese": "病房"
+	},
+	"doctor": {
+	  "pos": [
+		[
+		  1016,
+		  472
+		]
+	  ],
+	  "chinese": "医生"
+	},
+	"nurse": {
+	  "pos": [
+		[
+		  1969,
+		  546
+		]
+	  ],
+	  "chinese": "护士"
+	},
+	"patient": {
+	  "pos": [
+		[
+		  691,
+		  925
+		]
+	  ],
+	  "chinese": "病人"
+	},
+	"patient bed": {
+	  "pos": [
+		[
+		  1434,
+		  1058
+		]
+	  ],
+	  "chinese": "病床"
+	},
+	"pillow": {
+	  "pos": [
+		[
+		  440,
+		  888
+		]
+	  ],
+	  "chinese": "枕头"
+	},
+	"stethoscope": {
+	  "pos": [
+		[
+		  1090,
+		  558
+		]
+	  ],
+	  "chinese": "听诊器"
+	},
+	"medical monitor": {
+	  "pos": [
+		[
+		  194,
+		  869
+		]
+	  ],
+	  "chinese": "监护仪"
+	},
+	"IV drip": {
+	  "pos": [
+		[
+		  770,
+		  396
+		]
+	  ],
+	  "chinese": "输液袋"
+	},
+	"IV stand": {
+	  "pos": [
+		[
+		  701,
+		  586
+		]
+	  ],
+	  "chinese": "输液架"
+	},
+	"infusion bottle": {
+	  "pos": [
+		[
+		  1695,
+		  741
+		],
+		[
+		  1732,
+		  1026
+		]
+	  ],
+	  "chinese": "输液瓶"
+	},
+	"medical cart": {
+	  "pos": [
+		[
+		  1786,
+		  876
+		]
+	  ],
+	  "chinese": "医用推车"
+	},
+	"bedside cabinet": {
+	  "pos": [
+		[
+		  280,
+		  1162
+		]
+	  ],
+	  "chinese": "床头柜"
+	},
+	"nurse cap": {
+	  "pos": [
+		[
+		  1988,
+		  339
+		]
+	  ],
+	  "chinese": "护士帽"
+	},
+	"hospital gown": {
+	  "pos": [
+		[
+		  627,
+		  994
+		]
+	  ],
+	  "chinese": "病号服"
+	},
+	"health poster": {
+	  "pos": [
+		[
+		  2296,
+		  384
+		]
+	  ],
+	  "chinese": "健康宣传海报"
+	},
+	"corridor": {
+	  "pos": [
+		[
+		  2544,
+		  832
+		]
+	  ],
+	  "chinese": "走廊"
+	},
+	"window": {
+	  "pos": [
+		[
+		  994,
+		  150
+		]
+	  ],
+	  "chinese": "窗户"
+	},
+	"hospital door": {
+	  "pos": [
+		[
+		  2478,
+		  615
+		]
+	  ],
+	  "chinese": "病房门"
+	},
+	"floor sign": {
+	  "pos": [
+		[
+		  676,
+		  1477
+		],
+		[
+		  2407,
+		  1007
+		]
+	  ],
+	  "chinese": "地面指引标识"
+	}
+  }
+}

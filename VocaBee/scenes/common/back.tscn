@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://nf3arlu8boi2"]
+
+[ext_resource type="Script" uid="uid://bugq1b2fkel7p" path="res://scripts/common/back.gd" id="1_rc8wc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2"]
+resource_name = "white_button_hover"
+bg_color = Color(0.98, 0.98, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.4, 0.6, 1, 0.2)
+shadow_size = 8
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
+resource_name = "white_button_normal"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.85, 0.85, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.08)
+shadow_size = 6
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3"]
+resource_name = "white_button_pressed"
+bg_color = Color(0.92, 0.94, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.5, 0.9, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.3, 0.5, 0.9, 0.15)
+shadow_size = 4
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="Theme" id="Theme_whmns"]
+Button/styles/focus = SubResource("StyleBoxFlat_2")
+Button/styles/hover = SubResource("StyleBoxFlat_2")
+Button/styles/normal = SubResource("StyleBoxFlat_1")
+Button/styles/pressed = SubResource("StyleBoxFlat_3")
+
+[node name="Back" type="Control" unique_id=1594582093]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_rc8wc")
+
+[node name="MenuButtons" type="VBoxContainer" parent="." unique_id=951813573]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 31.0
+theme = SubResource("Theme_whmns")
+
+[node name="BackBtn" type="Button" parent="MenuButtons" unique_id=456809926]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_focus_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_colors/font_pressed_color = Color(0.7, 0.2, 0.2, 1)
+theme_override_colors/font_hover_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 18
+text = "退出"

@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://b1kmjixg0oo03"]
+
+[ext_resource type="Script" uid="uid://cdewpgj23d7o4" path="res://scripts/common/game_ui.gd" id="1_aurti"]
+[ext_resource type="PackedScene" uid="uid://nf3arlu8boi2" path="res://scenes/common/back.tscn" id="2_3cqg8"]
+
+[sub_resource type="StyleBoxFlat" id="TopBarStyle"]
+bg_color = Color(1, 1, 1, 0.386)
+border_width_bottom = 1
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="ButtonNormal"]
+bg_color = Color(1, 1, 1, 0.8)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.7, 0.7, 0.7, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2saa7"]
+bg_color = Color(1, 1, 1, 0.8)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ButtonHover"]
+bg_color = Color(0.9, 0.9, 0.95, 1)
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StatusStyle"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="GameOverStyle"]
+bg_color = Color(0.7162962, 0.7162962, 0.7162962, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="GameUI" type="Control" unique_id=976897839]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_aurti")
+
+[node name="TopBar" type="Panel" parent="." unique_id=679393531]
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("TopBarStyle")
+
+[node name="TopContent" type="MarginContainer" parent="TopBar" unique_id=1089661303]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBox" type="HBoxContainer" parent="TopBar/TopContent" unique_id=1260398262]
+layout_mode = 2
+
+[node name="GameTypeLabel" type="Label" parent="TopBar/TopContent/HBox" unique_id=365336595]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 28
+text = "WORD GAME"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="TopBar/TopContent/HBox" unique_id=1968709457]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ScoreLabel" type="Label" parent="TopBar/TopContent/HBox" unique_id=350602134]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "Score: 0"
+horizontal_alignment = 2
+
+[node name="BackButton" type="Button" parent="TopBar/TopContent/HBox" unique_id=1314074813]
+custom_minimum_size = Vector2(100, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("ButtonNormal")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2saa7")
+theme_override_styles/hover = SubResource("ButtonHover")
+text = "BACK"
+
+[node name="StatusPanel" type="Panel" parent="." unique_id=750926190]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 100.0
+offset_right = -20.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StatusStyle")
+
+[node name="HealthContainer" type="HBoxContainer" parent="StatusPanel" unique_id=1963018388]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -20.0
+offset_right = 60.0
+offset_bottom = 20.0
+alignment = 1
+
+[node name="TimerContainer" type="HBoxContainer" parent="StatusPanel" unique_id=1628602380]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -20.0
+offset_right = 60.0
+offset_bottom = 20.0
+alignment = 1
+
+[node name="TimerLabel" type="Label" parent="StatusPanel/TimerContainer" unique_id=722058931]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "60s"
+horizontal_alignment = 1
+
+[node name="GameOverPanel" type="Panel" parent="." unique_id=2112848492]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -80.0
+offset_right = 150.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("GameOverStyle")
+
+[node name="VBox" type="VBoxContainer" parent="GameOverPanel" unique_id=416020072]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+
+[node name="GameOverLabel" type="Label" parent="GameOverPanel/VBox" unique_id=799280736]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="GameOverPanel/VBox" unique_id=742897342]
+custom_minimum_size = Vector2(120, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("ButtonNormal")
+theme_override_styles/hover = SubResource("ButtonHover")
+text = "RESTART"
+
+[node name="Timer" type="Timer" parent="." unique_id=1293815828]
+
+[node name="Back" parent="." unique_id=1594582093 instance=ExtResource("2_3cqg8")]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 27.93
+offset_right = 18.0
+offset_bottom = 27.93

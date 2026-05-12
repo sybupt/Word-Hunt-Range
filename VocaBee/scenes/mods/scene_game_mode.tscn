@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dnibv31lralv8"]
+
+[ext_resource type="Script" uid="uid://bj55v7i0jjoep" path="res://scripts/mods/scene_game_mode.gd" id="1_ie2el"]
+[ext_resource type="Texture2D" uid="uid://d2688pbaa3qkn" path="res://assets/scene_imgs/bedroom.png" id="2_ie2el"]
+[ext_resource type="PackedScene" uid="uid://nf3arlu8boi2" path="res://scenes/common/back.tscn" id="3_7bx6h"]
+
+[node name="SceneGameMode" type="Control" unique_id=1865487698]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ie2el")
+
+[node name="Bg" type="Panel" parent="." unique_id=695981854]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Img" type="TextureRect" parent="." unique_id=1642850356]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -558.53
+offset_top = -314.92
+offset_right = 2173.47
+offset_bottom = 1219.08
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.41, 0.41)
+mouse_filter = 2
+texture = ExtResource("2_ie2el")
+stretch_mode = 2
+
+[node name="Top" type="Panel" parent="." unique_id=696450142]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Top" unique_id=624936757]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Chair"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Words" type="Node2D" parent="." unique_id=729753152]
+
+[node name="Back" parent="." unique_id=1594582093 instance=ExtResource("3_7bx6h")]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 4.0
+offset_bottom = 6.0

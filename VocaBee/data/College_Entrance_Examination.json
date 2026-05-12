@@ -1,0 +1,4912 @@
+{
+    "1": {
+        "english": "absence",
+        "chinese_trans": "缺席，不在场，缺乏",
+        "spell": "[ˈæbsəns]"
+    },
+    "2": {
+        "english": "absorb",
+        "chinese_trans": "吸收，使专心",
+        "spell": "[əbˈsɔːb]"
+    },
+    "3": {
+        "english": "abstract",
+        "chinese_trans": "抽象的 n,摘要",
+        "spell": "[ˈæbstrækt]"
+    },
+    "4": {
+        "english": "academic",
+        "chinese_trans": "学院的，学术的",
+        "spell": "[ækəˈdemɪk]"
+    },
+    "5": {
+        "english": "access",
+        "chinese_trans": "接近，通道，入口",
+        "spell": "[ˈækses]"
+    },
+    "6": {
+        "english": "accordingly",
+        "chinese_trans": "因此，依照",
+        "spell": "[ə'kɔrdɪŋlɪ]"
+    },
+    "7": {
+        "english": "account",
+        "chinese_trans": "记述，解释，账目",
+        "spell": "[əˈkaʊnt]"
+    },
+    "8": {
+        "english": "accurate",
+        "chinese_trans": "准确的，正确无误的",
+        "spell": "['ækjʊreɪt]"
+    },
+    "9": {
+        "english": "accuse",
+        "chinese_trans": "指责，归咎于",
+        "spell": "[əˈkjuːz]"
+    },
+    "10": {
+        "english": "actor",
+        "chinese_trans": "男演员",
+        "spell": "[ˈæktə(r)]"
+    },
+    "11": {
+        "english": "actress",
+        "chinese_trans": "女演员",
+        "spell": "[ˈæktrɪs]"
+    },
+    "12": {
+        "english": "actual",
+        "chinese_trans": "实际的，现行的",
+        "spell": "[ˈæktʃʊəl]"
+    },
+    "13": {
+        "english": "adapt",
+        "chinese_trans": "使适应，改编",
+        "spell": "[əˈdæpt]"
+    },
+    "14": {
+        "english": "admire",
+        "chinese_trans": "钦佩，羡慕，赞赏",
+        "spell": "[ədˈmaɪə(r)]"
+    },
+    "15": {
+        "english": "admit",
+        "chinese_trans": "承认，准许…进入",
+        "spell": "[ədˈmɪt]"
+    },
+    "16": {
+        "english": "adopt",
+        "chinese_trans": "收养，采用，采取",
+        "spell": "[əˈdɔpt]"
+    },
+    "17": {
+        "english": "adult",
+        "chinese_trans": "成年人 n.成年的",
+        "spell": "[ˈædʌlt]"
+    },
+    "18": {
+        "english": "advance",
+        "chinese_trans": "前进，提高 n.进展",
+        "spell": "[ədˈvɑːns]"
+    },
+    "19": {
+        "english": "adventure",
+        "chinese_trans": "冒险，惊险活动",
+        "spell": "[ədˈventʃə(r)]"
+    },
+    "20": {
+        "english": "affair",
+        "chinese_trans": "事情，事件，事务",
+        "spell": "[əˈfeə(r)]"
+    },
+    "21": {
+        "english": "affect",
+        "chinese_trans": "影响，感动",
+        "spell": "[əˈfekt]"
+    },
+    "22": {
+        "english": "afterward(s)",
+        "chinese_trans": "后来，以后，随后",
+        "spell": "[ˈɑːftəwəd(z)]"
+    },
+    "23": {
+        "english": "agent",
+        "chinese_trans": "代理人，代理商",
+        "spell": "[ˈeɪdʒənt]"
+    },
+    "24": {
+        "english": "agriculture",
+        "chinese_trans": "农业，农艺，农学",
+        "spell": "[ˈæɡrɪkʌltʃə(r)]"
+    },
+    "25": {
+        "english": "ahead",
+        "chinese_trans": "在前，向前，提前",
+        "spell": "[əˈhed]"
+    },
+    "26": {
+        "english": "aid",
+        "chinese_trans": "帮助，救护，助手",
+        "spell": "[eɪd]"
+    },
+    "27": {
+        "english": "aim",
+        "chinese_trans": "瞄准，针对，致力",
+        "spell": "[eɪm]"
+    },
+    "28": {
+        "english": "aircraft",
+        "chinese_trans": "飞机，飞行器",
+        "spell": "[ˈeəkrɑːft]"
+    },
+    "29": {
+        "english": "alarm",
+        "chinese_trans": "惊恐，忧虑，警报",
+        "spell": "[əˈlɑːm]"
+    },
+    "30": {
+        "english": "album",
+        "chinese_trans": "集邮本，照相簿，唱片",
+        "spell": "[ˈælbəm]"
+    },
+    "31": {
+        "english": "alcohol",
+        "chinese_trans": "酒精，乙醇",
+        "spell": "[ˈælkəhɔl]"
+    },
+    "32": {
+        "english": "altogether",
+        "chinese_trans": "完全，总而言之",
+        "spell": "[ɔːltəˈɡeðə(r)]"
+    },
+    "33": {
+        "english": "amaze",
+        "chinese_trans": "使惊奇，使惊愕",
+        "spell": "[əˈmeɪz]"
+    },
+    "34": {
+        "english": "ambition",
+        "chinese_trans": "雄心，抱负，野心",
+        "spell": "[æmˈbɪʃ(ə)n]"
+    },
+    "35": {
+        "english": "amount",
+        "chinese_trans": "总数，数量，和",
+        "spell": "[əˈmaʊnt]"
+    },
+    "36": {
+        "english": "amuse",
+        "chinese_trans": "逗……乐，给…… 娱乐",
+        "spell": "[əˈmjuːz]"
+    },
+    "37": {
+        "english": "analyze",
+        "chinese_trans": "分析，分解，解析",
+        "spell": "['ænəlaiz]"
+    },
+    "38": {
+        "english": "ancestor",
+        "chinese_trans": "祖宗，祖先",
+        "spell": "[ˈænsəstə(r)]"
+    },
+    "39": {
+        "english": "anger",
+        "chinese_trans": "怒，愤怒 vt.使发愁",
+        "spell": "['æŋgə]"
+    },
+    "40": {
+        "english": "angle",
+        "chinese_trans": "角，角度",
+        "spell": "[ˈæŋɡ(ə)l]"
+    },
+    "41": {
+        "english": "anniversary",
+        "chinese_trans": "周年纪念日",
+        "spell": "[ænɪˈvɜːsərɪ]"
+    },
+    "42": {
+        "english": "announce",
+        "chinese_trans": "宣布，发表",
+        "spell": "[əˈnaʊns]"
+    },
+    "43": {
+        "english": "annoy",
+        "chinese_trans": "使恼怒，打扰",
+        "spell": "[əˈnɔɪ]"
+    },
+    "44": {
+        "english": "anxious",
+        "chinese_trans": "忧虑的，渴望的",
+        "spell": "[ˈæŋkʃəs]"
+    },
+    "45": {
+        "english": "anyhow",
+        "chinese_trans": "无论如何",
+        "spell": "[ˈenɪhaʊ]"
+    },
+    "46": {
+        "english": "apart",
+        "chinese_trans": "相隔，分开，除去",
+        "spell": "[əˈpɑːt]"
+    },
+    "47": {
+        "english": "apartment",
+        "chinese_trans": "一套公寓房间",
+        "spell": "[əˈpɑːtmənt]"
+    },
+    "48": {
+        "english": "apologize",
+        "chinese_trans": "道歉，谢罪，认错",
+        "spell": "[əˈpɔlədʒaɪz]"
+    },
+    "49": {
+        "english": "appearance",
+        "chinese_trans": "出现，来到，外观",
+        "spell": "[əˈpɪərəns]"
+    },
+    "50": {
+        "english": "apply",
+        "chinese_trans": "应用，实施，使用",
+        "spell": "[əˈplaɪ]"
+    },
+    "51": {
+        "english": "appointment",
+        "chinese_trans": "任命，约会，约定",
+        "spell": "[əˈpɔɪntmənt]"
+    },
+    "52": {
+        "english": "appreciate",
+        "chinese_trans": "欣赏，领会，感谢",
+        "spell": "[əˈpriːʃɪeɪt]"
+    },
+    "53": {
+        "english": "approach",
+        "chinese_trans": "向……靠近 n.靠近",
+        "spell": "[əˈprəʊtʃ]"
+    },
+    "54": {
+        "english": "architecture",
+        "chinese_trans": "建筑学，建筑式样",
+        "spell": "[ˈɑːkɪtektʃə(r)]"
+    },
+    "55": {
+        "english": "argue",
+        "chinese_trans": "争论，争辩，辩论",
+        "spell": "[ˈɑːɡjuː]"
+    },
+    "56": {
+        "english": "arrange",
+        "chinese_trans": "筹备，整理，调解",
+        "spell": "[əˈreɪndʒ]"
+    },
+    "57": {
+        "english": "arrest",
+        "chinese_trans": "逮捕，拘留",
+        "spell": "[əˈrest]"
+    },
+    "58": {
+        "english": "arrival",
+        "chinese_trans": "到达，到达者",
+        "spell": "[əˈraɪv(ə)l]"
+    },
+    "59": {
+        "english": "artist",
+        "chinese_trans": "艺术家，美术家",
+        "spell": "[ˈɑːtɪst]"
+    },
+    "60": {
+        "english": "ash",
+        "chinese_trans": "灰，灰末，骨灰",
+        "spell": "[æʃ]"
+    },
+    "61": {
+        "english": "ashamed",
+        "chinese_trans": "惭愧的，羞耻的",
+        "spell": "[əˈʃeɪmd]"
+    },
+    "62": {
+        "english": "aside",
+        "chinese_trans": "在旁边，到旁边",
+        "spell": "[əˈsaɪd]"
+    },
+    "63": {
+        "english": "aspect",
+        "chinese_trans": "方面，样子，外表",
+        "spell": "[ˈæspekt]"
+    },
+    "64": {
+        "english": "assistant",
+        "chinese_trans": "助手，助教",
+        "spell": "[əˈsɪst(ə)nt]"
+    },
+    "65": {
+        "english": "assume",
+        "chinese_trans": "假定，承担，呈现",
+        "spell": "[əˈsjuːm; ]"
+    },
+    "66": {
+        "english": "astonish",
+        "chinese_trans": "使惊讶，使吃惊",
+        "spell": "[əˈstɔnɪʃ]"
+    },
+    "67": {
+        "english": "athlete",
+        "chinese_trans": "运动员",
+        "spell": "[ˈæθliːt]"
+    },
+    "68": {
+        "english": "atmosphere",
+        "chinese_trans": "大气，气氛",
+        "spell": "[ˈætməsfɪə(r)]"
+    },
+    "69": {
+        "english": "attach",
+        "chinese_trans": "缚，系，贴，附加",
+        "spell": "[əˈtætʃ]"
+    },
+    "70": {
+        "english": "attack",
+        "chinese_trans": "vt.n.攻击，进攻",
+        "spell": "[əˈtæk]"
+    },
+    "71": {
+        "english": "attempt",
+        "chinese_trans": "尝试，试图 n.企图",
+        "spell": "[əˈtempt]"
+    },
+    "72": {
+        "english": "attend",
+        "chinese_trans": "出席，照顾，护理",
+        "spell": "[əˈtend]"
+    },
+    "73": {
+        "english": "attitude",
+        "chinese_trans": "态度，看法，姿势",
+        "spell": "[ˈætɪtjuːd; ]"
+    },
+    "74": {
+        "english": "attract",
+        "chinese_trans": "吸引，诱惑",
+        "spell": "[əˈtrækt]"
+    },
+    "75": {
+        "english": "audience",
+        "chinese_trans": "听众，观众",
+        "spell": "[ˈɔːdɪəns]"
+    },
+    "76": {
+        "english": "author",
+        "chinese_trans": "作者，作家",
+        "spell": "[ˈɔːθə(r)]"
+    },
+    "77": {
+        "english": "available",
+        "chinese_trans": "可利用的，通用的",
+        "spell": "[ə'veɪləbl]"
+    },
+    "78": {
+        "english": "average",
+        "chinese_trans": "平均数 a.平均的",
+        "spell": "[ˈævərɪdʒ]"
+    },
+    "79": {
+        "english": "award",
+        "chinese_trans": "奖，奖品，判定",
+        "spell": "[ə'wɔrd]"
+    },
+    "80": {
+        "english": "aware",
+        "chinese_trans": "知道的，意识到的",
+        "spell": "[əˈweə(r)]"
+    },
+    "81": {
+        "english": "awful",
+        "chinese_trans": "令人不愉快的",
+        "spell": "[ˈɔːfʊl]"
+    },
+    "82": {
+        "english": "badly",
+        "chinese_trans": "坏，差，严重地",
+        "spell": "[ˈbædlɪ]"
+    },
+    "83": {
+        "english": "badminton",
+        "chinese_trans": "羽毛球",
+        "spell": "[ˈbædmɪntən]"
+    },
+    "84": {
+        "english": "baggage",
+        "chinese_trans": "行李",
+        "spell": "[ˈbæɡɪdʒ]"
+    },
+    "85": {
+        "english": "bake",
+        "chinese_trans": "烤，烘，烧硬",
+        "spell": "[beɪk]"
+    },
+    "86": {
+        "english": "balance",
+        "chinese_trans": "使平衡，称 n. 天平",
+        "spell": "[ˈbæləns]"
+    },
+    "87": {
+        "english": "ban",
+        "chinese_trans": "禁令 vt. 禁止，取缔",
+        "spell": "[bæn]"
+    },
+    "88": {
+        "english": "band",
+        "chinese_trans": "乐队，带，波段",
+        "spell": "[bænd]"
+    },
+    "89": {
+        "english": "bar",
+        "chinese_trans": "酒吧间，条，杆",
+        "spell": "[bɑː(r)]"
+    },
+    "90": {
+        "english": "bare",
+        "chinese_trans": "赤裸的，仅仅的",
+        "spell": "[beə(r)]"
+    },
+    "91": {
+        "english": "bargain",
+        "chinese_trans": "交易，vi.议价，成交",
+        "spell": "[ˈbɑːɡɪn]"
+    },
+    "92": {
+        "english": "base",
+        "chinese_trans": "基础，底层，基地",
+        "spell": "[beɪs]"
+    },
+    "93": {
+        "english": "basin",
+        "chinese_trans": "盆子，盆地",
+        "spell": "[ˈbeɪs(ə)n]"
+    },
+    "94": {
+        "english": "basis",
+        "chinese_trans": "基础，根据",
+        "spell": "[ˈbeɪsɪs]"
+    },
+    "95": {
+        "english": "bath",
+        "chinese_trans": "洗澡，浴缸",
+        "spell": "[bɑːθ]"
+    },
+    "96": {
+        "english": "bathe",
+        "chinese_trans": "给……洗澡，弄湿",
+        "spell": "[beɪð]"
+    },
+    "97": {
+        "english": "battery",
+        "chinese_trans": "电池",
+        "spell": "[ˈbætərɪ]"
+    },
+    "98": {
+        "english": "battle",
+        "chinese_trans": "战役，斗争 vi.作战",
+        "spell": "[ˈbæt(ə)l]"
+    },
+    "99": {
+        "english": "beard",
+        "chinese_trans": "胡须，络腮胡子",
+        "spell": "[bɪəd]"
+    },
+    "100": {
+        "english": "beauty",
+        "chinese_trans": "美，美丽，美人",
+        "spell": "[ˈbjuːtɪ]"
+    },
+    "101": {
+        "english": "beer",
+        "chinese_trans": "啤酒",
+        "spell": "[bɪə(r)]"
+    },
+    "102": {
+        "english": "beg",
+        "chinese_trans": "vi.乞求，请求",
+        "spell": "[beɡ]"
+    },
+    "103": {
+        "english": "beginning",
+        "chinese_trans": "开始，开端，起源",
+        "spell": "[bɪˈɡɪnɪŋ]"
+    },
+    "104": {
+        "english": "behave",
+        "chinese_trans": "表现，举止",
+        "spell": "[bɪˈheɪv]"
+    },
+    "105": {
+        "english": "belly",
+        "chinese_trans": "腹部。胃",
+        "spell": "[ˈbelɪ]"
+    },
+    "106": {
+        "english": "belong",
+        "chinese_trans": "属于，附属",
+        "spell": "[bɪˈlɔŋ]"
+    },
+    "107": {
+        "english": "belt",
+        "chinese_trans": "带，腰带，区",
+        "spell": "[belt]"
+    },
+    "108": {
+        "english": "bench",
+        "chinese_trans": "长凳，条凳，工作台",
+        "spell": "[bentʃ]"
+    },
+    "109": {
+        "english": "bend",
+        "chinese_trans": "使弯曲，vi.弯曲",
+        "spell": "[bend]"
+    },
+    "110": {
+        "english": "benefit",
+        "chinese_trans": "利益，恩惠，津贴",
+        "spell": "[ˈbenɪfɪt]"
+    },
+    "111": {
+        "english": "best",
+        "chinese_trans": "最好的",
+        "spell": "[best]"
+    },
+    "112": {
+        "english": "better",
+        "chinese_trans": "较好的 ad. 更好的",
+        "spell": "[ˈbetə(r)]"
+    },
+    "113": {
+        "english": "billion",
+        "chinese_trans": "十亿",
+        "spell": "[ˈbɪlɪən]"
+    },
+    "114": {
+        "english": "biology",
+        "chinese_trans": "生物学，生态学",
+        "spell": "[baɪˈɔlədʒɪ]"
+    },
+    "115": {
+        "english": "birthplace",
+        "chinese_trans": "出生地",
+        "spell": "[ˈbɜːθpleɪs]"
+    },
+    "116": {
+        "english": "bite",
+        "chinese_trans": "咬，叮，螫",
+        "spell": "[baɪt]"
+    },
+    "117": {
+        "english": "blame",
+        "chinese_trans": "责备，把……归咎于",
+        "spell": "[bleɪm]"
+    },
+    "118": {
+        "english": "blank",
+        "chinese_trans": "空白的 n. 空白",
+        "spell": "[blæŋk]"
+    },
+    "119": {
+        "english": "blanket",
+        "chinese_trans": "毯子",
+        "spell": "[ˈblæŋkɪt]"
+    },
+    "120": {
+        "english": "bleed",
+        "chinese_trans": "流血",
+        "spell": "[bliːd]"
+    },
+    "121": {
+        "english": "block",
+        "chinese_trans": "街区 vt.堵塞，拦阻",
+        "spell": "[blɔk]"
+    },
+    "122": {
+        "english": "blouse",
+        "chinese_trans": "宽松的上衣",
+        "spell": "[blaʊz]"
+    },
+    "123": {
+        "english": "boil",
+        "chinese_trans": "沸腾，气化 vt.沸腾",
+        "spell": "[bɔɪl]"
+    },
+    "124": {
+        "english": "bomb",
+        "chinese_trans": "炸弹 vt.轰炸",
+        "spell": "[bɔm]"
+    },
+    "125": {
+        "english": "bone",
+        "chinese_trans": "骨，骨骼",
+        "spell": "[bəʊn]"
+    },
+    "126": {
+        "english": "border",
+        "chinese_trans": "边缘，边界",
+        "spell": "[ˈbɔːdə(r)]"
+    },
+    "127": {
+        "english": "bother",
+        "chinese_trans": "烦扰，迷惑 n.麻烦",
+        "spell": "['bɔðɚ]"
+    },
+    "128": {
+        "english": "brake",
+        "chinese_trans": "闸，刹车 vi.制动",
+        "spell": "[breɪk]"
+    },
+    "129": {
+        "english": "branch",
+        "chinese_trans": "树枝，分部，分支",
+        "spell": "[brɑːntʃ]"
+    },
+    "130": {
+        "english": "brand",
+        "chinese_trans": "商品，烙印 vt.铭刻",
+        "spell": "[brænd]"
+    },
+    "131": {
+        "english": "brick",
+        "chinese_trans": "砖块",
+        "spell": "[brɪk]"
+    },
+    "132": {
+        "english": "brief",
+        "chinese_trans": "简短的 vt.作简报",
+        "spell": "[briːf]"
+    },
+    "133": {
+        "english": "broad",
+        "chinese_trans": "宽的。阔的，广泛的",
+        "spell": "[brɔːd]"
+    },
+    "134": {
+        "english": "broadcast",
+        "chinese_trans": "广播，播音",
+        "spell": "[ˈbrɔːdkɑːst]"
+    },
+    "135": {
+        "english": "broom",
+        "chinese_trans": "扫鉥",
+        "spell": "[bruːm]"
+    },
+    "136": {
+        "english": "bucket",
+        "chinese_trans": "水桶，吊桶",
+        "spell": "[ˈbʌkɪt]"
+    },
+    "137": {
+        "english": "budget",
+        "chinese_trans": "预算",
+        "spell": "[ˈbʌdʒɪt]"
+    },
+    "138": {
+        "english": "burden",
+        "chinese_trans": "担子，负担，装载量",
+        "spell": "[ˈbɜːd(ə)n]"
+    },
+    "139": {
+        "english": "burst",
+        "chinese_trans": "使爆裂 vi.n.爆炸",
+        "spell": "[ˈbɜːst]"
+    },
+    "140": {
+        "english": "bury",
+        "chinese_trans": "埋葬，埋藏",
+        "spell": "[ˈberɪ]"
+    },
+    "141": {
+        "english": "bush",
+        "chinese_trans": "灌木",
+        "spell": "[bʊʃ]"
+    },
+    "142": {
+        "english": "butcher",
+        "chinese_trans": "屠夫，屠户",
+        "spell": "['bʊtʃə]"
+    },
+    "143": {
+        "english": "button",
+        "chinese_trans": "扣子，按钮vt.扣紧",
+        "spell": "[ˈbʌt(ə)n]"
+    },
+    "144": {
+        "english": "cafe",
+        "chinese_trans": "咖啡馆，小餐厅",
+        "spell": "[ˈkæfeɪ]"
+    },
+    "145": {
+        "english": "cage",
+        "chinese_trans": "笼，鸟笼，囚笼",
+        "spell": "[keɪdʒ]"
+    },
+    "146": {
+        "english": "calculate",
+        "chinese_trans": "计算，估计，计划",
+        "spell": "[ˈkælkjʊleɪt]"
+    },
+    "147": {
+        "english": "calm",
+        "chinese_trans": "平静的",
+        "spell": "[kɑːm]"
+    },
+    "148": {
+        "english": "candidate",
+        "chinese_trans": "候选人，投考者",
+        "spell": "[ ˈkændɪdeɪt]"
+    },
+    "149": {
+        "english": "carpet",
+        "chinese_trans": "地毯，毛毯，毡毯",
+        "spell": "[ˈkɑːpɪt]"
+    },
+    "150": {
+        "english": "carrot",
+        "chinese_trans": "胡萝卜",
+        "spell": "[ˈkærət]"
+    },
+    "151": {
+        "english": "cart",
+        "chinese_trans": "二轮运货马车",
+        "spell": "[kɑrt]"
+    },
+    "152": {
+        "english": "case",
+        "chinese_trans": "情况，事实，病例",
+        "spell": "[keɪs]"
+    },
+    "153": {
+        "english": "cash",
+        "chinese_trans": "现金，现款",
+        "spell": "[kæʃ]"
+    },
+    "154": {
+        "english": "castle",
+        "chinese_trans": "城堡",
+        "spell": "[ ˈkæsl]"
+    },
+    "155": {
+        "english": "casual",
+        "chinese_trans": "偶然的，随便的",
+        "spell": "[ˈkæʒʊəl]"
+    },
+    "156": {
+        "english": "cattle",
+        "chinese_trans": "牛，牲口，家畜",
+        "spell": "[ˈkæt(ə)l"
+    },
+    "157": {
+        "english": "cave",
+        "chinese_trans": "山洞，洞穴，窑洞",
+        "spell": "[keɪv]"
+    },
+    "158": {
+        "english": "centimeter",
+        "chinese_trans": "厘米",
+        "spell": "['sentiˌmi:tə(r)]"
+    },
+    "159": {
+        "english": "central",
+        "chinese_trans": "中心的，主要的",
+        "spell": "[ˈsentr(ə)l]"
+    },
+    "160": {
+        "english": "ceremony",
+        "chinese_trans": "典礼，仪式，礼节",
+        "spell": "[ˈserɪmənɪ]"
+    },
+    "161": {
+        "english": "certainly",
+        "chinese_trans": "一定，必定，当然",
+        "spell": "[ˈsɜːtənlɪ]"
+    },
+    "162": {
+        "english": "chain",
+        "chinese_trans": "链，链条，项圈",
+        "spell": "[tʃeɪn]"
+    },
+    "163": {
+        "english": "challenge",
+        "chinese_trans": "挑战",
+        "spell": "[ˈtʃæləndʒ]"
+    },
+    "164": {
+        "english": "champion",
+        "chinese_trans": "冠军",
+        "spell": "[ˈtʃæmpɪən]"
+    },
+    "165": {
+        "english": "channel",
+        "chinese_trans": "海峡，渠道，频道",
+        "spell": "[ˈtʃæn(ə)l]"
+    },
+    "166": {
+        "english": "chapter",
+        "chinese_trans": "章，回，篇",
+        "spell": "[ˈtʃæptə(r)]"
+    },
+    "167": {
+        "english": "character",
+        "chinese_trans": "性格，特性，角色",
+        "spell": "[ˈkærɪktə(r)]"
+    },
+    "168": {
+        "english": "characteristic",
+        "chinese_trans": "特有的， n.特性",
+        "spell": "[kærɪktəˈrɪstɪk]"
+    },
+    "169": {
+        "english": "charge",
+        "chinese_trans": "索价，控告 n.费用",
+        "spell": "[tʃɑːdʒ]"
+    },
+    "170": {
+        "english": "chat",
+        "chinese_trans": "n.闲谈，聊天",
+        "spell": "[tʃæt]"
+    },
+    "171": {
+        "english": "check",
+        "chinese_trans": "支票",
+        "spell": "[tʃek]"
+    },
+    "172": {
+        "english": "cheek",
+        "chinese_trans": "面颊，脸蛋",
+        "spell": "[tʃiːk]"
+    },
+    "173": {
+        "english": "chief",
+        "chinese_trans": "主要的，首席的",
+        "spell": "[tʃiːf]"
+    },
+    "174": {
+        "english": "chimney",
+        "chinese_trans": "烟囱",
+        "spell": "[ˈtʃɪmnɪ]"
+    },
+    "175": {
+        "english": "cigar",
+        "chinese_trans": "雪茄",
+        "spell": "[sɪˈɡɑː(r)]"
+    },
+    "176": {
+        "english": "cigarette",
+        "chinese_trans": "香烟",
+        "spell": "[sɪɡəˈret]"
+    },
+    "177": {
+        "english": "citizen",
+        "chinese_trans": "公民，市民，居民",
+        "spell": "[ˈsɪtɪz(ə)n]"
+    },
+    "178": {
+        "english": "civil",
+        "chinese_trans": "公民的，公职的",
+        "spell": "[ˈsɪv(ə)l]"
+    },
+    "179": {
+        "english": "clerk",
+        "chinese_trans": "店员，办事员，职员",
+        "spell": "[ klərk]"
+    },
+    "180": {
+        "english": "climate",
+        "chinese_trans": "气候",
+        "spell": "[ˈklaɪmɪt]"
+    },
+    "181": {
+        "english": "clinic",
+        "chinese_trans": "诊所，医务室，会诊",
+        "spell": "[ˈklɪnɪk]"
+    },
+    "182": {
+        "english": "clothing",
+        "chinese_trans": "衣服",
+        "spell": "[ˈkləʊðɪŋ]"
+    },
+    "183": {
+        "english": "cock",
+        "chinese_trans": "公鸡，笼头",
+        "spell": "[kɔk]"
+    },
+    "184": {
+        "english": "collar",
+        "chinese_trans": "衣领",
+        "spell": "[ˈkɔlə(r)]"
+    },
+    "185": {
+        "english": "comb",
+        "chinese_trans": "梳子 vt.梳理",
+        "spell": "[kəʊm]"
+    },
+    "186": {
+        "english": "combine",
+        "chinese_trans": "使结合，兼有",
+        "spell": "[kəmˈbaɪn]"
+    },
+    "187": {
+        "english": "comedy",
+        "chinese_trans": "喜剧，喜剧场面",
+        "spell": "[ˈkɔmədɪ]"
+    },
+    "188": {
+        "english": "comfort",
+        "chinese_trans": "舒适，安慰 vt.安慰",
+        "spell": "[ˈkʌmfət]"
+    },
+    "189": {
+        "english": "comment",
+        "chinese_trans": "评论，意见，注释",
+        "spell": "[ˈkɔment]"
+    },
+    "190": {
+        "english": "commercial",
+        "chinese_trans": "商业的，商品化的",
+        "spell": "[kə'mɝʃəl]"
+    },
+    "191": {
+        "english": "committee",
+        "chinese_trans": "委员会",
+        "spell": "[kəˈmɪtɪ]"
+    },
+    "192": {
+        "english": "communism",
+        "chinese_trans": "共产主义",
+        "spell": "[ˈkɔmjʊnɪz(ə)m]"
+    },
+    "193": {
+        "english": "communist",
+        "chinese_trans": "共产党员",
+        "spell": "[ˈkɔmjuːnɪst]"
+    },
+    "194": {
+        "english": "companion",
+        "chinese_trans": "同伴",
+        "spell": "[kəmˈpænɪən]"
+    },
+    "195": {
+        "english": "compete",
+        "chinese_trans": "比赛，竞争，对抗",
+        "spell": "[kəmˈpiːt]"
+    },
+    "196": {
+        "english": "complex",
+        "chinese_trans": "结合的，复杂的",
+        "spell": "[ˈkɔmpleks]"
+    },
+    "197": {
+        "english": "comrade",
+        "chinese_trans": "同志",
+        "spell": "[ˈkɔmrɪd]"
+    },
+    "198": {
+        "english": "concentrate",
+        "chinese_trans": "集中，聚集，浓缩",
+        "spell": "[ˈkɔnsəntreɪt]"
+    },
+    "199": {
+        "english": "concern",
+        "chinese_trans": "关心，挂念，关系",
+        "spell": "[kənˈsɜːn]"
+    },
+    "200": {
+        "english": "conclusion",
+        "chinese_trans": "结论，推论，结尾",
+        "spell": "[kənˈkluːʒ(ə)n]"
+    },
+    "201": {
+        "english": "concrete",
+        "chinese_trans": "混凝土 a.具体的，实在的",
+        "spell": "[ˈkɔŋkriːt]"
+    },
+    "202": {
+        "english": "conduct",
+        "chinese_trans": "举止，行为，指导",
+        "spell": "[ˈkəndʌkt]"
+    },
+    "203": {
+        "english": "conductor",
+        "chinese_trans": "售票员，（乐队）指挥",
+        "spell": "[kənˈdʌktə(r)]"
+    },
+    "204": {
+        "english": "confident",
+        "chinese_trans": "确信的，自信的",
+        "spell": "[ˈkɔnfɪdənt]"
+    },
+    "205": {
+        "english": "confirm",
+        "chinese_trans": "证实，肯定，批准",
+        "spell": "[kənˈfɜːm]"
+    },
+    "206": {
+        "english": "conflict",
+        "chinese_trans": "争论，冲突，斗争",
+        "spell": "[ˈkɔnflɪkt]"
+    },
+    "207": {
+        "english": "confuse",
+        "chinese_trans": "使混乱，混淆",
+        "spell": "[kənˈfjuːz]"
+    },
+    "208": {
+        "english": "congratulation",
+        "chinese_trans": "祝词，贺辞",
+        "spell": "[kənɡrætjʊˈleɪʃ(ə)n]"
+    },
+    "209": {
+        "english": "consist",
+        "chinese_trans": "由……组成",
+        "spell": "[kənˈsɪst]"
+    },
+    "210": {
+        "english": "constant",
+        "chinese_trans": "经常的，永恒的",
+        "spell": "[ˈkɔnstənt]"
+    },
+    "211": {
+        "english": "construction",
+        "chinese_trans": "建造，建筑物",
+        "spell": "[kənˈstrʌkʃ(ə)n]"
+    },
+    "212": {
+        "english": "consume",
+        "chinese_trans": "消耗，消费",
+        "spell": "[kən'sjum]"
+    },
+    "213": {
+        "english": "contain",
+        "chinese_trans": "包含，容纳",
+        "spell": "[kənˈteɪn]"
+    },
+    "214": {
+        "english": "content",
+        "chinese_trans": "满意的，满足的",
+        "spell": "[kənˈtent]"
+    },
+    "215": {
+        "english": "continent",
+        "chinese_trans": "大陆，洲",
+        "spell": "[ˈkɔntɪnənt]"
+    },
+    "216": {
+        "english": "contribute",
+        "chinese_trans": "捐献，捐助，投稿",
+        "spell": "[kənˈtrɪbjuːt]"
+    },
+    "217": {
+        "english": "convenient",
+        "chinese_trans": "便利的，方便的",
+        "spell": "[kənˈviːnɪənt]"
+    },
+    "218": {
+        "english": "convince",
+        "chinese_trans": "使确信，使信服",
+        "spell": "[kənˈvɪns]"
+    },
+    "219": {
+        "english": "corn",
+        "chinese_trans": "谷物，小麦",
+        "spell": "[kɔːn]"
+    },
+    "220": {
+        "english": "cottage",
+        "chinese_trans": "村舍，小屋",
+        "spell": "[ˈkɔtɪdʒ]"
+    },
+    "221": {
+        "english": "counter",
+        "chinese_trans": "柜台，计数器",
+        "spell": "[ˈkaʊntə(r)]"
+    },
+    "222": {
+        "english": "court",
+        "chinese_trans": "法庭",
+        "spell": "[kɔːt]"
+    },
+    "223": {
+        "english": "courtyard",
+        "chinese_trans": "庭院，院子",
+        "spell": "[ˈkɔːtjɑːd]"
+    },
+    "224": {
+        "english": "crash",
+        "chinese_trans": "碰撞，坠落 n.碰撞",
+        "spell": "[kræʃ]"
+    },
+    "225": {
+        "english": "cream",
+        "chinese_trans": "奶油",
+        "spell": "[kriːm]"
+    },
+    "226": {
+        "english": "creature",
+        "chinese_trans": "生物，创造物",
+        "spell": "[ˈkriːtʃə(r)]"
+    },
+    "227": {
+        "english": "credit",
+        "chinese_trans": "信用",
+        "spell": "[ˈkredɪt]"
+    },
+    "228": {
+        "english": "crew",
+        "chinese_trans": "全体船员",
+        "spell": "[kruː]"
+    },
+    "229": {
+        "english": "crime",
+        "chinese_trans": "罪，罪行，犯罪",
+        "spell": "[kraɪm]"
+    },
+    "230": {
+        "english": "crop",
+        "chinese_trans": "农作物，庄稼",
+        "spell": "[krɔp]"
+    },
+    "231": {
+        "english": "crossing",
+        "chinese_trans": "横越 n.交叉口",
+        "spell": "[ˈkrɔsɪŋ]"
+    },
+    "232": {
+        "english": "crowd",
+        "chinese_trans": "群，大众，一伙人",
+        "spell": "[kraʊd]"
+    },
+    "233": {
+        "english": "cupboard",
+        "chinese_trans": "碗柜",
+        "spell": "[ˈkʌbəd]"
+    },
+    "234": {
+        "english": "cure",
+        "chinese_trans": "医治，n.治愈",
+        "spell": "[kjʊə(r)]"
+    },
+    "235": {
+        "english": "curious",
+        "chinese_trans": "好奇的，稀奇古怪的",
+        "spell": "[ˈkjʊərɪəs]"
+    },
+    "236": {
+        "english": "curtain",
+        "chinese_trans": "帘，窗帘，幕（布）",
+        "spell": "[ˈkɜːt(ə)n]"
+    },
+    "237": {
+        "english": "cushion",
+        "chinese_trans": "垫子，坐垫，靠垫",
+        "spell": "[ˈkʊʃ(ə)n]"
+    },
+    "238": {
+        "english": "custom",
+        "chinese_trans": "习惯，风俗，海关",
+        "spell": "[ˈkʌstəm]"
+    },
+    "239": {
+        "english": "customer",
+        "chinese_trans": "顾客，主顾",
+        "spell": "[ˈkʌstəmə(r)]"
+    },
+    "240": {
+        "english": "cycle",
+        "chinese_trans": "循环",
+        "spell": "[ˈsaɪk(ə)l]"
+    },
+    "241": {
+        "english": "damage",
+        "chinese_trans": "损害，毁坏，n.损害",
+        "spell": "[ˈdæmɪdʒ]"
+    },
+    "242": {
+        "english": "damp",
+        "chinese_trans": "潮湿的，",
+        "spell": "[dæmp]"
+    },
+    "243": {
+        "english": "darkness",
+        "chinese_trans": "黑暗",
+        "spell": "[ˈdɑːknɪs]"
+    },
+    "244": {
+        "english": "dawn",
+        "chinese_trans": "黎明，开端",
+        "spell": "[dɔːn]"
+    },
+    "245": {
+        "english": "deadline",
+        "chinese_trans": "最终期限",
+        "spell": "[ˈdedlaɪn]"
+    },
+    "246": {
+        "english": "debate",
+        "chinese_trans": "争论，辩论",
+        "spell": "[dɪˈbeɪt]"
+    },
+    "247": {
+        "english": "debt",
+        "chinese_trans": "债务，欠债",
+        "spell": "[det]"
+    },
+    "248": {
+        "english": "declare",
+        "chinese_trans": "断言，声明",
+        "spell": "[dɪˈkleə(r)]"
+    },
+    "249": {
+        "english": "decorate",
+        "chinese_trans": "装饰",
+        "spell": "[ˈdekəreɪt]"
+    },
+    "250": {
+        "english": "decrease",
+        "chinese_trans": "减少",
+        "spell": "[dɪˈkriːs]"
+    },
+    "251": {
+        "english": "deed",
+        "chinese_trans": "行为，功绩，契约",
+        "spell": "[diːd]"
+    },
+    "252": {
+        "english": "defeat",
+        "chinese_trans": "战胜，击败",
+        "spell": "[dɪˈfiːt]"
+    },
+    "253": {
+        "english": "defence",
+        "chinese_trans": "防御，辩护",
+        "spell": "[di'fens]"
+    },
+    "254": {
+        "english": "defend",
+        "chinese_trans": "保卫，防守",
+        "spell": "[dɪˈfend]"
+    },
+    "255": {
+        "english": "degree",
+        "chinese_trans": "程度，度，学位",
+        "spell": "[dɪˈɡriː]"
+    },
+    "256": {
+        "english": "delay",
+        "chinese_trans": "推迟，耽搁，延误",
+        "spell": "[dɪˈleɪ]"
+    },
+    "257": {
+        "english": "delete",
+        "chinese_trans": "删掉，擦掉",
+        "spell": "[dɪˈliːt]"
+    },
+    "258": {
+        "english": "delight",
+        "chinese_trans": "快乐 vt.使高兴",
+        "spell": "[dɪˈlaɪt]"
+    },
+    "259": {
+        "english": "deliver",
+        "chinese_trans": "投递，送交",
+        "spell": "[dɪˈlɪvə(r)]"
+    },
+    "260": {
+        "english": "damand",
+        "chinese_trans": "要求，需要",
+        "spell": "[ dɪˈmænd]"
+    },
+    "261": {
+        "english": "department",
+        "chinese_trans": "部，司，局，处，系",
+        "spell": "[dɪˈpɑːtmənt]"
+    },
+    "262": {
+        "english": "depth",
+        "chinese_trans": "深度，深处",
+        "spell": "[depθ]"
+    },
+    "263": {
+        "english": "description",
+        "chinese_trans": "描述，形容",
+        "spell": "[dɪˈskrɪpʃ(ə)n]"
+    },
+    "264": {
+        "english": "desert",
+        "chinese_trans": "沙漠 vt.离弃，擅离",
+        "spell": "[dɪˈzɜːt]"
+    },
+    "265": {
+        "english": "deserve",
+        "chinese_trans": "应受，值得",
+        "spell": "[dɪˈzɜːv]"
+    },
+    "266": {
+        "english": "design",
+        "chinese_trans": "设计 n.设计，图样",
+        "spell": "[dɪˈzaɪn]"
+    },
+    "267": {
+        "english": "desire",
+        "chinese_trans": "相望，要求n.愿望",
+        "spell": "[dɪˈzaɪə(r)]"
+    },
+    "268": {
+        "english": "destination",
+        "chinese_trans": "目的地，终点，目标",
+        "spell": "[destɪˈneɪʃ(ə)n]"
+    },
+    "269": {
+        "english": "destory",
+        "chinese_trans": "破坏，消灭",
+        "spell": "[dɪˈstrɔɪ]"
+    },
+    "270": {
+        "english": "detect",
+        "chinese_trans": "察觉，发觉，侦查",
+        "spell": "[dɪ'tekt]"
+    },
+    "271": {
+        "english": "determine",
+        "chinese_trans": "决定，决心",
+        "spell": "[dɪˈtɜːmɪn]"
+    },
+    "272": {
+        "english": "devote",
+        "chinese_trans": "将……奉献，致力于",
+        "spell": "[dɪˈvəʊt]"
+    },
+    "273": {
+        "english": "diagram",
+        "chinese_trans": "图解，图表，简图",
+        "spell": "[ˈdaɪəɡræm]"
+    },
+    "274": {
+        "english": "dial",
+        "chinese_trans": "钟面，拨号盘 vt.拨号",
+        "spell": "[ˈdaɪ(ə)l]"
+    },
+    "275": {
+        "english": "diamond",
+        "chinese_trans": "钻石，菱形",
+        "spell": "[ˈdaɪəmənd]"
+    },
+    "276": {
+        "english": "dictation",
+        "chinese_trans": "口授",
+        "spell": "[dɪkˈteɪʃ(ə)n]"
+    },
+    "277": {
+        "english": "diet",
+        "chinese_trans": "饮食，食物",
+        "spell": "['daɪət]"
+    },
+    "278": {
+        "english": "differ",
+        "chinese_trans": "不同，相异",
+        "spell": "[ˈdɪfə(r)]"
+    },
+    "279": {
+        "english": "digest",
+        "chinese_trans": "消化，领会 n.文摘",
+        "spell": "[dɪˈdʒest]"
+    },
+    "280": {
+        "english": "digital",
+        "chinese_trans": "数字的",
+        "spell": "[ˈdɪdʒɪt(ə)l]"
+    },
+    "281": {
+        "english": "dirt",
+        "chinese_trans": "尘，土，污垢",
+        "spell": "[dɜːt]"
+    },
+    "282": {
+        "english": "disadvantage",
+        "chinese_trans": "缺点，弱点",
+        "spell": "[dɪsədˈvɑːntɪdʒ]"
+    },
+    "283": {
+        "english": "disagree",
+        "chinese_trans": "不同意，不一致",
+        "spell": "[dɪsəˈɡriː]"
+    },
+    "284": {
+        "english": "disappear",
+        "chinese_trans": "不见，失踪，消失",
+        "spell": "[dɪsəˈpɪə(r)]"
+    },
+    "285": {
+        "english": "disappoint",
+        "chinese_trans": "使失望，",
+        "spell": "[dɪsəˈpɔɪnt]"
+    },
+    "286": {
+        "english": "disaster",
+        "chinese_trans": "灾难",
+        "spell": "[dɪˈzɑːstə(r)]"
+    },
+    "287": {
+        "english": "discount",
+        "chinese_trans": "折扣",
+        "spell": "[ˈdɪskaʊnt]"
+    },
+    "288": {
+        "english": "discriminate",
+        "chinese_trans": "区别对待，歧视",
+        "spell": "[dɪskrɪmɪˈneɪt]"
+    },
+    "289": {
+        "english": "dislike",
+        "chinese_trans": "n.不喜爱，厌恶",
+        "spell": "[dɪsˈlaɪk]"
+    },
+    "290": {
+        "english": "distance",
+        "chinese_trans": "距离，远处",
+        "spell": "[ˈdɪstəns]"
+    },
+    "291": {
+        "english": "distant",
+        "chinese_trans": "在远处的，疏远的",
+        "spell": "[ˈdɪst(ə)nt]"
+    },
+    "292": {
+        "english": "distinguish",
+        "chinese_trans": "区别，辨别",
+        "spell": "[dɪˈstɪŋɡwɪʃ]"
+    },
+    "293": {
+        "english": "district",
+        "chinese_trans": "地区，区域",
+        "spell": "[ˈdɪstrɪkt]"
+    },
+    "294": {
+        "english": "document",
+        "chinese_trans": "公文，公件",
+        "spell": "[ˈdɔkjʊmənt]"
+    },
+    "295": {
+        "english": "donate",
+        "chinese_trans": "vi.捐赠",
+        "spell": "[ dəu'neit ]"
+    },
+    "296": {
+        "english": "dormitory",
+        "chinese_trans": "集体寝室，宿舍",
+        "spell": "[ˈdɔːmɪtərɪ]"
+    },
+    "297": {
+        "english": "dot",
+        "chinese_trans": "点，圆点 vt.打点在",
+        "spell": "[dɔt]"
+    },
+    "298": {
+        "english": "download",
+        "chinese_trans": "（从BBS）下载，卸载",
+        "spell": "['daunləud]"
+    },
+    "299": {
+        "english": "downtown",
+        "chinese_trans": "在市区，往市区",
+        "spell": "[ˈdaʊntaʊn]"
+    },
+    "300": {
+        "english": "drawing",
+        "chinese_trans": "绘画",
+        "spell": "[ˈdrɔːɪŋ]"
+    },
+    "301": {
+        "english": "drill",
+        "chinese_trans": "钻头，操练",
+        "spell": "[drɪl]"
+    },
+    "302": {
+        "english": "drown",
+        "chinese_trans": "溺死",
+        "spell": "[draʊn]"
+    },
+    "303": {
+        "english": "drunk",
+        "chinese_trans": "醉的，陶醉的",
+        "spell": "[drʌŋk]"
+    },
+    "304": {
+        "english": "due",
+        "chinese_trans": "预期的，应给的",
+        "spell": "[djuː]"
+    },
+    "305": {
+        "english": "dull",
+        "chinese_trans": "枯燥的，阴暗的",
+        "spell": "[dʌl]"
+    },
+    "306": {
+        "english": "dust",
+        "chinese_trans": "灰尘",
+        "spell": "[dʌst]"
+    },
+    "307": {
+        "english": "dusty",
+        "chinese_trans": "多灰尘的，灰蒙蒙的",
+        "spell": "[ˈdʌstɪ]"
+    },
+    "308": {
+        "english": "eager",
+        "chinese_trans": "渴望的，热切的",
+        "spell": "[ˈiːɡə(r)]"
+    },
+    "309": {
+        "english": "earn",
+        "chinese_trans": "挣得，获得",
+        "spell": "[ɜːn]"
+    },
+    "310": {
+        "english": "earthquake",
+        "chinese_trans": "地震",
+        "spell": "[ˈɜːθkweɪk]"
+    },
+    "311": {
+        "english": "eastern",
+        "chinese_trans": "东方的，朝东的",
+        "spell": "[ˈiːst(ə)n]"
+    },
+    "312": {
+        "english": "edit",
+        "chinese_trans": "编辑，编撰，校订",
+        "spell": "['edɪt]"
+    },
+    "313": {
+        "english": "effect",
+        "chinese_trans": "效果，效力",
+        "spell": "[ɪˈfekt]"
+    },
+    "314": {
+        "english": "elect",
+        "chinese_trans": "选举，推选",
+        "spell": "[ɪˈlekt]"
+    },
+    "315": {
+        "english": "electricity",
+        "chinese_trans": "电，电流",
+        "spell": "[ɪlekˈtrɪsɪtɪ]"
+    },
+    "316": {
+        "english": "electronic",
+        "chinese_trans": "电子的",
+        "spell": "[ɪlekˈtrɔnɪk]"
+    },
+    "317": {
+        "english": "embarrass",
+        "chinese_trans": "使窘迫，使为难",
+        "spell": "[ɪmˈbærəs]"
+    },
+    "318": {
+        "english": "emergency",
+        "chinese_trans": "紧急情况，突发事件",
+        "spell": "[ɪˈmɜːdʒənsɪ]"
+    },
+    "319": {
+        "english": "employ",
+        "chinese_trans": "雇用",
+        "spell": "[ɪmˈplɔɪ]"
+    },
+    "320": {
+        "english": "endless",
+        "chinese_trans": "无止境的",
+        "spell": "[ˈendlɪs]"
+    },
+    "321": {
+        "english": "engine",
+        "chinese_trans": "发动机，引擎",
+        "spell": "[ˈendʒɪn]"
+    },
+    "322": {
+        "english": "enjoyable",
+        "chinese_trans": "使人快乐的，有乐趣的",
+        "spell": "[ɪnˈdʒɔɪəb(ə)l]"
+    },
+    "323": {
+        "english": "entertainment",
+        "chinese_trans": "娱乐，款待，娱乐表演",
+        "spell": "[entəˈteɪnmənt]"
+    },
+    "324": {
+        "english": "entire",
+        "chinese_trans": "全部的，彻底的",
+        "spell": "[ɪnˈtaɪə(r)]"
+    },
+    "325": {
+        "english": "entrance",
+        "chinese_trans": "入口，进入",
+        "spell": "[ˈentrəns]"
+    },
+    "326": {
+        "english": "envelope",
+        "chinese_trans": "信封，封套",
+        "spell": "[ˈenvələʊp]"
+    },
+    "327": {
+        "english": "envy",
+        "chinese_trans": "妒忌，羡慕",
+        "spell": "[ˈenvɪ]"
+    },
+    "328": {
+        "english": "equal",
+        "chinese_trans": "相等的，平等的",
+        "spell": "[ˈiːkw(ə)l]"
+    },
+    "329": {
+        "english": "equipment",
+        "chinese_trans": "装备，设备，配备",
+        "spell": "[ɪˈkwɪpmənt]"
+    },
+    "330": {
+        "english": "error",
+        "chinese_trans": "错误，谬误，差错",
+        "spell": "[ˈerə(r)]"
+    },
+    "331": {
+        "english": "escape",
+        "chinese_trans": "逃跑，逸出 n.逃跑",
+        "spell": "[ɪˈskeɪp]"
+    },
+    "332": {
+        "english": "especially",
+        "chinese_trans": "特别，尤其，格外",
+        "spell": "[ɪˈspeʃəlɪ]"
+    },
+    "333": {
+        "english": "essay",
+        "chinese_trans": "短文，散文，小品文",
+        "spell": "[ˈeseɪ]"
+    },
+    "334": {
+        "english": "evaluate",
+        "chinese_trans": "评价，估……的价",
+        "spell": "[ɪˈvæljʊeɪt]"
+    },
+    "335": {
+        "english": "event",
+        "chinese_trans": "事件，事变",
+        "spell": "[ ɪ'vent]"
+    },
+    "336": {
+        "english": "evidence",
+        "chinese_trans": "根据，证据，证人",
+        "spell": "[ˈevɪdəns]"
+    },
+    "337": {
+        "english": "exact",
+        "chinese_trans": "确切的，精确的",
+        "spell": "[ɪɡˈzækt]"
+    },
+    "338": {
+        "english": "exactly",
+        "chinese_trans": "的确如此",
+        "spell": "[ɪg'zæktlɪ]"
+    },
+    "339": {
+        "english": "exchange",
+        "chinese_trans": "交换，交流 n.交换",
+        "spell": "[ɪksˈtʃeɪndʒ]"
+    },
+    "340": {
+        "english": "exciting",
+        "chinese_trans": "令人兴奋的",
+        "spell": "[ɪk'saɪtɪŋ]"
+    },
+    "341": {
+        "english": "exhibition",
+        "chinese_trans": "展览，陈列，展览会",
+        "spell": "[eksɪˈbɪʃ(ə)n]"
+    },
+    "342": {
+        "english": "exist",
+        "chinese_trans": "存在，生存",
+        "spell": "[ɪg'zɪst]"
+    },
+    "343": {
+        "english": "exit",
+        "chinese_trans": "出口，退场 vi.退出",
+        "spell": "[ˈeksɪt]"
+    },
+    "344": {
+        "english": "expand",
+        "chinese_trans": "扩大，使膨胀",
+        "spell": "[ɪkˈspænd]"
+    },
+    "345": {
+        "english": "expense",
+        "chinese_trans": "花费，消费，费用",
+        "spell": "[ɪkˈspens]"
+    },
+    "346": {
+        "english": "expert",
+        "chinese_trans": "专家 a.熟练的",
+        "spell": "[ˈekspɜːt]"
+    },
+    "347": {
+        "english": "explanation",
+        "chinese_trans": "解释，说明，辩解",
+        "spell": "[ekspləˈneɪʃ(ə)n]"
+    },
+    "348": {
+        "english": "explode",
+        "chinese_trans": "使爆炸 vi.爆炸",
+        "spell": "[ɪkˈspləʊd]"
+    },
+    "349": {
+        "english": "exploit",
+        "chinese_trans": "剥削，利用，开拓",
+        "spell": "[ɪk'splɔɪt]"
+    },
+    "350": {
+        "english": "explore",
+        "chinese_trans": "vi.探险，探索",
+        "spell": "[ɪkˈsplɔː(r)]"
+    },
+    "351": {
+        "english": "export",
+        "chinese_trans": "输出，出口",
+        "spell": "[ekˈspɔːt]"
+    },
+    "352": {
+        "english": "expression",
+        "chinese_trans": "词句，表达，表情",
+        "spell": "[ɪkˈspreʃ(ə)n]"
+    },
+    "353": {
+        "english": "extra",
+        "chinese_trans": "额外的 ad.特别地",
+        "spell": "[ˈekstrə]"
+    },
+    "354": {
+        "english": "extraordinary",
+        "chinese_trans": "非同寻常的，特别的",
+        "spell": "[ɪkˈstrɔːdɪnərɪ]"
+    },
+    "355": {
+        "english": "extremely",
+        "chinese_trans": "极其，非常",
+        "spell": "[ɪkˈstriːmlɪ]"
+    },
+    "356": {
+        "english": "fade",
+        "chinese_trans": "褪色，逐渐消失",
+        "spell": "[feɪd]"
+    },
+    "357": {
+        "english": "failure",
+        "chinese_trans": "失败，失败的人",
+        "spell": "[ˈfeɪljə(r)]"
+    },
+    "358": {
+        "english": "fairly",
+        "chinese_trans": "相当，公平地",
+        "spell": "[ˈfeəlɪ]"
+    },
+    "359": {
+        "english": "faith",
+        "chinese_trans": "信任，信心，信仰",
+        "spell": "[feɪθ]"
+    },
+    "360": {
+        "english": "false",
+        "chinese_trans": "不真实的，伪造的",
+        "spell": "[fɔːls]"
+    },
+    "361": {
+        "english": "familiar",
+        "chinese_trans": "熟悉的",
+        "spell": "[fəˈmɪlɪə(r)]"
+    },
+    "362": {
+        "english": "farther",
+        "chinese_trans": "更远地 a.更远的",
+        "spell": "['fɑrðɚ]"
+    },
+    "363": {
+        "english": "fasten",
+        "chinese_trans": "扎牢，扣住，使固定",
+        "spell": "[ˈfaːs(ə)n]"
+    },
+    "364": {
+        "english": "fault",
+        "chinese_trans": "缺点，过失，故障",
+        "spell": "[fɔːlt]"
+    },
+    "365": {
+        "english": "favor",
+        "chinese_trans": "好感，赞同，恩惠",
+        "spell": "['feɪvə]"
+    },
+    "366": {
+        "english": "fax",
+        "chinese_trans": "传真",
+        "spell": "[fæks]"
+    },
+    "367": {
+        "english": "feather",
+        "chinese_trans": "羽毛，翎毛，羽状物",
+        "spell": "[ˈfeðə(r)]"
+    },
+    "368": {
+        "english": "federal",
+        "chinese_trans": "联邦的，联盟的",
+        "spell": "[ˈfedər(ə)l]"
+    },
+    "369": {
+        "english": "fee",
+        "chinese_trans": "费，酬金，赏金",
+        "spell": "[fiː]"
+    },
+    "370": {
+        "english": "fellow",
+        "chinese_trans": "人，家伙，伙伴",
+        "spell": "[ˈfeləʊ]"
+    },
+    "371": {
+        "english": "female",
+        "chinese_trans": "女性的，雌性的",
+        "spell": "[ˈfiːmeɪl]"
+    },
+    "372": {
+        "english": "fence",
+        "chinese_trans": "栅栏",
+        "spell": "[fens]"
+    },
+    "373": {
+        "english": "fiction",
+        "chinese_trans": "小说，虚构，杜撰",
+        "spell": "[ˈfɪkʃ(ə)n]"
+    },
+    "374": {
+        "english": "fierce",
+        "chinese_trans": "凶猛的，狂热的",
+        "spell": "[ˈfɪəs]"
+    },
+    "375": {
+        "english": "figure",
+        "chinese_trans": "数字，外形，人物",
+        "spell": "[ˈfɪɡə(r)]"
+    },
+    "376": {
+        "english": "file",
+        "chinese_trans": "档案 vt.把……归档",
+        "spell": "[faɪl]"
+    },
+    "377": {
+        "english": "finance",
+        "chinese_trans": "财政，金融，财源",
+        "spell": "[ˈfaɪnæns]"
+    },
+    "378": {
+        "english": "fireworks",
+        "chinese_trans": "[pl.]爆竹，烟花",
+        "spell": "[ˈfaɪəwɜːks]"
+    },
+    "379": {
+        "english": "firm",
+        "chinese_trans": "坚定的 n.公司，商号",
+        "spell": "[fɜːm]"
+    },
+    "380": {
+        "english": "fist",
+        "chinese_trans": "拳头",
+        "spell": "[fɪst]"
+    },
+    "381": {
+        "english": "flame",
+        "chinese_trans": "火焰，光辉，热情",
+        "spell": "[fleɪm]"
+    },
+    "382": {
+        "english": "flash",
+        "chinese_trans": "闪光 vi.闪，闪烁",
+        "spell": "[flæʃ]"
+    },
+    "383": {
+        "english": "flesh",
+        "chinese_trans": "肉，肌肉，肉体",
+        "spell": "[fleʃ]"
+    },
+    "384": {
+        "english": "flight",
+        "chinese_trans": "航班，飞行，逃跑",
+        "spell": "[flaɪt]"
+    },
+    "385": {
+        "english": "float",
+        "chinese_trans": "漂浮 vt.使漂浮",
+        "spell": "[fləʊt]"
+    },
+    "386": {
+        "english": "flood",
+        "chinese_trans": "洪水",
+        "spell": "[flʌd]"
+    },
+    "387": {
+        "english": "flour",
+        "chinese_trans": "面粉，粉末",
+        "spell": "[ˈflaʊə(r)]"
+    },
+    "388": {
+        "english": "flow",
+        "chinese_trans": "流动，飘扬，涨潮",
+        "spell": "[fləʊ]"
+    },
+    "389": {
+        "english": "fluent",
+        "chinese_trans": "流利的，流畅的",
+        "spell": "[ˈfluːənt]"
+    },
+    "390": {
+        "english": "focus",
+        "chinese_trans": "聚焦，注视n.焦点",
+        "spell": "[ˈfəʊkəs]"
+    },
+    "391": {
+        "english": "foggy",
+        "chinese_trans": "有雾的，模糊的",
+        "spell": "[ˈfɔɡɪ]"
+    },
+    "392": {
+        "english": "fold",
+        "chinese_trans": "折叠，合拢 n.褶",
+        "spell": "[fəʊld]"
+    },
+    "393": {
+        "english": "folk",
+        "chinese_trans": "人们，家属，亲属",
+        "spell": "[fəʊk]"
+    },
+    "394": {
+        "english": "fond",
+        "chinese_trans": "喜爱的，溺爱的",
+        "spell": "[fɔnd]"
+    },
+    "395": {
+        "english": "fool",
+        "chinese_trans": "傻子 vt.欺骗，愚弄",
+        "spell": "[fuːl]"
+    },
+    "396": {
+        "english": "foolish",
+        "chinese_trans": "愚蠢的",
+        "spell": "[ˈfuːlɪʃ]"
+    },
+    "397": {
+        "english": "forbid",
+        "chinese_trans": "禁止",
+        "spell": "[fəˈbɪd]"
+    },
+    "398": {
+        "english": "forecast",
+        "chinese_trans": "预测，预报 vt.预示",
+        "spell": "[ˈfɔːkɑːst]"
+    },
+    "399": {
+        "english": "forever",
+        "chinese_trans": "永远，总是，老是",
+        "spell": "[fəˈrevə(r)]"
+    },
+    "400": {
+        "english": "forgive",
+        "chinese_trans": "原谅，宽恕",
+        "spell": "[fəˈɡɪv]"
+    },
+    "401": {
+        "english": "former",
+        "chinese_trans": "在前的 n.前者",
+        "spell": "[ˈfɔːmə(r)]"
+    },
+    "402": {
+        "english": "fortnight",
+        "chinese_trans": "两星期，十四天",
+        "spell": "[ˈfɔːtnaɪt]"
+    },
+    "403": {
+        "english": "fortunate",
+        "chinese_trans": "幸运的",
+        "spell": "[ˈfɔːtʃənət]"
+    },
+    "404": {
+        "english": "fortunately",
+        "chinese_trans": "幸运地，幸亏",
+        "spell": "[ˈfɔːtʃənətli]"
+    },
+    "405": {
+        "english": "fortune",
+        "chinese_trans": "命运，运气，财产",
+        "spell": "[ˈfɔːtʃuːn]"
+    },
+    "406": {
+        "english": "found",
+        "chinese_trans": "创立，创办",
+        "spell": "[faʊnd]"
+    },
+    "407": {
+        "english": "fountain",
+        "chinese_trans": "泉水，喷泉",
+        "spell": "[ ˈfaʊntn]"
+    },
+    "408": {
+        "english": "freedom",
+        "chinese_trans": "自由",
+        "spell": "[ˈfriːdəm]"
+    },
+    "409": {
+        "english": "frequent",
+        "chinese_trans": "经常的",
+        "spell": "[ˈfriːkwənt]"
+    },
+    "410": {
+        "english": "frequently",
+        "chinese_trans": "时常，频繁地",
+        "spell": "[ˈfriːkwəntli]"
+    },
+    "411": {
+        "english": "frighten",
+        "chinese_trans": "使惊恐，吓唬",
+        "spell": "[ˈfraɪt(ə)n]"
+    },
+    "412": {
+        "english": "fry",
+        "chinese_trans": "油煎，油炸，油炒",
+        "spell": "[fraɪ]"
+    },
+    "413": {
+        "english": "fuel",
+        "chinese_trans": "燃料， vt.给……加燃料",
+        "spell": "[fjuːəl]"
+    },
+    "414": {
+        "english": "function",
+        "chinese_trans": "功能，职务，函数",
+        "spell": "['fʌŋkʃən]"
+    },
+    "415": {
+        "english": "fur",
+        "chinese_trans": "软毛，毛皮，裘皮",
+        "spell": "[fɜː(r)]"
+    },
+    "416": {
+        "english": "further",
+        "chinese_trans": "更进一步",
+        "spell": "['fɝðɚ]"
+    },
+    "417": {
+        "english": "gain",
+        "chinese_trans": "获得，增加 n.增进",
+        "spell": "[ɡeɪn]"
+    },
+    "418": {
+        "english": "garbage",
+        "chinese_trans": "垃圾，污物废料",
+        "spell": "[ˈɡɑːbɪdʒ]"
+    },
+    "419": {
+        "english": "gas",
+        "chinese_trans": "煤气，气体",
+        "spell": "[ɡæs]"
+    },
+    "420": {
+        "english": "gather",
+        "chinese_trans": "聚集集合 vt.收集",
+        "spell": "[ˈɡæðə(r)]"
+    },
+    "421": {
+        "english": "gay",
+        "chinese_trans": "快乐的,鲜明的",
+        "spell": "[ɡeɪ]"
+    },
+    "422": {
+        "english": "generally",
+        "chinese_trans": "一般的，通常的",
+        "spell": "[ˈdʒenər(ə)li]"
+    },
+    "423": {
+        "english": "generation",
+        "chinese_trans": "一代，一代人，生产",
+        "spell": "[dʒenəˈreɪʃ(ə)n]"
+    },
+    "424": {
+        "english": "generous",
+        "chinese_trans": "慷慨的，宽厚的",
+        "spell": "[ˈdʒenərəs]"
+    },
+    "425": {
+        "english": "gentle",
+        "chinese_trans": "和蔼的，轻柔的",
+        "spell": "[ˈdʒent(ə)l]"
+    },
+    "426": {
+        "english": "glance",
+        "chinese_trans": "看一下n.一瞥",
+        "spell": "[glæns]"
+    },
+    "427": {
+        "english": "globe",
+        "chinese_trans": "地球，世界，地球仪",
+        "spell": "[gləub]"
+    },
+    "428": {
+        "english": "goal",
+        "chinese_trans": "球门，得分，目的",
+        "spell": "[ɡəʊl]"
+    },
+    "429": {
+        "english": "goods",
+        "chinese_trans": "货物，商品",
+        "spell": "[ɡʊdz]"
+    },
+    "430": {
+        "english": "gradual",
+        "chinese_trans": "逐渐的，渐近的",
+        "spell": "['grædʒuəl]"
+    },
+    "431": {
+        "english": "gradually",
+        "chinese_trans": "逐渐地，逐步地",
+        "spell": "[ˈɡrædjʊəlɪ]"
+    },
+    "432": {
+        "english": "graduate",
+        "chinese_trans": "大学毕业生",
+        "spell": "['grædʒu,eit]"
+    },
+    "433": {
+        "english": "graduation",
+        "chinese_trans": "毕业，",
+        "spell": "[ɡrædjʊˈeɪʃ(ə)n]"
+    },
+    "434": {
+        "english": "grain",
+        "chinese_trans": "谷物，谷粒，颗粒",
+        "spell": "[ɡreɪn]"
+    },
+    "435": {
+        "english": "grand",
+        "chinese_trans": "宏伟的，重大的",
+        "spell": "[ɡrænd]"
+    },
+    "436": {
+        "english": "grasp",
+        "chinese_trans": "抓紧，掌握n.抓",
+        "spell": "[græsp]"
+    },
+    "437": {
+        "english": "gravity",
+        "chinese_trans": "重力，引力，严重性",
+        "spell": "['grævətɪ]"
+    },
+    "438": {
+        "english": "greatly",
+        "chinese_trans": "大大地，非常地",
+        "spell": "['gretlɪ]"
+    },
+    "439": {
+        "english": "greet",
+        "chinese_trans": "问候，招呼，反应",
+        "spell": "[ɡriːt]"
+    },
+    "440": {
+        "english": "grey",
+        "chinese_trans": "灰色(的）",
+        "spell": "[ɡreɪ]"
+    },
+    "441": {
+        "english": "grocer",
+        "chinese_trans": "杂货商",
+        "spell": "[ˈɡrəʊsə(r)]"
+    },
+    "442": {
+        "english": "grocery",
+        "chinese_trans": "杂货店",
+        "spell": "['grɔsərɪ]"
+    },
+    "443": {
+        "english": "guide",
+        "chinese_trans": "导游vt.指导",
+        "spell": "[ɡaɪd]"
+    },
+    "444": {
+        "english": "guilty",
+        "chinese_trans": "内疚的，有罪的",
+        "spell": "[ˈɡɪltɪ]"
+    },
+    "445": {
+        "english": "haircut",
+        "chinese_trans": "理发，发型，发式",
+        "spell": "[ˈheəkʌt]"
+    },
+    "446": {
+        "english": "hammer",
+        "chinese_trans": "锤子vt.锤击",
+        "spell": "['hæmə(r)]"
+    },
+    "447": {
+        "english": "handkerchief",
+        "chinese_trans": "手帕",
+        "spell": "[ˈhæŋkətʃɪf]"
+    },
+    "448": {
+        "english": "handle",
+        "chinese_trans": "柄把手vt.处理",
+        "spell": "[ˈhænd(ə)l]"
+    },
+    "449": {
+        "english": "happiness",
+        "chinese_trans": "幸福，满足",
+        "spell": "[ˈhæpɪnɪs]"
+    },
+    "450": {
+        "english": "harbour",
+        "chinese_trans": "港",
+        "spell": "['hɑ:bə]"
+    },
+    "451": {
+        "english": "hard-working",
+        "chinese_trans": "勤劳",
+        "spell": "['ha:d'wə:kiŋ]"
+    },
+    "452": {
+        "english": "hardship",
+        "chinese_trans": "艰难，困苦",
+        "spell": "[ˈhɑːdʃɪp]"
+    },
+    "453": {
+        "english": "harm",
+        "chinese_trans": "上海，损害vt.损害",
+        "spell": "[hɑːm]"
+    },
+    "454": {
+        "english": "harmony",
+        "chinese_trans": "协调，和谐",
+        "spell": "[ˈhɑːmənɪ]"
+    },
+    "455": {
+        "english": "harvest",
+        "chinese_trans": "收获，收成vt.收割",
+        "spell": "[ˈhɑːvɪst]"
+    },
+    "456": {
+        "english": "headmaster",
+        "chinese_trans": "英国中小学校长，男舍监",
+        "spell": "[hedˈmɑːstə(r)]"
+    },
+    "457": {
+        "english": "hesitate",
+        "chinese_trans": "犹豫，踌躇",
+        "spell": "['hezɪ,teɪt]"
+    },
+    "458": {
+        "english": "highway",
+        "chinese_trans": "公路，大路",
+        "spell": "[ˈhaɪweɪ]"
+    },
+    "459": {
+        "english": "hire",
+        "chinese_trans": "雇用",
+        "spell": "[ˈhaɪə(r)]"
+    },
+    "460": {
+        "english": "honey",
+        "chinese_trans": "米，蜜蜂，甜，甜蜜",
+        "spell": "['hʌnɪ]"
+    },
+    "461": {
+        "english": "hopeless",
+        "chinese_trans": "没有希望的，绝望的",
+        "spell": "['həuplisli]"
+    },
+    "462": {
+        "english": "horrible",
+        "chinese_trans": "可怕的，极可憎的，极可厌的",
+        "spell": "[ˈhɔrəb(ə)l]"
+    },
+    "463": {
+        "english": "host",
+        "chinese_trans": "主人，东道主",
+        "spell": "[həʊst]"
+    },
+    "464": {
+        "english": "housewife",
+        "chinese_trans": "家庭主妇",
+        "spell": "[ˈhaʊswaɪf]"
+    },
+    "465": {
+        "english": "humour",
+        "chinese_trans": "纵容，迁就",
+        "spell": "['hju:mə]"
+    },
+    "466": {
+        "english": "hunger",
+        "chinese_trans": "饥饿，渴望",
+        "spell": "[ˈhʌŋɡə(r)]"
+    },
+    "467": {
+        "english": "hunt",
+        "chinese_trans": "打猎，搜寻",
+        "spell": "[hʌnt]"
+    },
+    "468": {
+        "english": "identify",
+        "chinese_trans": "身份，相同vt.确定身份",
+        "spell": "[aɪ'denti,faɪ]"
+    },
+    "469": {
+        "english": "ignore",
+        "chinese_trans": "不顾，不理，忽视",
+        "spell": "[ɪɡˈnɔː(r)]"
+    },
+    "470": {
+        "english": "illegal",
+        "chinese_trans": "非法的",
+        "spell": "[ɪˈliːɡ(ə)l]"
+    },
+    "471": {
+        "english": "immediate",
+        "chinese_trans": "立即的，直接的",
+        "spell": "[ɪˈmiːdɪət]"
+    },
+    "472": {
+        "english": "immigrate",
+        "chinese_trans": "移民",
+        "spell": "['ɪmi,greit]"
+    },
+    "473": {
+        "english": "import",
+        "chinese_trans": "输入，进口",
+        "spell": "[ɪmˈpɔːt]"
+    },
+    "474": {
+        "english": "importance",
+        "chinese_trans": "重要性",
+        "spell": "[ɪmˈpɔːt(ə)ns]"
+    },
+    "475": {
+        "english": "impress",
+        "chinese_trans": "给……深刻印象",
+        "spell": "[ɪmˈpres]"
+    },
+    "476": {
+        "english": "income",
+        "chinese_trans": "收入，收益",
+        "spell": "[ˈɪnkʌm]"
+    },
+    "477": {
+        "english": "indeed",
+        "chinese_trans": "真正地，确实",
+        "spell": "[ɪnˈdiːd]"
+    },
+    "478": {
+        "english": "independent",
+        "chinese_trans": "独立的，自主的",
+        "spell": "[ɪndɪˈpendənt]"
+    },
+    "479": {
+        "english": "indicate",
+        "chinese_trans": "标示，表示，表明",
+        "spell": "['ɪndɪkeɪt]"
+    },
+    "480": {
+        "english": "infer",
+        "chinese_trans": "推论，推断，猜想",
+        "spell": "[ɪn'fə]"
+    },
+    "481": {
+        "english": "inform",
+        "chinese_trans": "通知，向……报告",
+        "spell": "[ɪnˈfɔːm]"
+    },
+    "482": {
+        "english": "innocent",
+        "chinese_trans": "清白的，幼稚的",
+        "spell": "[ˈɪnəsənt]"
+    },
+    "483": {
+        "english": "insect",
+        "chinese_trans": "昆虫",
+        "spell": "[ˈɪnsekt]"
+    },
+    "484": {
+        "english": "insert",
+        "chinese_trans": "插入，嵌入",
+        "spell": "[ɪnˈsɜːt]"
+    },
+    "485": {
+        "english": "inspire",
+        "chinese_trans": "鼓舞，给……以灵感",
+        "spell": "[ɪnˈspaɪə(r)]"
+    },
+    "486": {
+        "english": "instant",
+        "chinese_trans": "瞬间 a.立即的",
+        "spell": "[ˈɪnst(ə)nt]"
+    },
+    "487": {
+        "english": "institute",
+        "chinese_trans": "研究所，学院",
+        "spell": "[ˈɪnstɪtjuːt]"
+    },
+    "488": {
+        "english": "instrument",
+        "chinese_trans": "仪器，工具，乐器",
+        "spell": "[ˈɪnstrʊmənt]"
+    },
+    "489": {
+        "english": "insurance",
+        "chinese_trans": "保险，保险费",
+        "spell": "[ɪnˈʃʊərəns]"
+    },
+    "490": {
+        "english": "intelligence",
+        "chinese_trans": "智力，理解力，情报",
+        "spell": "[ɪnˈtelɪdʒəns]"
+    },
+    "491": {
+        "english": "intend",
+        "chinese_trans": "想要，打算，意指",
+        "spell": "[ɪnˈtend]"
+    },
+    "492": {
+        "english": "interpret",
+        "chinese_trans": "解释，说明，口译",
+        "spell": "[ɪnˈtɜːprɪt]"
+    },
+    "493": {
+        "english": "interpreter",
+        "chinese_trans": "翻译",
+        "spell": "[ɪnˈtɜːprɪtə(r)]"
+    },
+    "494": {
+        "english": "interrupt",
+        "chinese_trans": "打扰，打断，终止",
+        "spell": "[ɪntəˈrʌpt]"
+    },
+    "495": {
+        "english": "jam",
+        "chinese_trans": "果酱",
+        "spell": "[dʒæm]"
+    },
+    "496": {
+        "english": "jar",
+        "chinese_trans": "罐子，坛子，广口瓶",
+        "spell": "[dʒɑː(r)]"
+    },
+    "497": {
+        "english": "jazz",
+        "chinese_trans": "爵士音乐，爵士舞曲",
+        "spell": "[dʒæz]"
+    },
+    "498": {
+        "english": "journalist",
+        "chinese_trans": "记者，新闻工作者",
+        "spell": "[ˈdʒɜːnəlɪst]"
+    },
+    "499": {
+        "english": "journey",
+        "chinese_trans": "旅行，旅程",
+        "spell": "[ˈdʒɜːnɪ]"
+    },
+    "500": {
+        "english": "judge",
+        "chinese_trans": "法官，裁判员",
+        "spell": "[dʒʌdʒ]"
+    },
+    "501": {
+        "english": "jungle",
+        "chinese_trans": "丛林，密林",
+        "spell": "[ˈdʒʌŋɡ(ə)l]"
+    },
+    "502": {
+        "english": "junior",
+        "chinese_trans": "年少的，地位较低的 n.晚辈",
+        "spell": "[ˈdʒuːnɪə(r)]"
+    },
+    "503": {
+        "english": "justice",
+        "chinese_trans": "正义，公正，司法",
+        "spell": "[ˈdʒʌstɪs]"
+    },
+    "504": {
+        "english": "kindergarten",
+        "chinese_trans": "幼儿园",
+        "spell": "[kɪndəˈɡɑːt(ə)n]"
+    },
+    "505": {
+        "english": "lack",
+        "chinese_trans": "缺乏，不足 n.短缺的东西",
+        "spell": "[læk]"
+    },
+    "506": {
+        "english": "ladder",
+        "chinese_trans": "梯子",
+        "spell": "[ˈlædə(r)]"
+    },
+    "507": {
+        "english": "lately",
+        "chinese_trans": "最近",
+        "spell": "[ˈleɪtlɪ]"
+    },
+    "508": {
+        "english": "later",
+        "chinese_trans": "后来",
+        "spell": "[ˈleɪtə(r)]"
+    },
+    "509": {
+        "english": "latter",
+        "chinese_trans": "[两者中]后者的",
+        "spell": "[ˈlætə(r)]"
+    },
+    "510": {
+        "english": "lawyer",
+        "chinese_trans": "律师",
+        "spell": "[ˈlɔːjə(r)]"
+    },
+    "511": {
+        "english": "league",
+        "chinese_trans": "同盟，联盟",
+        "spell": "[liːɡ]"
+    },
+    "512": {
+        "english": "leak",
+        "chinese_trans": "漏，泄露 n.漏洞",
+        "spell": "[liːk]"
+    },
+    "513": {
+        "english": "lecture",
+        "chinese_trans": "演讲，讲课，n.演讲，讲课",
+        "spell": "[ˈlektʃə(r)]"
+    },
+    "514": {
+        "english": "legal",
+        "chinese_trans": "合法的",
+        "spell": "[ˈliːɡ(ə)l]"
+    },
+    "515": {
+        "english": "length",
+        "chinese_trans": "长度",
+        "spell": "[leŋθ]"
+    },
+    "516": {
+        "english": "less",
+        "chinese_trans": "更少的 ad.更少地",
+        "spell": "[les]"
+    },
+    "517": {
+        "english": "liberate",
+        "chinese_trans": "解放，释放",
+        "spell": "[ˈlɪbəreɪt]"
+    },
+    "518": {
+        "english": "librarian",
+        "chinese_trans": "图书馆馆员",
+        "spell": "[laɪˈbreərɪən]"
+    },
+    "519": {
+        "english": "lifetime",
+        "chinese_trans": "终身",
+        "spell": "[ˈlaɪftaɪm]"
+    },
+    "520": {
+        "english": "lightning",
+        "chinese_trans": "闪电",
+        "spell": "[ˈlaɪtnɪŋ]"
+    },
+    "521": {
+        "english": "likely",
+        "chinese_trans": "可能，ad.很可能",
+        "spell": "[ˈlaɪklɪ]"
+    },
+    "522": {
+        "english": "limit",
+        "chinese_trans": "限制，限定n.限度，限制",
+        "spell": "[ˈlɪmɪt]"
+    },
+    "523": {
+        "english": "link",
+        "chinese_trans": "连接 n.联系",
+        "spell": "[lɪŋk]"
+    },
+    "524": {
+        "english": "lip",
+        "chinese_trans": "嘴唇",
+        "spell": "[lɪp]"
+    },
+    "525": {
+        "english": "liquid",
+        "chinese_trans": "液体 a.液体的，流动的",
+        "spell": "[ˈlɪkwɪd]"
+    },
+    "526": {
+        "english": "literature",
+        "chinese_trans": "文学（作品）",
+        "spell": "[ˈlɪtərətʃə(r)]"
+    },
+    "527": {
+        "english": "litre",
+        "chinese_trans": "公升",
+        "spell": "[liːtə(r)]"
+    },
+    "528": {
+        "english": "living-room",
+        "chinese_trans": "起居室",
+        "spell": "['lɪvɪŋ rum]"
+    },
+    "529": {
+        "english": "load",
+        "chinese_trans": "装，装满 n.负载，负担",
+        "spell": "[ləʊd]"
+    },
+    "530": {
+        "english": "loaf",
+        "chinese_trans": "一条面包",
+        "spell": "[ləʊf]"
+    },
+    "531": {
+        "english": "local",
+        "chinese_trans": "地方的 n.局部",
+        "spell": "[ˈləʊk(ə)l]"
+    },
+    "532": {
+        "english": "loose",
+        "chinese_trans": "宽松的，自由的",
+        "spell": "[luːs]"
+    },
+    "533": {
+        "english": "lorry",
+        "chinese_trans": "卡车",
+        "spell": "[ ˈlɔːrɪ]"
+    },
+    "534": {
+        "english": "loss",
+        "chinese_trans": "遗失，失败，损失",
+        "spell": "[lɔs]"
+    },
+    "535": {
+        "english": "luggage",
+        "chinese_trans": "行李，皮箱",
+        "spell": "[ˈlʌɡɪdʒ]"
+    },
+    "536": {
+        "english": "lung",
+        "chinese_trans": "肺",
+        "spell": "[lʌŋ]"
+    },
+    "537": {
+        "english": "mailbox",
+        "chinese_trans": "邮箱",
+        "spell": "['meɪlbɒks]"
+    },
+    "538": {
+        "english": "major",
+        "chinese_trans": "主修，专攻a.主要的n.专业",
+        "spell": "[ˈmeɪdʒə(r)]"
+    },
+    "539": {
+        "english": "majority",
+        "chinese_trans": "多数",
+        "spell": "[məˈdʒɔrɪtɪ]"
+    },
+    "540": {
+        "english": "male",
+        "chinese_trans": "男的，雄的",
+        "spell": "[meɪl]"
+    },
+    "541": {
+        "english": "mankind",
+        "chinese_trans": "人类",
+        "spell": "[mænˈkaɪnd]"
+    },
+    "542": {
+        "english": "manner",
+        "chinese_trans": "方式，态度；礼貌",
+        "spell": "[ˈmænə(r)]"
+    },
+    "543": {
+        "english": "March",
+        "chinese_trans": "三月",
+        "spell": "[mɑːtʃ]"
+    },
+    "544": {
+        "english": "mass",
+        "chinese_trans": "大量，群众",
+        "spell": "[mæs]"
+    },
+    "545": {
+        "english": "material",
+        "chinese_trans": "材料，原料，素材a.物质的",
+        "spell": "[məˈtɪərɪəl]"
+    },
+    "546": {
+        "english": "mathematics",
+        "chinese_trans": "数学",
+        "spell": "[mæθəˈmætɪks]"
+    },
+    "547": {
+        "english": "matter",
+        "chinese_trans": "事情，物质 vi.要紧，有关系",
+        "spell": "[ˈmætə(r)]"
+    },
+    "548": {
+        "english": "maximum",
+        "chinese_trans": "最大量a.最大的",
+        "spell": "[ˈmæksɪməm]"
+    },
+    "549": {
+        "english": "means",
+        "chinese_trans": "方法，手段",
+        "spell": "[miːnz]"
+    },
+    "550": {
+        "english": "meanwhile",
+        "chinese_trans": "同时，当时",
+        "spell": "[ˈmiːnwaɪl]"
+    },
+    "551": {
+        "english": "measure",
+        "chinese_trans": "量，测量n.测量，措施",
+        "spell": "[ˈmeʒə(r)]"
+    },
+    "552": {
+        "english": "medal",
+        "chinese_trans": "奖章，纪念章",
+        "spell": "[ˈmed(ə)l]"
+    },
+    "553": {
+        "english": "media",
+        "chinese_trans": "媒体",
+        "spell": "[ˈmiːdɪə]"
+    },
+    "554": {
+        "english": "mental",
+        "chinese_trans": "智力的，精神的",
+        "spell": "[ˈment(ə)l]"
+    },
+    "555": {
+        "english": "menu",
+        "chinese_trans": "菜单",
+        "spell": "['menju:]"
+    },
+    "556": {
+        "english": "merchant",
+        "chinese_trans": "商人",
+        "spell": "[ˈmɜːtʃənt]"
+    },
+    "557": {
+        "english": "mercy",
+        "chinese_trans": "仁慈",
+        "spell": "[ˈmɜːsɪ]"
+    },
+    "558": {
+        "english": "merely",
+        "chinese_trans": "仅仅，只不过",
+        "spell": "[ˈmɪəlɪ]"
+    },
+    "559": {
+        "english": "merry",
+        "chinese_trans": "欢乐的，愉快的",
+        "spell": "[ˈmerɪ]"
+    },
+    "560": {
+        "english": "midday",
+        "chinese_trans": "中午",
+        "spell": "[ˈmɪddeɪ]"
+    },
+    "561": {
+        "english": "midnight",
+        "chinese_trans": "午夜",
+        "spell": "[ˈmɪdnaɪt]"
+    },
+    "562": {
+        "english": "mild",
+        "chinese_trans": "温柔的，温暖的",
+        "spell": "[maɪld]"
+    },
+    "563": {
+        "english": "million",
+        "chinese_trans": "百万",
+        "spell": "[ˈmɪljən]"
+    },
+    "564": {
+        "english": "mine",
+        "chinese_trans": "我的n.矿（山）vt.开采",
+        "spell": "[maɪn]"
+    },
+    "565": {
+        "english": "mineral",
+        "chinese_trans": "矿物a.矿物的",
+        "spell": "[ˈmɪnər(ə)l]"
+    },
+    "566": {
+        "english": "minimum",
+        "chinese_trans": "最小量a.最小的",
+        "spell": "[ˈmɪnɪməm]"
+    },
+    "567": {
+        "english": "minister",
+        "chinese_trans": "部长，大臣",
+        "spell": "[ˈmɪnɪstə(r)]"
+    },
+    "568": {
+        "english": "minority",
+        "chinese_trans": "少数派;少数民族",
+        "spell": "[maɪ'nɔrətɪ]"
+    },
+    "569": {
+        "english": "miserable",
+        "chinese_trans": "痛苦的，悲惨的",
+        "spell": "['mizərəbl]"
+    },
+    "570": {
+        "english": "misunderstand",
+        "chinese_trans": "误解，误会",
+        "spell": "[mɪsʌndəˈstænd]"
+    },
+    "571": {
+        "english": "mix",
+        "chinese_trans": "使混合;混淆",
+        "spell": "[mɪks]"
+    },
+    "572": {
+        "english": "mobile",
+        "chinese_trans": "运动的，移动的",
+        "spell": "[ˈməʊbaɪl]"
+    },
+    "573": {
+        "english": "modest",
+        "chinese_trans": "谦虚的",
+        "spell": "[ˈmɔdɪst]"
+    },
+    "574": {
+        "english": "moral",
+        "chinese_trans": "合乎道德的n.道德，品行",
+        "spell": "[ ˈmɔːrəl]"
+    },
+    "575": {
+        "english": "motor",
+        "chinese_trans": "发动机，机动车",
+        "spell": "[ˈməʊtə(r)]"
+    },
+    "576": {
+        "english": "mountainous",
+        "chinese_trans": "多山的",
+        "spell": "[ˈmaʊntɪnəs]"
+    },
+    "577": {
+        "english": "mourn",
+        "chinese_trans": "哀痛，哀悼",
+        "spell": "[mɔːn]"
+    },
+    "578": {
+        "english": "movement",
+        "chinese_trans": "动作;活动;移动",
+        "spell": "[ˈmuːvmənt]"
+    },
+    "579": {
+        "english": "multiply",
+        "chinese_trans": "增加;乘",
+        "spell": "[ˈmʌltɪplaɪ]"
+    },
+    "580": {
+        "english": "musical",
+        "chinese_trans": "音乐的",
+        "spell": "[ˈmjuːzɪk(ə)l]"
+    },
+    "581": {
+        "english": "nail",
+        "chinese_trans": "钉子;指甲vt.钉",
+        "spell": "[neɪl]"
+    },
+    "582": {
+        "english": "nation",
+        "chinese_trans": "民族，国家",
+        "spell": "[ˈneɪʃ(ə)n]"
+    },
+    "583": {
+        "english": "nationality",
+        "chinese_trans": "国籍，民族",
+        "spell": "[næʃəˈnælətɪ]"
+    },
+    "584": {
+        "english": "native",
+        "chinese_trans": "本土的n.本地人",
+        "spell": "[ˈneɪtɪv]"
+    },
+    "585": {
+        "english": "navy",
+        "chinese_trans": "海军",
+        "spell": "[ˈneɪvɪ]"
+    },
+    "586": {
+        "english": "neat",
+        "chinese_trans": "整洁的；简洁的",
+        "spell": "[niːt]"
+    },
+    "587": {
+        "english": "needle",
+        "chinese_trans": "针vt.缝补，编织",
+        "spell": "[niːd(ə)l]"
+    },
+    "588": {
+        "english": "nephew",
+        "chinese_trans": "侄子，外甥",
+        "spell": "[ˈnevjuː]"
+    },
+    "589": {
+        "english": "nest",
+        "chinese_trans": "巢，窝",
+        "spell": "[nest]"
+    },
+    "590": {
+        "english": "net",
+        "chinese_trans": "静的，纯的n.网，网状物",
+        "spell": "[net]"
+    },
+    "591": {
+        "english": "niece",
+        "chinese_trans": "侄女，外甥女",
+        "spell": "[niːs]"
+    },
+    "592": {
+        "english": "noble",
+        "chinese_trans": "高尚的n.贵族",
+        "spell": "[ˈnəʊb(ə)l]"
+    },
+    "593": {
+        "english": "noisy",
+        "chinese_trans": "嘈杂的，喧闹的",
+        "spell": "['nɔɪzɪ]"
+    },
+    "594": {
+        "english": "noun",
+        "chinese_trans": "名词",
+        "spell": "[naun]"
+    },
+    "595": {
+        "english": "novel",
+        "chinese_trans": "小说a.新奇的，新颖的",
+        "spell": "[ˈnɔv(ə)l]"
+    },
+    "596": {
+        "english": "nowadays",
+        "chinese_trans": "现今，现在n.现今，现在",
+        "spell": "[ˈnaʊədeɪz]"
+    },
+    "597": {
+        "english": "nowhere",
+        "chinese_trans": "任何地方都不",
+        "spell": "[ˈnəʊweə(r）]"
+    },
+    "598": {
+        "english": "nuclear",
+        "chinese_trans": "原子核的；核心的",
+        "spell": "[ˈnjuːklɪə(r)]"
+    },
+    "599": {
+        "english": "nut",
+        "chinese_trans": "坚果",
+        "spell": "[nʌt]"
+    },
+    "600": {
+        "english": "nutrition",
+        "chinese_trans": "营养",
+        "spell": "[njuːˈtrɪʃ(ə)n]"
+    },
+    "601": {
+        "english": "obey",
+        "chinese_trans": "顺从 vi.服从",
+        "spell": "[əʊˈbeɪ]"
+    },
+    "602": {
+        "english": "observe",
+        "chinese_trans": "观察，注意到",
+        "spell": "[əbˈzɜːv]"
+    },
+    "603": {
+        "english": "obtain",
+        "chinese_trans": "获得",
+        "spell": "[əbˈteɪn]"
+    },
+    "604": {
+        "english": "obvious",
+        "chinese_trans": "显而易见的",
+        "spell": "[ˈɔbvɪəs]"
+    },
+    "605": {
+        "english": "occupation",
+        "chinese_trans": "占领，占据；职业，工作",
+        "spell": "[ɔkjʊˈpeɪʃ(ə)n]"
+    },
+    "606": {
+        "english": "occupy",
+        "chinese_trans": "占领，占有；忙碌",
+        "spell": "['ɔkju,pai]"
+    },
+    "607": {
+        "english": "occur",
+        "chinese_trans": "发生",
+        "spell": "[ə'kə:]"
+    },
+    "608": {
+        "english": "official",
+        "chinese_trans": "官方的n.官员，行政人员",
+        "spell": "[əˈfɪʃ(ə)l]"
+    },
+    "609": {
+        "english": "onto",
+        "chinese_trans": "到……上",
+        "spell": "[ˈɔntʊ]"
+    },
+    "610": {
+        "english": "opera",
+        "chinese_trans": "歌剧",
+        "spell": "[ˈɔpərə]"
+    },
+    "611": {
+        "english": "operate",
+        "chinese_trans": "操作，施行手术",
+        "spell": "[ˈɔpəreɪt]"
+    },
+    "612": {
+        "english": "opinion",
+        "chinese_trans": "意见，看法",
+        "spell": "[əˈpɪnjən]"
+    },
+    "613": {
+        "english": "oppose",
+        "chinese_trans": "反对，反抗",
+        "spell": "[əˈpəʊz]"
+    },
+    "614": {
+        "english": "opposite",
+        "chinese_trans": "对面的n.对立物",
+        "spell": "[ˈɔpəzɪt]"
+    },
+    "615": {
+        "english": "optimistic",
+        "chinese_trans": "乐观的",
+        "spell": "[ɔptɪˈmɪstɪk]"
+    },
+    "616": {
+        "english": "oral",
+        "chinese_trans": "口头的",
+        "spell": "[ˈɔːrəl]"
+    },
+    "617": {
+        "english": "orbit",
+        "chinese_trans": "运行轨道vt.环绕",
+        "spell": "[ˈɔːbɪt]"
+    },
+    "618": {
+        "english": "ordinary",
+        "chinese_trans": "平常的，平凡的",
+        "spell": "[ˈɔːdɪnərɪ]"
+    },
+    "619": {
+        "english": "organise",
+        "chinese_trans": "组织，安排；筹办",
+        "spell": "['ɔ:gənaiz]"
+    },
+    "620": {
+        "english": "original",
+        "chinese_trans": "最初的，新颖的n.创新",
+        "spell": "[ə'ridʒənl]"
+    },
+    "621": {
+        "english": "otherwise",
+        "chinese_trans": "另外，要不然",
+        "spell": "[ˈʌðəwaɪz]"
+    },
+    "622": {
+        "english": "ought",
+        "chinese_trans": "应该",
+        "spell": "[ɔːt]"
+    },
+    "623": {
+        "english": "outdoor",
+        "chinese_trans": "户外的，野外的",
+        "spell": "[aʊtˈdɔː]"
+    },
+    "624": {
+        "english": "outdoors",
+        "chinese_trans": "在户外n.户外",
+        "spell": "[aʊtˈdɔːz]"
+    },
+    "625": {
+        "english": "outer",
+        "chinese_trans": "外部的，外面的",
+        "spell": "[ˈaʊtə(r)]"
+    },
+    "626": {
+        "english": "outline",
+        "chinese_trans": "轮廓 n.大纲",
+        "spell": "[ˈaʊtlaɪn]"
+    },
+    "627": {
+        "english": "outstanding",
+        "chinese_trans": "突出的，杰出的",
+        "spell": "[aʊtˈstændɪŋ]"
+    },
+    "628": {
+        "english": "overcome",
+        "chinese_trans": "战胜，克服",
+        "spell": "[əʊvəˈkʌm]"
+    },
+    "629": {
+        "english": "owe",
+        "chinese_trans": "欠，归功于",
+        "spell": "[əʊ]"
+    },
+    "630": {
+        "english": "ox",
+        "chinese_trans": "公牛",
+        "spell": "[ɔks]"
+    },
+    "631": {
+        "english": "oxygen",
+        "chinese_trans": "氧，氧气",
+        "spell": "[ˈɔksɪdʒ(ə)n]"
+    },
+    "632": {
+        "english": "pack",
+        "chinese_trans": "捆扎，打包；挤满n.包",
+        "spell": "[pæk]"
+    },
+    "633": {
+        "english": "packet",
+        "chinese_trans": "小包",
+        "spell": "[ˈpækɪt]"
+    },
+    "634": {
+        "english": "pain",
+        "chinese_trans": "痛苦，疼痛",
+        "spell": "[peɪn]"
+    },
+    "635": {
+        "english": "painful",
+        "chinese_trans": "痛苦的",
+        "spell": "[ˈpeɪnfʊl]"
+    },
+    "636": {
+        "english": "painting",
+        "chinese_trans": "油画，绘画",
+        "spell": "[ˈpeɪntɪŋ]"
+    },
+    "637": {
+        "english": "pan",
+        "chinese_trans": "平底锅",
+        "spell": "[pæn]"
+    },
+    "638": {
+        "english": "panic",
+        "chinese_trans": "恐慌，惊慌",
+        "spell": "[ˈpænɪk]"
+    },
+    "639": {
+        "english": "paragraph",
+        "chinese_trans": "（文章的）段，节",
+        "spell": "[ˈpærəɡrɑːf]"
+    },
+    "640": {
+        "english": "parcel",
+        "chinese_trans": "包裹，邮包",
+        "spell": "[ˈpɑːs(ə)l]"
+    },
+    "641": {
+        "english": "parrot",
+        "chinese_trans": "鹦鹉",
+        "spell": "[ˈpærət]"
+    },
+    "642": {
+        "english": "participate",
+        "chinese_trans": "参与，参加",
+        "spell": "[pɑːˈtɪsɪpeɪt]"
+    },
+    "643": {
+        "english": "particular",
+        "chinese_trans": "特殊的，特定的",
+        "spell": "[pəˈtɪkjʊlə(r)]"
+    },
+    "644": {
+        "english": "partly",
+        "chinese_trans": "部分地",
+        "spell": "[ˈpɑːtlɪ]"
+    },
+    "645": {
+        "english": "partner",
+        "chinese_trans": "伙伴，搭档，合伙人；配偶",
+        "spell": "[ˈpɑːtnə(r)]"
+    },
+    "646": {
+        "english": "passer-by",
+        "chinese_trans": "过路人",
+        "spell": "['pɑ:sə-baɪ]"
+    },
+    "647": {
+        "english": "passive",
+        "chinese_trans": "被动的，消极的",
+        "spell": "[ˈpæsɪv]"
+    },
+    "648": {
+        "english": "pattern",
+        "chinese_trans": "式样，模型",
+        "spell": "[ˈpæt(ə)n]"
+    },
+    "649": {
+        "english": "pause",
+        "chinese_trans": "中止 vi. 暂停，中止",
+        "spell": "[pɔːz]"
+    },
+    "650": {
+        "english": "peaceful",
+        "chinese_trans": "和平的，平静的",
+        "spell": "[ˈpiːsfʊl]"
+    },
+    "651": {
+        "english": "pence",
+        "chinese_trans": "的复数",
+        "spell": "[pens]"
+    },
+    "652": {
+        "english": "per",
+        "chinese_trans": "没，每一",
+        "spell": "[pə(r)]"
+    },
+    "653": {
+        "english": "perform",
+        "chinese_trans": "执行；演出",
+        "spell": "[pəˈfɔːm]"
+    },
+    "654": {
+        "english": "performance",
+        "chinese_trans": "履行；表演；表现",
+        "spell": "[pɚ'fɔrməns]"
+    },
+    "655": {
+        "english": "permit",
+        "chinese_trans": "允许 n. 执照，许可证",
+        "spell": "[pəˈmɪt]"
+    },
+    "656": {
+        "english": "persuade",
+        "chinese_trans": "说服",
+        "spell": "[pə'sweid]"
+    },
+    "657": {
+        "english": "petrol",
+        "chinese_trans": "汽油",
+        "spell": "[ˈpetr(ə)l]"
+    },
+    "658": {
+        "english": "phenomenon",
+        "chinese_trans": "现象",
+        "spell": "[fɪˈnɔmɪnən]"
+    },
+    "659": {
+        "english": "phrase",
+        "chinese_trans": "短语，习惯用语",
+        "spell": "[freɪz]"
+    },
+    "660": {
+        "english": "pile",
+        "chinese_trans": "堆 vt.堆叠",
+        "spell": "[paɪl]"
+    },
+    "661": {
+        "english": "pill",
+        "chinese_trans": "药丸",
+        "spell": "[pɪl]"
+    },
+    "662": {
+        "english": "pillow",
+        "chinese_trans": "枕头",
+        "spell": "['piləu]"
+    },
+    "663": {
+        "english": "pin",
+        "chinese_trans": "别针，钉子 vt. 钉住",
+        "spell": "[pɪn]"
+    },
+    "664": {
+        "english": "pipe",
+        "chinese_trans": "用管子输送 n.管子，导管；烟斗",
+        "spell": "[paɪp]"
+    },
+    "665": {
+        "english": "platform",
+        "chinese_trans": "站台，讲台",
+        "spell": "[ˈplætfɔːm]"
+    },
+    "666": {
+        "english": "player",
+        "chinese_trans": "表演者，比赛者",
+        "spell": "[ˈpleɪə(r)]"
+    },
+    "667": {
+        "english": "playmate",
+        "chinese_trans": "玩伴，游伴",
+        "spell": "[ˈpleɪmeɪt]"
+    },
+    "668": {
+        "english": "pleased",
+        "chinese_trans": "高兴的",
+        "spell": "[pliːzd]"
+    },
+    "669": {
+        "english": "plough",
+        "chinese_trans": "犁 vt. 犁，耕",
+        "spell": "[plau]"
+    },
+    "670": {
+        "english": "poet",
+        "chinese_trans": "诗人",
+        "spell": "[ˈpəʊɪt]"
+    },
+    "671": {
+        "english": "poison",
+        "chinese_trans": "毒药 vt. 毒害；投毒",
+        "spell": "[ˈpɔɪz(ə)n]"
+    },
+    "672": {
+        "english": "pole",
+        "chinese_trans": "杆，柱",
+        "spell": "[pəʊl]"
+    },
+    "673": {
+        "english": "policy",
+        "chinese_trans": "政策，方针",
+        "spell": "[ˈpɔləsɪ]"
+    },
+    "674": {
+        "english": "political",
+        "chinese_trans": "政治上的",
+        "spell": "[pəˈlɪtɪk(ə)l]"
+    },
+    "675": {
+        "english": "politics",
+        "chinese_trans": "政治",
+        "spell": "[ˈpɔlɪtɪks]"
+    },
+    "676": {
+        "english": "pollution",
+        "chinese_trans": "污染",
+        "spell": "[pəˈluːʃ(ə)n]"
+    },
+    "677": {
+        "english": "port",
+        "chinese_trans": "港口",
+        "spell": "[pɔːt]"
+    },
+    "678": {
+        "english": "positive",
+        "chinese_trans": "确定的；积极的；正确的",
+        "spell": "['pɔzɪtɪv]"
+    },
+    "679": {
+        "english": "possession",
+        "chinese_trans": "财产",
+        "spell": "[pəˈzeʃ(ə)n]"
+    },
+    "680": {
+        "english": "possibly",
+        "chinese_trans": "可能的，也许",
+        "spell": "['pɔsəbli]"
+    },
+    "681": {
+        "english": "postcode",
+        "chinese_trans": "邮递区号",
+        "spell": "[ˈpəʊstkəʊd]"
+    },
+    "682": {
+        "english": "pot",
+        "chinese_trans": "锅",
+        "spell": "[pɔt]"
+    },
+    "683": {
+        "english": "potential",
+        "chinese_trans": "潜在的 n. 潜能",
+        "spell": "[pəˈtenʃ(ə)l]"
+    },
+    "684": {
+        "english": "pour",
+        "chinese_trans": "流，倾盆大雨 vi. 倾斜",
+        "spell": "[pɔː(r)]"
+    },
+    "685": {
+        "english": "powder",
+        "chinese_trans": "粉末，火药",
+        "spell": "[ˈpaʊdə(r)]"
+    },
+    "686": {
+        "english": "power",
+        "chinese_trans": "能力；电力；权利",
+        "spell": "['pauə]"
+    },
+    "687": {
+        "english": "powerful",
+        "chinese_trans": "强有力的",
+        "spell": "[ˈpaʊəfʊl]"
+    },
+    "688": {
+        "english": "practical",
+        "chinese_trans": "实用的",
+        "spell": "[ˈpræktɪk(ə)l]"
+    },
+    "689": {
+        "english": "pray",
+        "chinese_trans": "请求；祈祷",
+        "spell": "[preɪ]"
+    },
+    "690": {
+        "english": "precious",
+        "chinese_trans": "珍贵的，宝贵的",
+        "spell": "[ˈpreʃəs]"
+    },
+    "691": {
+        "english": "predict",
+        "chinese_trans": "预言，预测",
+        "spell": "[prɪˈdɪkt]"
+    },
+    "692": {
+        "english": "perfer",
+        "chinese_trans": "宁可，宁愿",
+        "spell": "[prɪˈfɜː(r)]"
+    },
+    "693": {
+        "english": "press",
+        "chinese_trans": "压，按 vt. 压；压榨 n. 印刷；新闻，报刊",
+        "spell": "[pres]"
+    },
+    "694": {
+        "english": "pretend",
+        "chinese_trans": "假装，装作 vi. 假装",
+        "spell": "[prɪ'tend]"
+    },
+    "695": {
+        "english": "principle",
+        "chinese_trans": "原则，原理",
+        "spell": "[ˈprɪnsɪp(ə)l]"
+    },
+    "696": {
+        "english": "process",
+        "chinese_trans": "过程 vt. 处理",
+        "spell": "[ˈprəʊses]"
+    },
+    "697": {
+        "english": "production",
+        "chinese_trans": "产品；产量",
+        "spell": "[prəˈdʌkʃ(ə)n]"
+    },
+    "698": {
+        "english": "profession",
+        "chinese_trans": "职业",
+        "spell": "[prəˈfeʃ(ə)n]"
+    },
+    "699": {
+        "english": "professor",
+        "chinese_trans": "教授",
+        "spell": "[prəˈfesə(r)]"
+    },
+    "700": {
+        "english": "profit",
+        "chinese_trans": "利润 vi. 得益",
+        "spell": "[ˈprɔfɪt]"
+    },
+    "701": {
+        "english": "project",
+        "chinese_trans": "计划；工程；项目 vi. 伸出 vt. 设计，规划",
+        "spell": "[ˈprɔdʒekt]"
+    },
+    "702": {
+        "english": "promote",
+        "chinese_trans": "促进，提升；推销",
+        "spell": "[prə'məut]"
+    },
+    "703": {
+        "english": "province",
+        "chinese_trans": "省",
+        "spell": "[ˈprɔvɪns]"
+    },
+    "704": {
+        "english": "publish",
+        "chinese_trans": "公布，发表；出版，刊印",
+        "spell": "[ˈpʌblɪʃ]"
+    },
+    "705": {
+        "english": "pump",
+        "chinese_trans": "泵 vt. 用泵抽，打气",
+        "spell": "[ˈpʌmp]"
+    },
+    "706": {
+        "english": "punishment",
+        "chinese_trans": "惩罚",
+        "spell": "[ˈpʌnɪʃmənt]"
+    },
+    "707": {
+        "english": "purchase",
+        "chinese_trans": "购买 n.购买；赃物",
+        "spell": "[ˈpɜːtʃəs]"
+    },
+    "708": {
+        "english": "pure",
+        "chinese_trans": "纯洁的",
+        "spell": "[pjʊə(r)]"
+    },
+    "709": {
+        "english": "puzzle",
+        "chinese_trans": "难题；迷 vi. 使迷惑",
+        "spell": "[ˈpʌz(ə)l]"
+    },
+    "710": {
+        "english": "quality",
+        "chinese_trans": "质量，特性",
+        "spell": "[ˈkwɔlətɪ]"
+    },
+    "711": {
+        "english": "quantity",
+        "chinese_trans": "数量；大量",
+        "spell": "[ˈkwɔntətɪ]"
+    },
+    "712": {
+        "english": "quarrel",
+        "chinese_trans": "争吵 n. 争吵，吵架",
+        "spell": "[ˈkwɔrəl]"
+    },
+    "713": {
+        "english": "queue",
+        "chinese_trans": "队列 vi. 排队等候",
+        "spell": "[kjuː]"
+    },
+    "714": {
+        "english": "quit",
+        "chinese_trans": "离开，停止；辞职",
+        "spell": "[kwɪt]"
+    },
+    "715": {
+        "english": "range",
+        "chinese_trans": "变动，变化 n.范围",
+        "spell": "[reɪndʒ]"
+    },
+    "716": {
+        "english": "rate",
+        "chinese_trans": "比率；速度；价格 vt. 评价，估价",
+        "spell": "[reɪt]"
+    },
+    "717": {
+        "english": "rank",
+        "chinese_trans": "军衔 vt. 归类于",
+        "spell": "[ræŋk]"
+    },
+    "718": {
+        "english": "react",
+        "chinese_trans": "反映",
+        "spell": "[riːˈækt]"
+    },
+    "719": {
+        "english": "ray",
+        "chinese_trans": "光线；射线",
+        "spell": "[reɪ]"
+    },
+    "720": {
+        "english": "reality",
+        "chinese_trans": "现实；真实",
+        "spell": "[rɪˈælɪtɪ]"
+    },
+    "721": {
+        "english": "reading",
+        "chinese_trans": "阅读；读物",
+        "spell": "['ridɪŋ]"
+    },
+    "722": {
+        "english": "recognize",
+        "chinese_trans": "认出，识别",
+        "spell": "[ˈrekəɡnaɪz]"
+    },
+    "723": {
+        "english": "reception",
+        "chinese_trans": "接待，接待处",
+        "spell": "[rɪˈsepʃ(ə)n]"
+    },
+    "724": {
+        "english": "recommend",
+        "chinese_trans": "推荐",
+        "spell": "[rekəˈmend]"
+    },
+    "725": {
+        "english": "recover",
+        "chinese_trans": "恢复，痊愈",
+        "spell": "[rɪˈkʌvə(r)]"
+    },
+    "726": {
+        "english": "recycle",
+        "chinese_trans": "重复利用",
+        "spell": "[riːˈsaɪk(ə)l]"
+    },
+    "727": {
+        "english": "reduce",
+        "chinese_trans": "减少，减小",
+        "spell": "[rɪˈdjuːs]"
+    },
+    "728": {
+        "english": "refer",
+        "chinese_trans": "求助于vi.参考，查阅",
+        "spell": "[rɪˈfɜː(r)]"
+    },
+    "729": {
+        "english": "reflect",
+        "chinese_trans": "反射，反映，思考",
+        "spell": "[rɪˈflekt]"
+    },
+    "730": {
+        "english": "reform",
+        "chinese_trans": "改革，改良vt.改革，革新",
+        "spell": "[rɪˈfɔːm]"
+    },
+    "731": {
+        "english": "register",
+        "chinese_trans": "登记，注册n.登记，注册",
+        "spell": "[ˈredʒɪstə(r)]"
+    },
+    "732": {
+        "english": "regular",
+        "chinese_trans": "规则的，整齐的，定期的，常规的",
+        "spell": "[ˈreɡjʊlə(r)]"
+    },
+    "733": {
+        "english": "reject",
+        "chinese_trans": "拒绝，丢掉，驳回",
+        "spell": "[rɪˈdʒekt]"
+    },
+    "734": {
+        "english": "relate",
+        "chinese_trans": "联系",
+        "spell": "[rɪˈleɪt]"
+    },
+    "735": {
+        "english": "relative",
+        "chinese_trans": "有关系的，相对的n.亲戚，亲属",
+        "spell": "[ˈrelətɪv]"
+    },
+    "736": {
+        "english": "relevant",
+        "chinese_trans": "有关的，中肯的",
+        "spell": "['rɛləvənt]"
+    },
+    "737": {
+        "english": "reliable",
+        "chinese_trans": "可靠的",
+        "spell": "[rɪˈlaɪəb(ə)l]"
+    },
+    "738": {
+        "english": "religion",
+        "chinese_trans": "宗教信仰",
+        "spell": "[rɪˈlɪdʒən]"
+    },
+    "739": {
+        "english": "rely",
+        "chinese_trans": "依赖，依靠，信赖",
+        "spell": "[rɪˈlaɪ]"
+    },
+    "740": {
+        "english": "remark",
+        "chinese_trans": "评论，n.评论，备注",
+        "spell": "[rɪˈmɑːk]"
+    },
+    "741": {
+        "english": "remind",
+        "chinese_trans": "提醒",
+        "spell": "[rɪˈmaɪnd]"
+    },
+    "742": {
+        "english": "remote",
+        "chinese_trans": "遥远的",
+        "spell": "[rɪˈməʊt]"
+    },
+    "743": {
+        "english": "remove",
+        "chinese_trans": "移动，搬迁",
+        "spell": "[rɪˈmuːv]"
+    },
+    "744": {
+        "english": "rent",
+        "chinese_trans": "租金，租vi.出租",
+        "spell": "[rent]"
+    },
+    "745": {
+        "english": "repair",
+        "chinese_trans": "修理，修补n.修理",
+        "spell": "[rɪˈpeə(r)]"
+    },
+    "746": {
+        "english": "repeat",
+        "chinese_trans": "重说，重做n.重复",
+        "spell": "[rɪˈpiːt]"
+    },
+    "747": {
+        "english": "reply",
+        "chinese_trans": "回答，答复n.答复",
+        "spell": "[rɪˈplaɪ]"
+    },
+    "748": {
+        "english": "represent",
+        "chinese_trans": "描绘，代表，象征",
+        "spell": "[reprɪˈzent]"
+    },
+    "749": {
+        "english": "republic",
+        "chinese_trans": "共和国",
+        "spell": "[rɪˈpʌblɪk]"
+    },
+    "750": {
+        "english": "reputation",
+        "chinese_trans": "名誉，声望",
+        "spell": "[repjʊˈteɪʃ(ə)n]"
+    },
+    "751": {
+        "english": "request",
+        "chinese_trans": "请求，要求vt.请求，要求",
+        "spell": "[rɪˈkwest]"
+    },
+    "752": {
+        "english": "rescue",
+        "chinese_trans": "援救，营救",
+        "spell": "[ˈreskjuː]"
+    },
+    "753": {
+        "english": "reserve",
+        "chinese_trans": "储备，保留，预定",
+        "spell": "[rɪˈzɜːv]"
+    },
+    "754": {
+        "english": "resist",
+        "chinese_trans": "抵抗，抵制",
+        "spell": "[rɪˈzɪst]"
+    },
+    "755": {
+        "english": "respect",
+        "chinese_trans": "尊敬，尊重n.尊敬",
+        "spell": "[rɪˈspekt]"
+    },
+    "756": {
+        "english": "respond",
+        "chinese_trans": "回答，响应",
+        "spell": "[rɪ'spɑnd]"
+    },
+    "757": {
+        "english": "responsible",
+        "chinese_trans": "有责任的，尽责的",
+        "spell": "[ri'spɔnsəbl]"
+    },
+    "758": {
+        "english": "retire",
+        "chinese_trans": "退休",
+        "spell": "[rɪˈtaɪə(r)]"
+    },
+    "759": {
+        "english": "revise",
+        "chinese_trans": "校订，修改",
+        "spell": "[rɪ'vaɪz]"
+    },
+    "760": {
+        "english": "revolution",
+        "chinese_trans": "革命，旋转",
+        "spell": "[revəˈluːʃ(ə)n]"
+    },
+    "761": {
+        "english": "reward",
+        "chinese_trans": "报的，报酬vt.报答，酬金",
+        "spell": "[rɪˈwɔːd]"
+    },
+    "762": {
+        "english": "ripe",
+        "chinese_trans": "成熟的，时机成熟的",
+        "spell": "[raɪp]"
+    },
+    "763": {
+        "english": "risk",
+        "chinese_trans": "风险，危险vt.冒险",
+        "spell": "[rɪsk]"
+    },
+    "764": {
+        "english": "rob",
+        "chinese_trans": "抢劫，劫掠vi.抢劫，劫掠",
+        "spell": "[rɔb]"
+    },
+    "765": {
+        "english": "rocket",
+        "chinese_trans": "火箭",
+        "spell": "['rɔkit]"
+    },
+    "766": {
+        "english": "roll",
+        "chinese_trans": "滚动，转动n.一卷，名册",
+        "spell": "[rəʊl]"
+    },
+    "767": {
+        "english": "roof",
+        "chinese_trans": "屋顶",
+        "spell": "[ruːf]"
+    },
+    "768": {
+        "english": "root",
+        "chinese_trans": "跟（部），根源vi.生根，扎根",
+        "spell": "[ruːt]"
+    },
+    "769": {
+        "english": "rough",
+        "chinese_trans": "表面不平的，粗略的，大致的",
+        "spell": "[rʌf]"
+    },
+    "770": {
+        "english": "rude",
+        "chinese_trans": "粗野的，残暴的",
+        "spell": "[ruːd]"
+    },
+    "771": {
+        "english": "ruin",
+        "chinese_trans": "毁灭，废墟vt.毁坏",
+        "spell": "[ˈruːɪn]"
+    },
+    "772": {
+        "english": "sacrifice",
+        "chinese_trans": "牺牲，献祭",
+        "spell": "[ˈsækrɪfaɪs]"
+    },
+    "773": {
+        "english": "sailor",
+        "chinese_trans": "海员，水兵",
+        "spell": "[ˈseɪlə(r)]"
+    },
+    "774": {
+        "english": "salary",
+        "chinese_trans": "薪水",
+        "spell": "[ˈsælərɪ]"
+    },
+    "775": {
+        "english": "satellite",
+        "chinese_trans": "卫星",
+        "spell": "[ˈsætəlaɪt]"
+    },
+    "776": {
+        "english": "satisfaction",
+        "chinese_trans": "满意",
+        "spell": "[sætɪsˈfækʃ(ə)n]"
+    },
+    "777": {
+        "english": "scan",
+        "chinese_trans": "浏览，扫描",
+        "spell": "[skæn]"
+    },
+    "778": {
+        "english": "scare",
+        "chinese_trans": "惊吓vi.受惊",
+        "spell": "[skeə(r)]"
+    },
+    "779": {
+        "english": "scene",
+        "chinese_trans": "情景，景色",
+        "spell": "[sɪːn]"
+    },
+    "780": {
+        "english": "schedule",
+        "chinese_trans": "安排n.时间表,计划表",
+        "spell": "[ ˈskedʒʊl]"
+    },
+    "781": {
+        "english": "scholarship",
+        "chinese_trans": "奖学金",
+        "spell": "[ˈskɔləʃɪp]"
+    },
+    "782": {
+        "english": "scientific",
+        "chinese_trans": "科学的",
+        "spell": "[saɪənˈtɪfɪk]"
+    },
+    "783": {
+        "english": "scold",
+        "chinese_trans": "责骂",
+        "spell": "[skəʊld]"
+    },
+    "784": {
+        "english": "scream",
+        "chinese_trans": "尖叫n.尖叫声",
+        "spell": "[skriːm]"
+    },
+    "785": {
+        "english": "seaside",
+        "chinese_trans": "海边",
+        "spell": "[ˈsiːsaɪd]"
+    },
+    "786": {
+        "english": "section",
+        "chinese_trans": "切片，部门，章节",
+        "spell": "[ˈsekʃ(ə)n]"
+    },
+    "787": {
+        "english": "secure",
+        "chinese_trans": "安全的",
+        "spell": "[sɪˈkjʊə(r)]"
+    },
+    "788": {
+        "english": "seed",
+        "chinese_trans": "种（子），籽",
+        "spell": "[siːd]"
+    },
+    "789": {
+        "english": "seek",
+        "chinese_trans": "寻找，探索",
+        "spell": "[siːk]"
+    },
+    "790": {
+        "english": "seize",
+        "chinese_trans": "抓住，夺取，占据",
+        "spell": "[siːz]"
+    },
+    "791": {
+        "english": "select",
+        "chinese_trans": "选择，vi.挑选",
+        "spell": "[sɪˈlekt]"
+    },
+    "792": {
+        "english": "self",
+        "chinese_trans": "自我，自己",
+        "spell": "[self]"
+    },
+    "793": {
+        "english": "selfish",
+        "chinese_trans": "自私的，利己的",
+        "spell": "[ˈselfɪʃ]"
+    },
+    "794": {
+        "english": "senior",
+        "chinese_trans": "年长者，资格老的",
+        "spell": "[ˈsiːnɪə(r)]"
+    },
+    "795": {
+        "english": "sensitive",
+        "chinese_trans": "敏感的，灵敏的",
+        "spell": "[ˈsensɪtɪv]"
+    },
+    "796": {
+        "english": "settle",
+        "chinese_trans": "安排，按放解决vi.定居",
+        "spell": "[ˈsetl]"
+    },
+    "797": {
+        "english": "sew",
+        "chinese_trans": "缝制",
+        "spell": "[səʊ]"
+    },
+    "798": {
+        "english": "sex",
+        "chinese_trans": "性别，性",
+        "spell": "[seks]"
+    },
+    "799": {
+        "english": "shade",
+        "chinese_trans": "树荫，遮光物vi.荫蔽",
+        "spell": "[ʃeɪd]"
+    },
+    "800": {
+        "english": "shadow",
+        "chinese_trans": "阴影，影子",
+        "spell": "[ˈʃædəʊ]"
+    },
+    "801": {
+        "english": "shallow",
+        "chinese_trans": "浅的，浅薄的n.浅滩",
+        "spell": "[ˈʃæləʊ]"
+    },
+    "802": {
+        "english": "sharp",
+        "chinese_trans": "（时刻）整a.锋利的，敏锐的，刺耳的",
+        "spell": "[ʃɑːp]"
+    },
+    "803": {
+        "english": "shave",
+        "chinese_trans": "剃，刮vi修面n.刮脸",
+        "spell": "[ʃeɪv]"
+    },
+    "804": {
+        "english": "sheet",
+        "chinese_trans": "被单，纸张，薄片",
+        "spell": "[ʃiːt]"
+    },
+    "805": {
+        "english": "shelter",
+        "chinese_trans": "掩蔽处vt.遮蔽，掩护",
+        "spell": "[ˈʃeltə(r)]"
+    },
+    "806": {
+        "english": "shock",
+        "chinese_trans": "冲击，震惊，电击vi.震动",
+        "spell": "[ʃɔk]"
+    },
+    "807": {
+        "english": "shoot",
+        "chinese_trans": "发射，射门，投篮n发芽",
+        "spell": "[ʃuːt]"
+    },
+    "808": {
+        "english": "shopping",
+        "chinese_trans": "购物",
+        "spell": "[ˈʃɔpɪŋ]"
+    },
+    "809": {
+        "english": "shore",
+        "chinese_trans": "滨，岸",
+        "spell": "[ʃɔː(r)]"
+    },
+    "810": {
+        "english": "shortcoming",
+        "chinese_trans": "短处，缺点",
+        "spell": "[ˈʃɔːtkʌmɪŋ]"
+    },
+    "811": {
+        "english": "shot",
+        "chinese_trans": "射击，发射，投篮",
+        "spell": "[ʃɔt]"
+    },
+    "812": {
+        "english": "sigh",
+        "chinese_trans": "叹息，叹气 n叹息",
+        "spell": "[saɪ]"
+    },
+    "813": {
+        "english": "sign",
+        "chinese_trans": "符号，征兆vt签名",
+        "spell": "[saɪn]"
+    },
+    "814": {
+        "english": "signal",
+        "chinese_trans": "信号 vi发信号",
+        "spell": "[ˈsɪɡn(ə)l]"
+    },
+    "815": {
+        "english": "significance",
+        "chinese_trans": "意义，意味重要性",
+        "spell": "[sɪg'nɪfɪkəns]"
+    },
+    "816": {
+        "english": "simply",
+        "chinese_trans": "简单地，朴素地，仅仅，只不过",
+        "spell": "[ˈsɪmp(ə)l]"
+    },
+    "817": {
+        "english": "sincere",
+        "chinese_trans": "真诚的，真挚的",
+        "spell": "[sɪn'sɪr]"
+    },
+    "818": {
+        "english": "sincerely",
+        "chinese_trans": "真诚地",
+        "spell": "[sɪn'sɪrlɪ]"
+    },
+    "819": {
+        "english": "sink",
+        "chinese_trans": "下降，降低n水槽，水池",
+        "spell": "[sɪŋk]"
+    },
+    "820": {
+        "english": "skin",
+        "chinese_trans": "剥皮 n皮，皮肤，兽皮",
+        "spell": "[skɪn]"
+    },
+    "821": {
+        "english": "skyscraper",
+        "chinese_trans": "摩天大楼",
+        "spell": "[ˈskaɪskreɪpə(r)]"
+    },
+    "822": {
+        "english": "slave",
+        "chinese_trans": "奴隶，苦工",
+        "spell": "[sleɪv]"
+    },
+    "823": {
+        "english": "slight",
+        "chinese_trans": "细长的，轻微的",
+        "spell": "[slaɪt]"
+    },
+    "824": {
+        "english": "slightly",
+        "chinese_trans": "轻微地",
+        "spell": "[slaɪtli]"
+    },
+    "825": {
+        "english": "slim",
+        "chinese_trans": "细长的 ，微小的",
+        "spell": "[slɪm]"
+    },
+    "826": {
+        "english": "smooth",
+        "chinese_trans": "平滑的，平静的",
+        "spell": "[smuð]"
+    },
+    "827": {
+        "english": "sneaker",
+        "chinese_trans": "鬼鬼祟祟做事的人，卑鄙者，运动鞋",
+        "spell": "['snikɚ]"
+    },
+    "828": {
+        "english": "soccer",
+        "chinese_trans": "英式足球",
+        "spell": "[ˈsɔkə(r)]"
+    },
+    "829": {
+        "english": "socialism",
+        "chinese_trans": "社会主义",
+        "spell": "[ˈsəʊʃəlɪz(ə)m]"
+    },
+    "830": {
+        "english": "socialist",
+        "chinese_trans": "社会主义的",
+        "spell": "[ˈsəʊʃəlɪst]"
+    },
+    "831": {
+        "english": "software",
+        "chinese_trans": "软件",
+        "spell": "['sɔft,wɛr]"
+    },
+    "832": {
+        "english": "soil",
+        "chinese_trans": "土壤，土地",
+        "spell": "[sɔɪl]"
+    },
+    "833": {
+        "english": "solar",
+        "chinese_trans": "太阳的，日光的",
+        "spell": "[ˈsəʊlə(r)]"
+    },
+    "834": {
+        "english": "soul",
+        "chinese_trans": "灵魂，精神，人",
+        "spell": "[səʊl]"
+    },
+    "835": {
+        "english": "specific",
+        "chinese_trans": "特有的，具体的",
+        "spell": "[spɪˈsɪfɪk]"
+    },
+    "836": {
+        "english": "spit",
+        "chinese_trans": "吐唾沫",
+        "spell": "[spɪt]"
+    },
+    "837": {
+        "english": "splendid",
+        "chinese_trans": "壮丽的，显著的",
+        "spell": "[ˈsplendɪd]"
+    },
+    "838": {
+        "english": "split",
+        "chinese_trans": "劈开",
+        "spell": "[splɪt]"
+    },
+    "839": {
+        "english": "spoken",
+        "chinese_trans": "口头讲的，口语的vbl",
+        "spell": "[ˈspəʊkən]"
+    },
+    "840": {
+        "english": "speak",
+        "chinese_trans": "的过去分词sponsor n发起者vt发起",
+        "spell": "[spiːk]"
+    },
+    "841": {
+        "english": "spot",
+        "chinese_trans": "认出，发现n点，斑点，地点",
+        "spell": "[spɔt]"
+    },
+    "842": {
+        "english": "spy",
+        "chinese_trans": "间谍，特务 vt侦查，监视",
+        "spell": "[spaɪ]"
+    },
+    "843": {
+        "english": "stable",
+        "chinese_trans": "稳定的，安定的 n马厩，马棚",
+        "spell": "[ˈsteɪb(ə)l]"
+    },
+    "844": {
+        "english": "stadium",
+        "chinese_trans": "露天大型运动场",
+        "spell": "[ˈsteɪdɪəm]"
+    },
+    "845": {
+        "english": "staff",
+        "chinese_trans": "全体工作人员",
+        "spell": "[stɑːf]"
+    },
+    "846": {
+        "english": "stage",
+        "chinese_trans": "舞台，阶段，时期",
+        "spell": "[steɪdʒ]"
+    },
+    "847": {
+        "english": "stair",
+        "chinese_trans": "楼梯",
+        "spell": "[steə(r)]"
+    },
+    "848": {
+        "english": "stare",
+        "chinese_trans": "凝视",
+        "spell": "[steə(r)]"
+    },
+    "849": {
+        "english": "starve",
+        "chinese_trans": "饿死 t使饿死",
+        "spell": "[stɑːv]"
+    },
+    "850": {
+        "english": "steady",
+        "chinese_trans": "稳固的 vt使稳定",
+        "spell": "[ˈstedɪ]"
+    },
+    "851": {
+        "english": "steam",
+        "chinese_trans": "蒸汽 i蒸发 vt蒸煮",
+        "spell": "[stiːm]"
+    },
+    "852": {
+        "english": "steel",
+        "chinese_trans": "钢",
+        "spell": "[stiːl]"
+    },
+    "853": {
+        "english": "straight",
+        "chinese_trans": "直的，正直的ad直接地",
+        "spell": "[streɪt]"
+    },
+    "854": {
+        "english": "strength",
+        "chinese_trans": "力量，力气",
+        "spell": "[streŋθ]"
+    },
+    "855": {
+        "english": "stress",
+        "chinese_trans": "压力，重音 vt着重，强调",
+        "spell": "[stres]"
+    },
+    "856": {
+        "english": "strike",
+        "chinese_trans": "打，击罢工，n罢工，打击，殴打",
+        "spell": "[straɪk]"
+    },
+    "857": {
+        "english": "struggle",
+        "chinese_trans": "斗争，奋斗 vi斗争，奋斗",
+        "spell": "[ˈstrʌɡ(ə)l]"
+    },
+    "858": {
+        "english": "studio",
+        "chinese_trans": "工作室，播音室",
+        "spell": "[ˈstjuːdɪəʊ]"
+    },
+    "859": {
+        "english": "style",
+        "chinese_trans": "风格，式样",
+        "spell": "[staɪl]"
+    },
+    "860": {
+        "english": "suck",
+        "chinese_trans": "吸，吮",
+        "spell": "[sʌk]"
+    },
+    "861": {
+        "english": "suddenly",
+        "chinese_trans": "突然",
+        "spell": "[ˈsʌd(ə)nlɪ]"
+    },
+    "862": {
+        "english": "suffer",
+        "chinese_trans": "遭受，忍受vi受害，受损失",
+        "spell": "[ˈsʌfə(r)]"
+    },
+    "863": {
+        "english": "suit",
+        "chinese_trans": "起诉，诉讼 vt适合",
+        "spell": "[ sjuːt]"
+    },
+    "864": {
+        "english": "suitable",
+        "chinese_trans": "适宜的，恰当的",
+        "spell": "[ˈsjuːtəb(ə)l]"
+    },
+    "865": {
+        "english": "sum",
+        "chinese_trans": "总数，金额 vi共计",
+        "spell": "[sʌm]"
+    },
+    "866": {
+        "english": "summary",
+        "chinese_trans": "简短的，扼要的n摘要，总结",
+        "spell": "[ˈsʌmərɪ]"
+    },
+    "867": {
+        "english": "sunset",
+        "chinese_trans": "日落",
+        "spell": "[ˈsʌnset]"
+    },
+    "868": {
+        "english": "sunshine",
+        "chinese_trans": "阳光",
+        "spell": "[ˈsʌnʃaɪn]"
+    },
+    "869": {
+        "english": "support",
+        "chinese_trans": "支持供养，承受",
+        "spell": "[səˈpɔːt]"
+    },
+    "870": {
+        "english": "surround",
+        "chinese_trans": "包围，环绕",
+        "spell": "[səˈraʊnd]"
+    },
+    "871": {
+        "english": "survive",
+        "chinese_trans": "幸免于 vi活下来",
+        "spell": "[səˈvaɪv]"
+    },
+    "872": {
+        "english": "swallow",
+        "chinese_trans": "吞，咽vi吞，咽n燕子",
+        "spell": "[ˈswɔləʊ]"
+    },
+    "873": {
+        "english": "switch",
+        "chinese_trans": "开关，转换 vt转换",
+        "spell": "[swɪtʃ]"
+    },
+    "874": {
+        "english": "symbol",
+        "chinese_trans": "象征，符号",
+        "spell": "[ˈsɪmb(ə)l]"
+    },
+    "875": {
+        "english": "sympathy",
+        "chinese_trans": "同情，同情心",
+        "spell": "[ˈsɪmpəθɪ]"
+    },
+    "876": {
+        "english": "system",
+        "chinese_trans": "系统，制度",
+        "spell": "[ˈsɪstəm]"
+    },
+    "877": {
+        "english": "tailor",
+        "chinese_trans": "裁缝 vt 裁纸衣服",
+        "spell": "[ˈteɪlə(r)]"
+    },
+    "878": {
+        "english": "talent",
+        "chinese_trans": "天才，才能",
+        "spell": "[ˈtælənt]"
+    },
+    "879": {
+        "english": "tank",
+        "chinese_trans": "坦克，大容器",
+        "spell": "[tæŋk]"
+    },
+    "880": {
+        "english": "tap",
+        "chinese_trans": "轻打，轻敲n塞子，龙头，轻叩，轻拍",
+        "spell": "[tæp]"
+    },
+    "881": {
+        "english": "target",
+        "chinese_trans": "靶，目标",
+        "spell": "[ˈtɑːɡɪt]"
+    },
+    "882": {
+        "english": "tax",
+        "chinese_trans": "（税）款vt征税",
+        "spell": "[tæks]"
+    },
+    "883": {
+        "english": "tear",
+        "chinese_trans": "泪滴，眼泪 vt撕开，撕裂",
+        "spell": "[tɪə(r)]"
+    },
+    "884": {
+        "english": "technical",
+        "chinese_trans": "技术的，工艺的",
+        "spell": "[ˈteknɪk(ə)l]"
+    },
+    "885": {
+        "english": "technique",
+        "chinese_trans": "技巧，技能",
+        "spell": "[tek'ni:k]"
+    },
+    "886": {
+        "english": "teenager",
+        "chinese_trans": "青少年",
+        "spell": "[ˈtiːneɪdʒə(r)]"
+    },
+    "887": {
+        "english": "telegram",
+        "chinese_trans": "电报",
+        "spell": "[ˈtelɪɡræm]"
+    },
+    "888": {
+        "english": "telegraph",
+        "chinese_trans": "电报（机）v发电报",
+        "spell": "['teligrɑf]"
+    },
+    "889": {
+        "english": "telescope",
+        "chinese_trans": "望远镜",
+        "spell": "['teliskəup]"
+    },
+    "890": {
+        "english": "television",
+        "chinese_trans": "电视，电视机",
+        "spell": "['teli,viʒən]"
+    },
+    "891": {
+        "english": "temple",
+        "chinese_trans": "神殿，宇宙，太阳穴",
+        "spell": "[ˈtemp(ə)l]"
+    },
+    "892": {
+        "english": "temporary",
+        "chinese_trans": "暂时的，临时的",
+        "spell": "[ˈtempərərɪ]"
+    },
+    "893": {
+        "english": "tend",
+        "chinese_trans": "走向，趋向",
+        "spell": "[tend]"
+    },
+    "894": {
+        "english": "tendency",
+        "chinese_trans": "趋向，趋势",
+        "spell": "[ˈtendənsɪ]"
+    },
+    "895": {
+        "english": "tense",
+        "chinese_trans": "紧张的，拉紧的n.时态",
+        "spell": "[tens]"
+    },
+    "896": {
+        "english": "theme",
+        "chinese_trans": "题目，词干，主旋律",
+        "spell": "[θiːm]"
+    },
+    "897": {
+        "english": "theory",
+        "chinese_trans": "理论，学说",
+        "spell": "['θiərɪ]"
+    },
+    "898": {
+        "english": "therefore",
+        "chinese_trans": "因此，所以",
+        "spell": "[ˈðeəfɔː(r)]"
+    },
+    "899": {
+        "english": "thief",
+        "chinese_trans": "窃贼，偷窃犯",
+        "spell": "[θiːf]"
+    },
+    "900": {
+        "english": "thinking",
+        "chinese_trans": "思考，想法，见解",
+        "spell": "[ˈθɪŋkɪŋ]"
+    },
+    "901": {
+        "english": "throat",
+        "chinese_trans": "咽喉",
+        "spell": "[θrəʊt]"
+    },
+    "902": {
+        "english": "throughout",
+        "chinese_trans": "遍及ad.到处",
+        "spell": "[θruːˈaʊt]"
+    },
+    "903": {
+        "english": "thus",
+        "chinese_trans": "如此，这样，因而",
+        "spell": "[ðʌs]"
+    },
+    "904": {
+        "english": "tick",
+        "chinese_trans": "滴答声，记号vi.发出滴答声",
+        "spell": "[tɪk]"
+    },
+    "905": {
+        "english": "tight",
+        "chinese_trans": "紧的，紧身的ad.紧紧地",
+        "spell": "[taɪt]"
+    },
+    "906": {
+        "english": "tin",
+        "chinese_trans": "锡，罐头",
+        "spell": "[tɪn]"
+    },
+    "907": {
+        "english": "timetable",
+        "chinese_trans": "时间表，时刻表",
+        "spell": "[ˈtaɪmteɪb(ə)l]"
+    },
+    "908": {
+        "english": "tire",
+        "chinese_trans": "疲劳，厌倦n.轮胎",
+        "spell": "[ˈtaɪə(r)]"
+    },
+    "909": {
+        "english": "tip",
+        "chinese_trans": "轻击vi.给小费n.小费",
+        "spell": "[tɪp]"
+    },
+    "910": {
+        "english": "tobacco",
+        "chinese_trans": "烟草，烟叶",
+        "spell": "[tə'bækəu]"
+    },
+    "911": {
+        "english": "title",
+        "chinese_trans": "标题，题目，称号，头衔",
+        "spell": "['taitl]"
+    },
+    "912": {
+        "english": "topic",
+        "chinese_trans": "题目，论题，话题",
+        "spell": "[ˈtɔpɪk]"
+    },
+    "913": {
+        "english": "tolerate",
+        "chinese_trans": "忍受，容忍",
+        "spell": "[ˈtɔləreɪt]"
+    },
+    "914": {
+        "english": "track",
+        "chinese_trans": "行踪，路径，轨道",
+        "spell": "[træk]"
+    },
+    "915": {
+        "english": "tough",
+        "chinese_trans": "坚韧的，健壮的",
+        "spell": "[tʌf]"
+    },
+    "916": {
+        "english": "tradition",
+        "chinese_trans": "传统，惯例",
+        "spell": "[trəˈdɪʃ(ə)n]"
+    },
+    "917": {
+        "english": "tractor",
+        "chinese_trans": "拖拉机",
+        "spell": "[ˈtræktə(r)]"
+    },
+    "918": {
+        "english": "trap",
+        "chinese_trans": "陷阱，诡计vt.诱骗",
+        "spell": "[træp]"
+    },
+    "919": {
+        "english": "transport",
+        "chinese_trans": "运输vt.运输",
+        "spell": "[trænsˈpɔːt]"
+    },
+    "920": {
+        "english": "trial",
+        "chinese_trans": "试验，审判",
+        "spell": "[ˈtraɪəl]"
+    },
+    "921": {
+        "english": "trend",
+        "chinese_trans": "伸向，倾向n.倾向",
+        "spell": "[trend]"
+    },
+    "922": {
+        "english": "type",
+        "chinese_trans": "类型vi.打字",
+        "spell": "[ˈtaɪp]"
+    },
+    "923": {
+        "english": "trick",
+        "chinese_trans": "诡计，窍门vt.哄骗",
+        "spell": "[trɪk]"
+    },
+    "924": {
+        "english": "typical",
+        "chinese_trans": "典型的，代表性的",
+        "spell": "[ˈtɪpɪk(ə)l]"
+    },
+    "925": {
+        "english": "typewriter",
+        "chinese_trans": "打字机",
+        "spell": "[ˈtaɪpraɪtə(r)]"
+    },
+    "926": {
+        "english": "tyre",
+        "chinese_trans": "轮胎",
+        "spell": "[taɪə]"
+    },
+    "927": {
+        "english": "typist",
+        "chinese_trans": "打字员",
+        "spell": "[ˈtaɪpɪst]"
+    },
+    "928": {
+        "english": "underline",
+        "chinese_trans": "在…下划线，强调",
+        "spell": "[ʌndəˈlaɪn]"
+    },
+    "929": {
+        "english": "understanding",
+        "chinese_trans": "理解，理解力",
+        "spell": "[ʌndəˈstændɪŋ]"
+    },
+    "930": {
+        "english": "unfair",
+        "chinese_trans": "不公平的",
+        "spell": "[ʌnˈfeə(r)]"
+    },
+    "931": {
+        "english": "uniform",
+        "chinese_trans": "一样的n.制服",
+        "spell": "[ˈjuːnɪfɔːm]"
+    },
+    "932": {
+        "english": "unique",
+        "chinese_trans": "唯一的",
+        "spell": "[jʊˈniːk]"
+    },
+    "933": {
+        "english": "unite",
+        "chinese_trans": "联合vt，使联合",
+        "spell": "[jʊˈnaɪt]"
+    },
+    "934": {
+        "english": "united",
+        "chinese_trans": "一致的，联合的",
+        "spell": "[ju'naɪtɪd]"
+    },
+    "935": {
+        "english": "universe",
+        "chinese_trans": "宇宙，世界",
+        "spell": "[ˈjuːnɪvɜːs]"
+    },
+    "936": {
+        "english": "unknown",
+        "chinese_trans": "未知的，不知名的",
+        "spell": "['ʌn'nəun]"
+    },
+    "937": {
+        "english": "unusual",
+        "chinese_trans": "不平常的，独特的",
+        "spell": "[ʌnˈjuːʒʊəl]"
+    },
+    "938": {
+        "english": "update",
+        "chinese_trans": "更新，使现代化n.现代化，更新",
+        "spell": "[ʌp'deɪt]"
+    },
+    "939": {
+        "english": "upset",
+        "chinese_trans": "使不适，使心烦n.混乱",
+        "spell": "[ʌpˈset]"
+    },
+    "940": {
+        "english": "upward",
+        "chinese_trans": "向上的，上升的ad.向上，往上",
+        "spell": "[ˈʌpwəd]"
+    },
+    "941": {
+        "english": "urban",
+        "chinese_trans": "都市的",
+        "spell": "[ˈɜːbən]"
+    },
+    "942": {
+        "english": "urgent",
+        "chinese_trans": "紧急的",
+        "spell": "[ˈɜːdʒənt]"
+    },
+    "943": {
+        "english": "usually",
+        "chinese_trans": "通常",
+        "spell": "[ˈjuːʒʊəlɪ]"
+    },
+    "944": {
+        "english": "valley",
+        "chinese_trans": "山谷，流域",
+        "spell": "[ˈvælɪ]"
+    },
+    "945": {
+        "english": "valuable",
+        "chinese_trans": "值钱的，有价值的n.贵重物品",
+        "spell": "[ˈvæljʊəb(ə)l]"
+    },
+    "946": {
+        "english": "variety",
+        "chinese_trans": "多样的，种类",
+        "spell": "[vəˈraɪətɪ]"
+    },
+    "947": {
+        "english": "various",
+        "chinese_trans": "各种各样的",
+        "spell": "[ˈveərɪəs]"
+    },
+    "948": {
+        "english": "vast",
+        "chinese_trans": "巨大的，广阔的",
+        "spell": "[vɑːst]"
+    },
+    "949": {
+        "english": "vehicle",
+        "chinese_trans": "车辆",
+        "spell": "[ˈviːhɪkl]"
+    },
+    "950": {
+        "english": "verb",
+        "chinese_trans": "动词",
+        "spell": "[vɝb]"
+    },
+    "951": {
+        "english": "victim",
+        "chinese_trans": "牺牲者，受害者",
+        "spell": "[ˈvɪktɪm]"
+    },
+    "952": {
+        "english": "view",
+        "chinese_trans": "看待，看n.见解，风景",
+        "spell": "[vjuː]"
+    },
+    "953": {
+        "english": "violent",
+        "chinese_trans": "猛烈的，狂暴的",
+        "spell": "[ˈvaɪələnt]"
+    },
+    "954": {
+        "english": "virus",
+        "chinese_trans": "病毒",
+        "spell": "[ˈvaɪərəs]"
+    },
+    "955": {
+        "english": "visa",
+        "chinese_trans": "鉴证，信用卡",
+        "spell": "[ˈviːzə]"
+    },
+    "956": {
+        "english": "volunteer",
+        "chinese_trans": "志愿者vt.志愿",
+        "spell": "[vɔlənˈtɪə(r)]"
+    },
+    "957": {
+        "english": "vote",
+        "chinese_trans": "选举，投票",
+        "spell": "[vəʊt]"
+    },
+    "958": {
+        "english": "voyage",
+        "chinese_trans": "航海vi.航海，航空",
+        "spell": "[ˈvɔɪɪdʒ]"
+    },
+    "959": {
+        "english": "wage",
+        "chinese_trans": "工资，报酬",
+        "spell": "[weɪdʒ]"
+    },
+    "960": {
+        "english": "waiter",
+        "chinese_trans": "侍者，服务员",
+        "spell": "[ˈweɪtə(r)]"
+    },
+    "961": {
+        "english": "waitress",
+        "chinese_trans": "女侍者，女服务员",
+        "spell": "['weitris]"
+    },
+    "962": {
+        "english": "wave",
+        "chinese_trans": "波，波涛，起伏vi.波动，挥手",
+        "spell": "[weɪv]"
+    },
+    "963": {
+        "english": "weakness",
+        "chinese_trans": "弱点",
+        "spell": "[ˈwiːknɪs]"
+    },
+    "964": {
+        "english": "web",
+        "chinese_trans": "（蜘蛛）网，网状物，网络",
+        "spell": "[web]"
+    },
+    "965": {
+        "english": "website  WWW",
+        "chinese_trans": "wedding",
+        "spell": "[websaɪt]"
+    },
+    "966": {
+        "english": "weed",
+        "chinese_trans": "杂草，野草vi.除草",
+        "spell": "[wiːd]"
+    },
+    "967": {
+        "english": "well-known",
+        "chinese_trans": "众所周知的",
+        "spell": "[wel- nəʊn]"
+    },
+    "968": {
+        "english": "whisper",
+        "chinese_trans": "低声细语vi.低于n.耳语，私语",
+        "spell": "[ˈwɪspə(r)]"
+    },
+    "969": {
+        "english": "whistle",
+        "chinese_trans": "口哨vi.吹口哨",
+        "spell": "['hwisl]"
+    },
+    "970": {
+        "english": "wild",
+        "chinese_trans": "野生的，野蛮的n.荒地",
+        "spell": "[waɪld]"
+    },
+    "971": {
+        "english": "willing",
+        "chinese_trans": "心甘情愿的",
+        "spell": "[ˈwɪlɪŋ]"
+    },
+    "972": {
+        "english": "wire",
+        "chinese_trans": "金属线，电缆",
+        "spell": "[ˈwaɪə(r)]"
+    },
+    "973": {
+        "english": "wipe",
+        "chinese_trans": "揩，擦n.揩，擦",
+        "spell": "[waɪp]"
+    },
+    "974": {
+        "english": "witness",
+        "chinese_trans": "证据，证人vt.目击",
+        "spell": "[ˈwɪtnɪs]"
+    },
+    "975": {
+        "english": "within",
+        "chinese_trans": "在…里面，不超过",
+        "spell": "[wɪˈðɪn]"
+    },
+    "976": {
+        "english": "wool",
+        "chinese_trans": "羊毛，毛线",
+        "spell": "[wul]"
+    },
+    "977": {
+        "english": "wooden",
+        "chinese_trans": "木制的，呆板的",
+        "spell": "[ˈwʊd(ə)n]"
+    },
+    "978": {
+        "english": "worst",
+        "chinese_trans": "最坏的",
+        "spell": "[wɜːst]"
+    },
+    "979": {
+        "english": "worse",
+        "chinese_trans": "更坏的ad.更坏",
+        "spell": "[wɜːs]"
+    },
+    "980": {
+        "english": "would",
+        "chinese_trans": "将，愿意",
+        "spell": "[ wʊd]"
+    },
+    "981": {
+        "english": "worthwhile",
+        "chinese_trans": "值得的",
+        "spell": "[wɜːθˈwaɪl]"
+    },
+    "982": {
+        "english": "youth",
+        "chinese_trans": "青春，青年",
+        "spell": "[juːθ]"
+    }
+}
