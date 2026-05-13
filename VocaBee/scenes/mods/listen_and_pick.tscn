@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://da02tf8u8xsll" path="res://scripts/mods/listen_and_pick.gd" id="1_ym3cr"]
 [ext_resource type="PackedScene" uid="uid://b1kmjixg0oo03" path="res://scenes/common/GameUI.tscn" id="2_gameui"]
+[ext_resource type="Texture2D" uid="uid://djsoknkyyf3v3" path="res://assets/LP_BG.png" id="2_usthq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ym3cr"]
 size = Vector2(1148, 453.00003)
@@ -9,16 +10,10 @@ size = Vector2(1148, 453.00003)
 [node name="ListenAndPick" type="Node2D" unique_id=1748296556]
 script = ExtResource("1_ym3cr")
 
-[node name="GameArea" type="Node2D" parent="." unique_id=1460004917]
-
-[node name="CardContainer" type="Node2D" parent="GameArea" unique_id=1068312351]
-
-[node name="Boundary" type="StaticBody2D" parent="GameArea" unique_id=270371083]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GameArea/Boundary" unique_id=514999187]
-position = Vector2(575, 420.5)
-rotation = -3.1415925
-shape = SubResource("RectangleShape2D_ym3cr")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1990586594]
+position = Vector2(578, 325)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("2_usthq")
 
 [node name="UILayer" type="CanvasLayer" parent="." unique_id=2095243323]
 
@@ -35,5 +30,16 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 24
 text = "点击正确的单词"
 horizontal_alignment = 1
+
+[node name="GameArea" type="Node2D" parent="." unique_id=1460004917]
+
+[node name="CardContainer" type="Node2D" parent="GameArea" unique_id=1068312351]
+
+[node name="Boundary" type="StaticBody2D" parent="GameArea" unique_id=270371083]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameArea/Boundary" unique_id=514999187]
+position = Vector2(575, 420.5)
+rotation = -3.1415925
+shape = SubResource("RectangleShape2D_ym3cr")
 
 [node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=550604048]

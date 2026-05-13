@@ -17,7 +17,7 @@ var current_target: Dictionary = {}
 var current_cards: Array[WordCard] = []
 var is_waiting_next_round: bool = false
 var _tts_voice_id: String = ""
-var use_timer_mode = false
+var use_timer_mode = true
 
 func _ready():
 	load_words()
@@ -82,6 +82,8 @@ func _start_new_round():
 	if words_list.is_empty():
 		return
 	is_waiting_next_round = false
+	if game_ui and game_ui.use_timer_mode:
+		game_ui.reset_timer()
 
 	# 1. 随机选择目标单词
 	var new_target = words_list[randi() % words_list.size()]

@@ -11,33 +11,6 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[sub_resource type="StyleBoxFlat" id="ButtonNormal"]
-bg_color = Color(1, 1, 1, 0.8)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.7, 0.7, 0.7, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2saa7"]
-bg_color = Color(1, 1, 1, 0.8)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
-[sub_resource type="StyleBoxFlat" id="ButtonHover"]
-bg_color = Color(0.9, 0.9, 0.95, 1)
-border_color = Color(0.4, 0.6, 1, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
 [sub_resource type="StyleBoxFlat" id="StatusStyle"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
@@ -51,6 +24,26 @@ corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="ButtonNormal"]
+bg_color = Color(1, 1, 1, 0.8)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.7, 0.7, 0.7, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ButtonHover"]
+bg_color = Color(0.9, 0.9, 0.95, 1)
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="GameUI" type="Control" unique_id=976897839]
 layout_mode = 3
@@ -97,16 +90,6 @@ size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 28
 text = "Score: 0"
 horizontal_alignment = 2
-
-[node name="BackButton" type="Button" parent="TopBar/TopContent/HBox" unique_id=1314074813]
-custom_minimum_size = Vector2(100, 48)
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 18
-theme_override_styles/normal = SubResource("ButtonNormal")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_2saa7")
-theme_override_styles/hover = SubResource("ButtonHover")
-text = "BACK"
 
 [node name="StatusPanel" type="Panel" parent="." unique_id=750926190]
 layout_mode = 0

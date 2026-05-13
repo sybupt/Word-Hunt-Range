@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnibv31lralv8"]
 
 [ext_resource type="Script" uid="uid://bj55v7i0jjoep" path="res://scripts/mods/scene_game_mode.gd" id="1_ie2el"]
-[ext_resource type="Texture2D" uid="uid://d2688pbaa3qkn" path="res://assets/scene_imgs/bedroom.png" id="2_ie2el"]
+[ext_resource type="Texture2D" uid="uid://d3rjtimlo2w5w" path="res://assets/scene_imgs/bathroom.png" id="2_7bx6h"]
 [ext_resource type="PackedScene" uid="uid://nf3arlu8boi2" path="res://scenes/common/back.tscn" id="3_7bx6h"]
 
 [node name="SceneGameMode" type="Control" unique_id=1865487698]
@@ -38,7 +38,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.41, 0.41)
 mouse_filter = 2
-texture = ExtResource("2_ie2el")
+texture = ExtResource("2_7bx6h")
 stretch_mode = 2
 
 [node name="Top" type="Panel" parent="." unique_id=696450142]

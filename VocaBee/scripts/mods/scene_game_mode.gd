@@ -16,7 +16,7 @@ const WORD_CARD_SCENE := preload("res://scenes/common/WordCard.tscn")
 const SCENE_DATA_DIR := "res://data/scene_data/"
 
 const DEFAULT_DISTRACTOR_COUNT := 4      # 最多尝试生成多少个干扰词
-const CARD_ALPHA := 0.78
+const CARD_ALPHA := 0.65
 const MAX_CORRECT_OFFSET := 120.0        # 正确词微调半径
 const MAX_DISTRACTOR_OFFSET := 120.0     # 干扰词微调半径（可以相同或稍大）
 const PLACE_MAX_TRIES := 60              # 微调尝试次数
@@ -29,7 +29,6 @@ var scene_files: Array[String] = []
 var scene_index: int = 0
 var scene_data: Dictionary = {}
 var annotation_keys: Array[String] = []
-var word_index: int = 0
 
 var current_english: String = ""
 var current_chinese: String = ""
@@ -91,22 +90,23 @@ func _load_scene(index: int) -> void:
 	for k in raw_keys:
 		annotation_keys.append(str(k))
 	annotation_keys.shuffle()
-	word_index = 0
 
 	# 构建所有英文的列表（用于干扰词池）
 	all_english_pool.clear()
 	for key in annotation_keys:
 		all_english_pool.append(key)
 
-	await _load_word(word_index)
+	await _load_word()
 
-func _load_word(index: int) -> void:
-	if index >= annotation_keys.size():
+func _load_word() -> void:
+	# 队列为空才切换场景
+	if annotation_keys.is_empty():
 		scene_index += 1
 		await _load_scene(scene_index)
 		return
 
-	current_english = annotation_keys[index]
+	# 从队列头部取出第一个单词
+	current_english = annotation_keys.pop_front()
 	var ann: Dictionary = scene_data["annotations"][current_english] as Dictionary
 	current_chinese = str(ann["chinese"])
 
@@ -247,12 +247,18 @@ func _clamp_to_screen(pos: Vector2, card_size: Vector2, screen_rect: Rect2, top_
 func _on_card_clicked(card_text: String, card: WordCard, card_english: String) -> void:
 	if card_english == current_english:
 		# 正确：进入下一个单词
-		word_index += 1
-		await _load_word(word_index)
+		await _load_word()
 	else:
 		# 错误：只移除该卡片
 		card.queue_free()
 		_flash_label_red()
+		# 先把【答错的这个单词】加入队尾
+		if not annotation_keys.has(card_english):
+			annotation_keys.append(card_english)
+
+		# 再把【当前正确单词】加入队尾
+		if not annotation_keys.has(current_english):
+			annotation_keys.append(current_english)
 
 func _flash_label_red() -> void:
 	var tween = create_tween()

@@ -1,0 +1,77 @@
+{
+	"image_path": "res://assets/scene_imgs/bathroom.png",
+	"annotations": {
+		"soap": {
+			"pos": [
+				[
+					844,
+					1029
+				]
+			],
+			"chinese": "香皂"
+		},
+		"towel": {
+			"pos": [
+				[
+					908,
+					1204
+				]
+			],
+			"chinese": "毛巾"
+		},
+		"toothbrush": {
+			"pos": [
+				[
+					1449,
+					891
+				]
+			],
+			"chinese": "牙刷"
+		},
+		"toothpaste": {
+			"pos": [
+				[
+					1900,
+					1026
+				]
+			],
+			"chinese": "牙膏"
+		},
+		"mirror": {
+			"pos": [
+				[
+					1016,
+					290
+				]
+			],
+			"chinese": "镜子"
+		},
+		"cabinet": {
+			"pos": [
+				[
+					1772,
+					1435
+				]
+			],
+			"chinese": "洗手柜"
+		},
+		"tile": {
+			"pos": [
+				[
+					248,
+					714
+				]
+			],
+			"chinese": "瓷砖"
+		},
+		"window": {
+			"pos": [
+				[
+					2559,
+					224
+				]
+			],
+			"chinese": "窗户"
+		}
+	}
+}

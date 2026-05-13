@@ -1,0 +1,141 @@
+{
+  "image_path": "res://assets/scene_imgs/stationery shop.png",
+  "annotations": {
+    "pen": {
+      "pos": [
+        [
+          938,
+          580
+        ],
+        [
+          715,
+          613
+        ]
+      ],
+      "chinese": "钢笔"
+    },
+    "pencil": {
+      "pos": [
+        [
+          1394,
+          669
+        ]
+      ],
+      "chinese": "铅笔"
+    },
+    "ruler": {
+      "pos": [
+        [
+          1387,
+          451
+        ],
+        [
+          1628,
+          512
+        ],
+        [
+          1807,
+          537
+        ]
+      ],
+      "chinese": "尺子"
+    },
+    "eraser": {
+      "pos": [
+        [
+          891,
+          934
+        ],
+        [
+          1117,
+          913
+        ],
+        [
+          1375,
+          883
+        ],
+        [
+          1570,
+          859
+        ]
+      ],
+      "chinese": "橡皮"
+    },
+    "colored pencil": {
+      "pos": [
+        [
+          2018,
+          509
+        ]
+      ],
+      "chinese": "彩铅"
+    },
+    "highlighter": {
+      "pos": [
+        [
+          1586,
+          1113
+        ]
+      ],
+      "chinese": "荧光笔"
+    },
+    "notebook": {
+      "pos": [
+        [
+          1872,
+          1024
+        ]
+      ],
+      "chinese": "笔记本"
+    },
+    "book": {
+      "pos": [
+        [
+          2279,
+          988
+        ]
+      ],
+      "chinese": "书"
+    },
+    "pen holder": {
+      "pos": [
+        [
+          2034,
+          671
+        ]
+      ],
+      "chinese": "笔筒"
+    },
+    "schoolbag": {
+      "pos": [
+        [
+          476,
+          1144
+        ]
+      ],
+      "chinese": "书包"
+    },
+    "shelf": {
+      "pos": [
+        [
+          436,
+          211
+        ],
+        [
+          1488,
+          958
+        ]
+      ],
+      "chinese": "货架"
+    },
+    "storage box": {
+      "pos": [
+        [
+          89,
+          1099
+        ]
+      ],
+      "chinese": "收纳盒"
+    }
+  }
+}

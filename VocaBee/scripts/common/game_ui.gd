@@ -15,7 +15,7 @@ class_name GameUI
 # ========== 导出变量（可在检查器中调整） ==========
 @export var game_type_name: String = "WORD GAME"   # true=计时器模式, false=血量模式
 @export var initial_health: int = 3
-@export var initial_time: float = 60.0
+@export var initial_time: float = 10.0
 @export var score_per_correct: int = 10
 
 # ========== 内部状态 ==========
@@ -124,20 +124,27 @@ func pause_timer():
 	if use_timer_mode:
 		timer_node.stop()
 
-## 重置整个游戏（分数、血量/时间、隐藏结束弹窗）
+# 修正 reset_timer
+func reset_timer():
+	if not use_timer_mode:
+		return
+	timer_node.stop()
+	current_time = initial_time
+	_update_timer_display()
+	if is_game_active:
+		timer_node.start(1.0)
+
+# 修正 reset_game
 func reset_game():
 	is_game_active = true
 	game_over_panel.visible = false
 	current_score = 0
 	_update_score_display()
 	if use_timer_mode:
-		current_time = initial_time
-		_update_timer_display()
-		timer_node.start(1.0)
+		reset_timer()
 	else:
 		current_health = initial_health
 		_update_health_display()
-	# 发出重试信号，方便上层场景重置自己的逻辑
 	restart_pressed.emit()
 
 ## 动态修改游戏类型名称
