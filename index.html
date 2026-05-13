@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Word-Hunt-Range - 结合硬件和游戏的英语词汇学习平台">
+    <title>Word-Hunt-Range - 英语学习解决方案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --accent-color: #f093fb;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+        }
+
+        /* ===== 导航栏 ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            margin-top: 70px;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* ===== 主容器 ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== 产品展示 ===== */
+        .products {
+            padding: 100px 20px;
+            background: var(--bg-light);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            margin: 15px auto 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .product-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .product-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .features-list li {
+            padding: 10px 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            margin-right: 12px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* ===== 功能特性 ===== */
+        .features {
+            padding: 100px 20px;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .feature-content h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .feature-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        .feature-list li::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .feature-image {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            border-radius: 15px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* ===== 规格对比 ===== */
+        .comparison {
+            padding: 80px 20px;
+            background: var(--bg-light);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background: var(--bg-light);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* ===== 技术栈 ===== */
+        .tech-stack {
+            padding: 100px 20px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-light);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-item:hover {
+            transform: scale(1.05);
+        }
+
+        .tech-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .tech-item h4 {
+            font-size: 16px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .tech-item p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* ===== CTA Section ===== */
+        .cta-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #4a5568;
+        }
+
+        /* ===== 响应式设计 ===== */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .feature-image {
+                height: 200px;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .products-grid {
+                gap: 20px;
+            }
+
+            .product-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== 导航栏 ===== -->
+    <header>
+        <nav>
+            <div class="logo">🎯 Word-Hunt-Range</div>
+            <ul class="nav-links">
+                <li><a href="#products">产品</a></li>
+                <li><a href="#features">功能</a></li>
+                <li><a href="#tech">技术</a></li>
+                <li><a href="#contact">联系</a></li>
+                <li><a href="https://github.com" class="cta-button">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>智能硬件 × 趣味游戏</h1>
+            <p>结合 AirMouse 无线交互设备与 VocaBee 英语学习平台，打造全新的词汇学习体验</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">了解产品</a>
+                <a href="https://github.com/sybupt/Word-Hunt-Range" class="btn-secondary">查看代码</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 产品展示 ===== -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">我们的产品</h2>
+
+            <div class="products-grid">
+                <!-- AirMouse -->
+                <div class="product-card">
+                    <div class="product-icon">🖱️</div>
+                    <h2>AirMouse</h2>
+                    <p>基于 ESP32 的无线交互设备，采用陀螺仪传感器技术，提供精确的光标控制和自然的人机交互体验。</p>
+                    <ul class="features-list">
+                        <li>基于 ESP32 微控制器</li>
+                        <li>6轴陀螺仪 + 加速度计</li>
+                        <li>蓝牙 LE 无线连接</li>
+                        <li>电池管理和低功耗设计</li>
+                        <li>PlatformIO 开发框架</li>
+                    </ul>
+                </div>
+
+                <!-- VocaBee -->
+                <div class="product-card">
+                    <div class="product-icon">🐝</div>
+                    <h2>VocaBee</h2>
+                    <p>一个引人入胜的英语词汇学习平台，采用 Godot 4.6 引擎开发，提供多种互动游戏模式和丰富的学习内容。</p>
+                    <ul class="features-list">
+                        <li>Godot 4.6 现代游戏引擎</li>
+                        <li>多种游戏模式</li>
+                        <li>6大词汇集合</li>
+                        <li>15个实景场景</li>
+                        <li>智能布局算法</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 功能特性 ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+
+            <!-- AirMouse Features -->
+            <div class="features-container">
+                <div>
+                    <h3>🎮 AirMouse - 智能交互</h3>
+                    <p>AirMouse 是一个创新的无线鼠标设备，通过陀螺仪传感器捕捉手部运动，提供自然直观的光标控制体验。完美适配 VocaBee 游戏，让学习变得更加互动有趣。</p>
+                    <ul class="feature-list">
+                        <li>实时陀螺仪数据处理</li>
+                        <li>死区和平滑过滤算法</li>
+                        <li>按键交互控制</li>
+                        <li>电池电量实时监测</li>
+                        <li>蓝牙设备配对</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <div style="text-align: center;">
+                        <div style="font-size: 60px;">🖱️</div>
+                        <div style="font-size: 14px; margin-top: 10px;">ESP32 + 陀螺仪</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VocaBee Features -->
+            <div class="features-container">
+                <div class="feature-image">
+                    <div style="text-align: center;">
+                        <div style="font-size: 60px;">🐝</div>
+                        <div style="font-size: 14px; margin-top: 10px;">Godot 4.6 引擎</div>
+                    </div>
+                </div>
+                <div>
+                    <h3>📚 VocaBee - 趣味学习</h3>
+                    <p>VocaBee 是一个完整的英语学习生态，整合了音频识别、场景识别、评分系统等多个功能模块，让用户在游戏中自然获取词汇知识。</p>
+                    <ul class="feature-list">
+                        <li>听音选词游戏模式</li>
+                        <li>场景探索互动学习</li>
+                        <li>6个专业词汇集合</li>
+                        <li>动态卡片布局系统</li>
+                        <li>评分和成就系统</li>
+                        <li>文本转语音发音</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 规格对比 ===== -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">产品规格对比</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>特性</th>
+                        <th>AirMouse</th>
+                        <th>VocaBee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>开发框架</strong></td>
+                        <td>PlatformIO / Arduino</td>
+                        <td>Godot 4.6</td>
+                    </tr>
+                    <tr>
+                        <td><strong>主要硬件</strong></td>
+                        <td>ESP32, MPU6050, 蓝牙模块</td>
+                        <td>跨平台支持</td>
+                    </tr>
+                    <tr>
+                        <td><strong>通信协议</strong></td>
+                        <td>蓝牙 LE</td>
+                        <td>本地游戏引擎</td>
+                    </tr>
+                    <tr>
+                        <td><strong>主要功能</strong></td>
+                        <td>无线光标控制</td>
+                        <td>游戏化学习</td>
+                    </tr>
+                    <tr>
+                        <td><strong>数据支持</strong></td>
+                        <td>传感器数据</td>
+                        <td>6大词汇集合 + 场景数据</td>
+                    </tr>
+                    <tr>
+                        <td><strong>目标用户</strong></td>
+                        <td>交互设备使用者</td>
+                        <td>英语学习者</td>
+                    </tr>
+                    <tr>
+                        <td><strong>开源</strong></td>
+                        <td>✓ MIT License</td>
+                        <td>✓ MIT License</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===== 技术栈 ===== -->
+    <section class="tech-stack" id="tech">
+        <div class="container">
+            <h2 class="section-title">技术栈</h2>
+            <div class="tech-grid">
+                <!-- 硬件技术 -->
+                <div class="tech-item">
+                    <div class="tech-icon">⚙️</div>
+                    <h4>硬件</h4>
+                    <p>ESP32, MPU6050 陀螺仪, Arduino框架</p>
+                </div>
+
+                <!-- 游戏引擎 -->
+                <div class="tech-item">
+                    <div class="tech-icon">🎮</div>
+                    <h4>游戏引擎</h4>
+                    <p>Godot 4.6, GDScript脚本语言</p>
+                </div>
+
+                <!-- 数据处理 -->
+                <div class="tech-item">
+                    <div class="tech-icon">📊</div>
+                    <h4>数据处理</h4>
+                    <p>JSON数据格式, Python工具脚本</p>
+                </div>
+
+                <!-- 通信协议 -->
+                <div class="tech-item">
+                    <div class="tech-icon">📡</div>
+                    <h4>通信</h4>
+                    <p>蓝牙LE, 无线传输协议</p>
+                </div>
+
+                <!-- 算法 -->
+                <div class="tech-item">
+                    <div class="tech-icon">🧮</div>
+                    <h4>算法</h4>
+                    <p>动态布局, 平滑过滤, 碰撞检测</p>
+                </div>
+
+                <!-- 跨平台 -->
+                <div class="tech-item">
+                    <div class="tech-icon">💻</div>
+                    <h4>跨平台</h4>
+                    <p>Windows, macOS, Linux支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA Section ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>准备好开始了吗？</h2>
+            <p>访问我们的 GitHub 仓库，查看完整代码、文档和快速开始指南</p>
+            <button class="btn-primary">访问 GitHub</button>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于项目</h4>
+                <p>Word-Hunt-Range 是一个融合硬件设计和软件开发的创新学习项目，致力于打造更好的英语学习体验。</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#products">产品</a></li>
+                    <li><a href="#features">功能</a></li>
+                    <li><a href="#tech">技术</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>子项目</h4>
+                <ul>
+                    <li><a href="#airmouse">AirMouse</a></li>
+                    <li><a href="https://github.com/Euler-lne/Vocabulary_Bee">VocaBee</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="mailto:contact@example.com">Email</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                    <li><a href="#">博客</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Word-Hunt-Range. All rights reserved. |
+                <a href="#">隐私政策</a> |
+                <a href="#">服务条款</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            }
+        });
+
+        // CTA 按钮跳转
+        document.querySelector('.cta-section .btn-primary').addEventListener('click', function () {
+            window.location.href = 'https://github.com/yourusername/Word-Hunt-Range';
+        });
+    </script>
+</body>
+
+</html>
