@@ -1,5 +1,10 @@
 # 🔫 WordTarget-Python - 单词射击游戏
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Pygame)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+[English](README_EG.md) | [中文](README.md)
+
 从蓝牙体感枪到单词射击——用真正的“枪”瞄准、射击、学单词
 
 ## 🔥 更新
