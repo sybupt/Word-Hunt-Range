@@ -27,6 +27,152 @@
             --video-radius: 28px;
         }
 
+        .dark-theme {
+            --primary-color: #9ca8c4;
+            --secondary-color: #65708f;
+            --accent-color: #a9b5d6;
+            --text-dark: #eef1fb;
+            --text-light: #aab1ca;
+            --bg-light: #10131c;
+            --bg-white: #171d2d;
+            --border-color: #2b3249;
+            --shadow: 0 18px 48px rgba(0, 0, 0, 0.48);
+            --shadow-hover: 0 30px 80px rgba(0, 0, 0, 0.55);
+        }
+
+        .dark-theme header {
+            background: rgba(10, 14, 24, 0.98);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .dark-theme .logo {
+            color: #f8fbff;
+            background: none;
+            -webkit-text-fill-color: #f8fbff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+        }
+
+        .dark-theme .nav-links a {
+            color: var(--text-light);
+        }
+
+        .dark-theme .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .dark-theme .cta-button {
+            background: linear-gradient(135deg, #6d7797, #4c5672);
+        }
+
+        .dark-theme .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-dark);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .dark-theme .download {
+            background: linear-gradient(135deg, #0f1321 0%, #161b2d 100%);
+        }
+
+        .dark-theme .download-card,
+        .dark-theme .product-card,
+        .dark-theme .comparison-table,
+        .dark-theme .tech-item,
+        .dark-theme .feature-image,
+        .dark-theme .footer,
+        .dark-theme .cta-section,
+        .dark-theme .video-showcase {
+            background: rgba(20, 26, 44, 0.95);
+        }
+
+        .dark-theme .download-card,
+        .dark-theme .product-card,
+        .dark-theme .tech-item,
+        .dark-theme .comparison-table,
+        .dark-theme .feature-image {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .dark-theme .comparison-table th,
+        .dark-theme .comparison-table td,
+        .dark-theme .download-card h3,
+        .dark-theme .download-card p,
+        .dark-theme .product-card h2,
+        .dark-theme .product-card p,
+        .dark-theme .feature-content p,
+        .dark-theme .feature-list li,
+        .dark-theme .tech-item h4,
+        .dark-theme .tech-item p,
+        .dark-theme .video-caption,
+        .dark-theme .footer-section p,
+        .dark-theme .footer-section a,
+        .dark-theme .footer-bottom {
+            color: var(--text-light);
+        }
+
+        .dark-theme .comparison-table th {
+            background: rgba(18, 24, 40, 0.96);
+            color: var(--text-dark);
+        }
+
+        .dark-theme .comparison-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .dark-theme .video-container {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .dark-theme .video-wrapper {
+            background: #081021;
+        }
+
+        .dark-theme .tech-item:hover {
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .dark-theme footer {
+            background: #05060c;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+        }
+
+        .dark-theme .footer-content {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 28px;
+            margin-bottom: 24px;
+        }
+
+        .dark-theme .footer-section h4 {
+            color: #f4f7ff;
+        }
+
+        .dark-theme footer a {
+            color: #b8c4e4;
+        }
+
+        .dark-theme footer a:hover {
+            color: #ffffff;
+        }
+
+        .dark-theme .theme-toggle {
+            background: rgba(255, 255, 255, 0.12);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .dark-theme .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .dark-theme .hero {
+            background: linear-gradient(135deg, #10131d 0%, #161c2e 100%);
+        }
+
+        .dark-theme .hero::before {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             color: var(--text-dark);
@@ -53,7 +199,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 18px;
             height: 70px;
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -100,6 +248,36 @@
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow);
+        }
+
+        .theme-toggle {
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--text-dark);
+            padding: 8px 18px;
+            border-radius: 40px;
+            border: 1px solid rgba(102, 126, 234, 0.24);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-weight: 600;
+            white-space: nowrap;
+            min-width: 128px;
+        }
+
+        .theme-toggle:hover {
+            background: white;
+            color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.16);
+        }
+
+        .dark-theme .theme-toggle {
+            background: rgba(255, 255, 255, 0.14);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .dark-theme .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.22);
+            color: white;
         }
 
         /* ===== Hero Section ===== */
@@ -729,6 +907,7 @@
                 <li><a href="https://github.com/sybupt/Word-Hunt-Range" class="cta-button" target="_blank">GitHub</a>
                 </li>
             </ul>
+            <button id="theme-toggle" class="theme-toggle" type="button">深色模式</button>
         </nav>
     </header>
 
@@ -736,7 +915,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>智能硬件 × 趣味游戏</h1>
-            <p>结合 AirMouse 无线交互设备与 VocaBee 英语学习平台，打造全新的词汇学习体验</p>
+            <p>结合 AirGun 无线交互设备与 WordTarget 英语学习平台，打造全新的词汇学习体验</p>
             <div class="hero-buttons">
                 <a href="#products" class="btn-primary">了解产品</a>
                 <a href="#download" class="btn-secondary">下载体验</a>
@@ -750,11 +929,11 @@
         <div class="container">
             <h2 class="section-title">我们的产品</h2>
             <div class="products-grid">
-                <!-- AirMouse -->
+                <!-- AirGun -->
                 <div class="product-card">
-                    <div class="product-icon">🖱️</div>
-                    <h2>AirMouse</h2>
-                    <p>基于 ESP32 的无线交互设备，采用陀螺仪传感器技术，提供精确的光标控制和自然的人机交互体验。</p>
+                    <div class="product-icon">🔫</div>
+                    <h2>AirGun</h2>
+                    <p>基于 ESP32 的无线交互设备，采用陀螺仪传感器和按键输入，提供精准的方向控制和自然的游戏操作体验。</p>
                     <ul class="features-list">
                         <li>基于 ESP32 微控制器</li>
                         <li>6轴陀螺仪 + 加速度计</li>
@@ -764,10 +943,10 @@
                     </ul>
                 </div>
 
-                <!-- VocaBee -->
+                <!-- WordTarget -->
                 <div class="product-card">
-                    <div class="product-icon">🐝</div>
-                    <h2>VocaBee</h2>
+                    <div class="product-icon">🎯</div>
+                    <h2>WordTarget</h2>
                     <p>一个引人入胜的英语词汇学习平台，采用 Godot 4.6 引擎开发，提供多种互动游戏模式和丰富的学习内容。</p>
                     <ul class="features-list">
                         <li>Godot 4.6 现代游戏引擎</li>
@@ -793,7 +972,7 @@
                     </video>
                 </div>
                 <div class="video-caption">
-                    🎬 <span>AirMouse + VocaBee 联动体验</span> | 沉浸式英语学习新维度
+                    🎬 <span>AirGun + WordTarget 联动体验</span> | 沉浸式英语学习新维度
                 </div>
             </div>
         </div>
@@ -803,11 +982,11 @@
     <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">核心功能</h2>
-            <!-- AirMouse 特性 -->
+            <!-- AirGun 特性 -->
             <div class="features-container">
                 <div>
-                    <h3>🎮 AirMouse - 智能交互</h3>
-                    <p>AirMouse 是一个创新的无线鼠标设备，通过陀螺仪传感器捕捉手部运动，提供自然直观的光标控制体验。完美适配 VocaBee 游戏，让学习变得更加互动有趣。</p>
+                    <h3>🎮 AirGun - 智能交互</h3>
+                    <p>AirGun 是一个创新的无线交互设备，通过陀螺仪传感器捕捉手部运动，并支持按键操作，提供自然直观的方向控制和游戏动作体验。完美适配 WordTarget 游戏，让学习变得更加互动有趣。</p>
                     <ul class="feature-list">
                         <li>实时陀螺仪数据处理</li>
                         <li>死区和平滑过滤算法</li>
@@ -818,22 +997,22 @@
                 </div>
                 <div class="feature-image">
                     <div style="text-align: center;">
-                        <div style="font-size: 60px;">🖱️</div>
+                        <div style="font-size: 60px;">🔫</div>
                         <div style="font-size: 14px; margin-top: 10px;">ESP32 + 高精度陀螺仪</div>
                     </div>
                 </div>
             </div>
-            <!-- VocaBee 特性 -->
+            <!-- WordTarget 特性 -->
             <div class="features-container">
                 <div class="feature-image">
                     <div style="text-align: center;">
-                        <div style="font-size: 60px;">🐝</div>
+                        <div style="font-size: 60px;">🎯</div>
                         <div style="font-size: 14px; margin-top: 10px;">Godot 4.6 引擎 互动学习</div>
                     </div>
                 </div>
                 <div>
-                    <h3>📚 VocaBee - 趣味学习</h3>
-                    <p>VocaBee 是一个完整的英语学习生态，整合了文本转语音、场景识别、评分系统等多个功能模块，让用户在游戏中自然获取词汇知识。</p>
+                    <h3>📚 WordTarget - 趣味学习</h3>
+                    <p>WordTarget 是一个完整的英语学习生态，整合了文本转语音、场景识别、评分系统等多个功能模块，让用户在游戏中自然获取词汇知识。</p>
                     <ul class="feature-list">
                         <li>听音选词游戏模式</li>
                         <li>场景探索互动学习</li>
@@ -855,8 +1034,8 @@
                 <thead>
                     <tr>
                         <th>特性</th>
-                        <th>AirMouse</th>
-                        <th>VocaBee</th>
+                        <th>AirGun</th>
+                        <th>WordTarget</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -877,7 +1056,7 @@
                     </tr>
                     <tr>
                         <td><strong>主要功能</strong></td>
-                        <td>无线光标控制</td>
+                        <td>无线方向控制与按键交互</td>
                         <td>游戏化学习</td>
                     </tr>
                     <tr>
@@ -943,11 +1122,12 @@
     <section class="download" id="download">
         <div class="container">
             <h2 class="section-title">下载与在线体验</h2>
-            <p class="download-intro">立即获取 VocaBee 的本地版本，或者直接访问在线试玩页面。我们为 Windows、Android 和网页版体验提供统一入口，帮助你快速进入学习状态。</p>
+            <p class="download-intro">立即获取 WordTarget 的本地版本，或者直接访问在线试玩页面。我们为 Windows、Android 和网页版体验提供统一入口，帮助你快速进入学习状态。
+            </p>
             <div class="download-grid">
                 <div class="download-card">
                     <h3>Windows 版下载</h3>
-                    <p>获取适配 Windows 的 VocaBee 安装包，直接运行游戏即可开始词汇挑战。</p>
+                    <p>获取适配 Windows 的 WordTarget 安装包，直接运行游戏即可开始词汇挑战。</p>
                     <a href="https://github.com/sybupt/Word-Hunt-Range/releases" target="_blank"
                         class="btn-download">前往下载</a>
                 </div>
@@ -996,8 +1176,8 @@
             <div class="footer-section">
                 <h4>子项目</h4>
                 <ul>
-                    <li><a href="#">AirMouse (硬件)</a></li>
-                    <li><a href="https://github.com/Euler-lne/Vocabulary_Bee" target="_blank">VocaBee →</a></li>
+                    <li><a href="#">AirGun (硬件)</a></li>
+                    <li><a href="https://github.com/Euler-lne/Vocabulary_Bee" target="_blank">WordTarget →</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -1059,6 +1239,29 @@
                 }
             });
         }
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('wh-theme');
+        const body = document.body;
+
+        function updateTheme(name) {
+            if (name === 'dark') {
+                body.classList.add('dark-theme');
+                themeToggle.textContent = '浅色模式';
+            } else {
+                body.classList.remove('dark-theme');
+                themeToggle.textContent = '深色模式';
+            }
+            localStorage.setItem('wh-theme', name);
+        }
+
+        if (currentTheme === 'dark') {
+            updateTheme('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
+        });
     </script>
 </body>
 
