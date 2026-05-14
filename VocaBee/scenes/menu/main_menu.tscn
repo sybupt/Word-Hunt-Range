@@ -186,7 +186,7 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 0.8)
 theme_override_font_sizes/font_size = 10
-text = "v1.0.0 - Made by Yanel"
+text = "v0.1.0 - Made by Euler"
 horizontal_alignment = 2
 
 [node name="AmbientLight" type="ColorRect" parent="." unique_id=1777978767]
