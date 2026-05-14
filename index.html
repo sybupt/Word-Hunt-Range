@@ -380,7 +380,7 @@
             line-height: 1.8;
         }
 
-        /* ===== 修改：下载网格强制一行4列（桌面端） ===== */
+        /* 下载网格：桌面端4列，中等屏2列，手机1列（原样保留） */
         .download-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -462,9 +462,10 @@
             border-radius: 2px;
         }
 
+        /* 关键修改：固定三列，保证三个卡片一行 */
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-bottom: 20px;
         }
@@ -538,7 +539,7 @@
             flex-shrink: 0;
         }
 
-        /* ===== 视频展示区 (新增，美观沉浸) ===== */
+        /* ===== 视频展示区 ===== */
         .video-showcase {
             padding: 80px 20px;
             background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
@@ -557,7 +558,6 @@
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
-            /* 16:9 比例 */
             height: 0;
             overflow: hidden;
             border-radius: var(--video-radius);
@@ -573,7 +573,6 @@
             object-fit: cover;
             border-radius: var(--video-radius);
             box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.25);
-            transition: all 0.3;
         }
 
         .video-caption {
@@ -685,7 +684,7 @@
             background: var(--bg-light);
         }
 
-        /* ===== 技术栈 (优化网格布局，固定列数解决第二行不满问题) ===== */
+        /* ===== 技术栈 ===== */
         .tech-stack {
             padding: 100px 20px;
             background: var(--bg-white);
@@ -800,7 +799,6 @@
 
         /* ===== 响应式 ===== */
         @media (max-width: 1200px) {
-            /* 中等屏幕：下载卡片改为2列 */
             .download-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -810,6 +808,10 @@
             .tech-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 25px;
+            }
+            /* 平板下产品卡片改为两列 */
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -824,11 +826,6 @@
 
             .hero p {
                 font-size: 18px;
-            }
-
-            .products-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
             }
 
             .features-container {
@@ -867,14 +864,16 @@
         }
 
         @media (max-width: 550px) {
-            /* 小屏幕：下载卡片改为1列 */
             .download-grid {
                 grid-template-columns: 1fr;
             }
-
             .tech-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
+            }
+            /* 手机下产品卡片改为一列 */
+            .products-grid {
+                grid-template-columns: 1fr;
             }
 
             .logo {
@@ -986,7 +985,7 @@
         </div>
     </section>
 
-    <!-- ========= 新增视频展示区 (美观留出位置，展示 demo.mp4) ========= -->
+    <!-- 视频展示区 -->
     <section class="video-showcase" id="demo-video">
         <div class="container">
             <h2 class="section-title">产品实机演示</h2>
@@ -1105,7 +1104,7 @@
         </div>
     </section>
 
-    <!-- 技术栈 (优化网格，严格3列布局，杜绝最后一行缺位) -->
+    <!-- 技术栈 -->
     <section class="tech-stack" id="tech">
         <div class="container">
             <h2 class="section-title">技术栈 · 生态</h2>
@@ -1231,7 +1230,7 @@
     </footer>
 
     <script>
-        // 平滑滚动（支持所有锚点，包括新增的演示视频）
+        // 平滑滚动（支持所有锚点）
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
@@ -1257,7 +1256,6 @@
             }
         });
 
-        // 可选：若视频加载失败时显示友好提醒（控制台不报错即可）
         const demoVideo = document.querySelector('.video-wrapper video');
         if (demoVideo) {
             demoVideo.addEventListener('error', () => {
