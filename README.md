@@ -2,6 +2,8 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+[English](README_EG.md) | [中文](README.md)
+
 **Word-Hunt-Range** 是一个完整的单词学习生态系统，由三个子项目组成：蓝牙体感枪硬件驱动 `AirGun`、基于 Godot 引擎的跨平台游戏 `VocaBee`，以及基于 Python/Pygame 的轻量级游戏 `WordTarget-Python`。  
 该项目旨在通过体感交互和趣味游戏，让英语词汇学习变得生动、高效。
 
