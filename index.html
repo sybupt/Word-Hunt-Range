@@ -380,9 +380,10 @@
             line-height: 1.8;
         }
 
+        /* ===== 修改：下载网格强制一行4列（桌面端） ===== */
         .download-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 26px;
             align-items: stretch;
         }
@@ -572,7 +573,7 @@
             object-fit: cover;
             border-radius: var(--video-radius);
             box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.25);
-            transition: all 0.3s;
+            transition: all 0.3;
         }
 
         .video-caption {
@@ -798,6 +799,13 @@
         }
 
         /* ===== 响应式 ===== */
+        @media (max-width: 1200px) {
+            /* 中等屏幕：下载卡片改为2列 */
+            .download-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 900px) {
             .tech-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -859,6 +867,11 @@
         }
 
         @media (max-width: 550px) {
+            /* 小屏幕：下载卡片改为1列 */
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
             .tech-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -1142,6 +1155,12 @@
                     <p>无需安装，直接进入网页版试玩页面。适合想快速测试游戏体验的用户。</p>
                     <a href="./assets/releases/Web/Vocabee.html" target="_blank" class="btn-download">访问在线页面</a>
                 </div>
+                <div class="download-card">
+                    <h3>Python 版本 Windows 版下载</h3>
+                    <p>获取适配 Windows 的 WordTarget Python版安装包。</p>
+                    <a href="./assets/releases/WordTarget-Python.exe" target="_blank"
+                        class="btn-download">前往下载</a>
+                </div>
             </div>
         </div>
     </section>
@@ -1176,8 +1195,9 @@
             <div class="footer-section">
                 <h4>子项目</h4>
                 <ul>
-                    <li><a href="#">AirGun (硬件)</a></li>
+                    <li><a href="https://github.com/PzkpfwIVH/AirGun.git" target="_blank">AirGun (硬件)</a></li>
                     <li><a href="https://github.com/Euler-lne/Vocabulary_Bee" target="_blank">WordTarget →</a></li>
+                    <li><a href="https://github.com/PzkpfwIVH/WordTarget-Python.git" target="_blank">WordTarget Python版</a></li>
                 </ul>
             </div>
             <div class="footer-section">

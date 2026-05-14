@@ -19,7 +19,7 @@ pygame.init()
 BASE_WIDTH, BASE_HEIGHT = 1280, 720
 current_width, current_height = BASE_WIDTH, BASE_HEIGHT
 screen = pygame.display.set_mode((current_width, current_height))
-pygame.display.set_caption("Word Hunt - 单词射击游戏")
+pygame.display.set_caption("WordTarget - 单词射击游戏")
 clock = pygame.time.Clock()
 is_fullscreen = False
 
@@ -811,7 +811,7 @@ def main_menu():
     theme.title_font_color = (255, 255, 255)
 
     menu = pygame_menu.Menu(
-        title="Word Hunt - 单词射击游戏",
+        title="WordTarget - 单词射击游戏",
         width=current_width,
         height=current_height,
         theme=theme
