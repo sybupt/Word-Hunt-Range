@@ -1062,12 +1062,28 @@
                 </li>
                 <li>
                     📈 访问量：
-                    <noscript><div class="statcounter"><a title="Web Analytics"
-                    href="https://statcounter.com/" target="_blank"><img
-                    class="statcounter"
-                    src="https://c.statcounter.com/13231058/0/34797c5c/0/"
-                    alt="Web Analytics"
-                    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+                    <!-- Statcounter 可见计数器：直接在此处执行脚本，计数器将渲染于此 -->
+                    <script type="text/javascript">
+                    var sc_project = 13231058;
+                    var sc_invisible = 0;       // 0 = 可见，显示计数器
+                    var sc_security = "34797c5c";
+                    var sc_text = 2;            // 数字 + 文字样式
+                    var scJsHost = "https://";
+                    document.write("<sc" + "ript type='text/javascript' src='" +
+                        scJsHost +
+                        "statcounter.com/counter/counter.js'></" + "script>");
+                    </script>
+                    <noscript>
+                        <div class="statcounter" style="display:inline-block; vertical-align:middle;">
+                            <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+                                <img class="statcounter"
+                                    src="https://c.statcounter.com/13231058/0/34797c5c/0/"
+                                    alt="Web Analytics"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    style="border:none; vertical-align:middle;">
+                            </a>
+                        </div>
+                    </noscript>
                 </li>
             </ul>
             <button id="theme-toggle" class="theme-toggle" type="button">深色模式</button>
@@ -1473,23 +1489,6 @@
         themeToggle.addEventListener('click', () => {
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
         });
-
-        // ===== Hits 访问量统计 =====
-        (async function () {
-            const pvSpan = document.getElementById('site-pv');
-            try {
-                const res = await fetch('https://hits.dwyl.com/sybupt/Word-Hunt-Range.json');
-                if (res.ok) {
-                    const data = await res.json();
-                    pvSpan.textContent = parseInt(data.count || 0, 10).toLocaleString();
-                } else {
-                    pvSpan.textContent = '---';
-                }
-            } catch (e) {
-                console.warn('访问量统计暂时不可用', e);
-                pvSpan.textContent = '---';
-            }
-        })();
         // // 加载本地 traffic.json 显示访问量
         // (async function loadPageViews() {
         //     const pvSpan = document.getElementById('site-pv');
@@ -1506,20 +1505,7 @@
         //     }
         // })();
     </script>
-    <!-- Default Statcounter code for Word Hunt Range
-    https://sybupt.github.io/Word-Hunt-Range/ -->
-    <script type="text/javascript">
-    var sc_project=13231058; 
-    var sc_invisible=0; 
-    var sc_security="34797c5c"; 
-    var sc_text=2; 
-    var scJsHost = "https://";
-    document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-    </script>
-    
-    <!-- End of Statcounter Code -->
+
 </body>
 
 </html>
