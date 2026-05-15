@@ -1464,36 +1464,48 @@
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
         });
 
-        // ===== CountAPI 页面访问量统计 =====
-        (async function loadCountAPI() {
+        // ===== CounterAPI 页面访问量统计 =====
+        (async function loadCounterAPI() {
             const pvSpan = document.getElementById('site-pv');
-            // 自定义命名空间与键，确保该项目独立计数
-            // 建议使用项目名作为 namespace，避免与其他项目混淆
-            const NAMESPACE = 'word-hunt-range';
-            const KEY = 'main-site';
+            
+            // 配置：直接使用你创建的端点信息
+            const WORKSPACE = 'word-hunt-range'; // 你的工作区名称
+            const COUNTER_NAME = 'word-hunt-views'; // 你的计数器名称
+            const BASE_URL = `https://api.counterapi.dev/v2/${WORKSPACE}/${COUNTER_NAME}`;
+            
+            // 【重要】生产环境中，不应在客户端代码中硬编码 API Key。
+            // 请务必将其替换为你的真实 API Key。
+            const API_KEY = 'ut_MXcjNujsgTCTAxkDO4nKqXKDeYKFdoqHCRxVcLbf';
 
             try {
-                // 先获取当前累计访问量
-                const getRes = await fetch(
-                    `https://api.countapi.xyz/get/${NAMESPACE}/${KEY}`
-                );
-                const data = await getRes.json();
-
-                if (data && data.value !== undefined) {
-                    pvSpan.textContent = data.value.toLocaleString();
+                // 1. 先获取当前计数并立即显示，保证页面加载速度
+                const getResponse = await fetch(BASE_URL, {
+                    headers: { 'Authorization': `Bearer ${API_KEY}` }
+                });
+                
+                if (getResponse.ok) {
+                    const getData = await getResponse.json();
+                    // 假设 API 返回的计数在 'count' 字段中，根据实际响应调整
+                    if (getData.count !== undefined) {
+                        pvSpan.textContent = parseInt(getData.count, 10).toLocaleString();
+                    } else {
+                        pvSpan.textContent = '0';
+                    }
                 } else {
-                    pvSpan.textContent = '0';
+                    pvSpan.textContent = '---';
                 }
 
-                // 异步递增访问量（不影响页面渲染，且自带去重）
-                fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
-                    .catch(() => {});
+                // 2. 异步递增访问量（不阻塞页面显示，且静默失败）
+                fetch(`${BASE_URL}/up`, {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${API_KEY}` }
+                }).catch(() => {});
+                
             } catch (e) {
-                console.warn('访问量统计暂不可用', e);
+                console.warn('访问量统计暂时不可用', e);
                 pvSpan.textContent = '---';
             }
         })();
-
         // // 加载本地 traffic.json 显示访问量
         // (async function loadPageViews() {
         //     const pvSpan = document.getElementById('site-pv');
