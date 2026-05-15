@@ -4,6 +4,60 @@
 [ext_resource type="Texture2D" uid="uid://d3rjtimlo2w5w" path="res://assets/scene_imgs/bathroom.png" id="2_7bx6h"]
 [ext_resource type="PackedScene" uid="uid://nf3arlu8boi2" path="res://scenes/common/back.tscn" id="3_7bx6h"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2"]
+resource_name = "white_button_hover"
+bg_color = Color(0.98, 0.98, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.4, 0.6, 1, 0.2)
+shadow_size = 8
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
+resource_name = "white_button_normal"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.85, 0.85, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.08)
+shadow_size = 6
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3"]
+resource_name = "white_button_pressed"
+bg_color = Color(0.92, 0.94, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.5, 0.9, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.3, 0.5, 0.9, 0.15)
+shadow_size = 4
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="Theme" id="Theme_7bx6h"]
+Button/styles/focus = SubResource("StyleBoxFlat_2")
+Button/styles/hover = SubResource("StyleBoxFlat_2")
+Button/styles/normal = SubResource("StyleBoxFlat_1")
+Button/styles/pressed = SubResource("StyleBoxFlat_3")
+
 [node name="SceneGameMode" type="Control" unique_id=1865487698]
 layout_mode = 3
 anchors_preset = 15
@@ -69,3 +123,81 @@ offset_left = 4.0
 offset_top = 6.0
 offset_right = 4.0
 offset_bottom = 6.0
+
+[node name="Panel" type="Panel" parent="." unique_id=69653201]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainContainer" type="Control" parent="Panel" unique_id=1733897176]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Panel/MainContainer" unique_id=238914128]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -156.0
+offset_right = 200.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.15, 0.15, 0.15, 1)
+theme_override_colors/font_shadow_color = Color(0.8, 0.85, 0.95, 0.6)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 56
+text = "WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/MainContainer" unique_id=1838066119]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -18.5
+offset_right = 120.0
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_7bx6h")
+
+[node name="RestartBtn" type="Button" parent="Panel/MainContainer/Buttons" unique_id=1334557209]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_focus_color = Color(0.4, 0.6, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.3, 0.5, 0.9, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.6, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "再来一次"
+
+[node name="BackBtn" type="Button" parent="Panel/MainContainer/Buttons" unique_id=745573542]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_focus_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_colors/font_pressed_color = Color(0.7, 0.2, 0.2, 1)
+theme_override_colors/font_hover_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 18
+text = "返回"
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=962034623]

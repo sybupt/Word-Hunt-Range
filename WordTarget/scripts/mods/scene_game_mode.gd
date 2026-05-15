@@ -1,50 +1,80 @@
 # GameController.gd
 extends Control
 
-# ──────────────────────────────────────────────
+# 题目结构体
+class QuestionItem:
+	var word: String
+	var is_listen_mode: bool  # true: 听英文选英文, false: 看英文选中文
+	
+	func _init(p_word: String, p_is_listen_mode: bool):
+		word = p_word
+		is_listen_mode = p_is_listen_mode
+
 # 节点引用
-# ──────────────────────────────────────────────
 @onready var img: TextureRect = $Img
 @onready var top: Panel = $Top
 @onready var word_name: Label = $Top/Label
-@onready var words: Node2D = $Words   # 注意：建议改为 Node2D，但这里保留原样
+@onready var words: Node2D = $Words
+@onready var win_panel = $Panel
+@onready var restart_btn = $Panel/MainContainer/Buttons/RestartBtn
+@onready var back_btn = $Panel/MainContainer/Buttons/BackBtn
 
-# ──────────────────────────────────────────────
-# 常量配置
-# ──────────────────────────────────────────────
+# 常量
 const WORD_CARD_SCENE := preload("res://scenes/common/WordCard.tscn")
 const SCENE_DATA_DIR := "res://data/scene_data/"
-
-const DEFAULT_DISTRACTOR_COUNT := 4      # 最多尝试生成多少个干扰词
+const DEFAULT_DISTRACTOR_COUNT := 4
 const CARD_ALPHA := 0.65
-const MAX_CORRECT_OFFSET := 120.0        # 正确词微调半径
-const MAX_DISTRACTOR_OFFSET := 120.0     # 干扰词微调半径（可以相同或稍大）
-const PLACE_MAX_TRIES := 60              # 微调尝试次数
 const FLASH_DURATION := 0.35
 
-# ──────────────────────────────────────────────
-# 运行时状态
-# ──────────────────────────────────────────────
+# 运行时
 var scene_files: Array[String] = []
 var scene_index: int = 0
 var scene_data: Dictionary = {}
-var annotation_keys: Array[String] = []
+var question_queue: Array[QuestionItem] = []
+var all_english_pool: Array[String] = []
 
+var current_question: QuestionItem = null
 var current_english: String = ""
-var current_chinese: String = ""
-var all_english_pool: Array[String] = []    # 当前场景所有英文（用于选干扰词）
+var placed_rects: Array[Rect2] = []   # 存储已放置卡片的矩形（用于碰撞检测）
 
-var placed_rects: Array[Rect2] = []         # 存储已放置卡片的全局矩形
+# TTS 语音
+var _tts_voice_id: String = ""
 
-# ──────────────────────────────────────────────
-# 生命周期
-# ──────────────────────────────────────────────
 func _ready() -> void:
+	restart_btn.pressed.connect(_on_restart_btn)
+	back_btn.pressed.connect(_on_back_btn)
+	_init_tts()
 	_load_scene_list()
 	await _load_scene(scene_index)
 
+func _init_tts() -> void:
+	var voices = DisplayServer.tts_get_voices_for_language("en")
+	if voices.size() > 0:
+		_tts_voice_id = voices[0]
+	else:
+		var all_voices = DisplayServer.tts_get_voices()
+		if all_voices.size() > 0:
+			_tts_voice_id = all_voices[0]
+		else:
+			printerr("No TTS voice available")
+			_tts_voice_id = ""
+
+func _speak_word(word: String) -> void:
+	if _tts_voice_id != "":
+		DisplayServer.tts_speak(word, _tts_voice_id)
+
+func _on_restart_btn():
+	win_panel.visible = false
+	scene_index = 0
+	_load_scene_list()
+	await _load_scene(scene_index)
+
+func _on_back_btn():
+	SceneTransition.change_scene("res://scenes/menu/game_mod_menu.tscn")
+
 func _load_scene_list() -> void:
 	scene_files.clear()
+	win_panel.visible = false
 	var dir := DirAccess.open(SCENE_DATA_DIR)
 	if dir == null:
 		push_error("无法打开 scene_data 目录：" + SCENE_DATA_DIR)
@@ -85,135 +115,98 @@ func _load_scene(index: int) -> void:
 	img.texture = tex
 	await get_tree().process_frame
 
+	# 构建题目队列：每个单词两个模式
 	var raw_keys: Array = scene_data["annotations"].keys()
-	annotation_keys.clear()
-	for k in raw_keys:
-		annotation_keys.append(str(k))
-	annotation_keys.shuffle()
-
-	# 构建所有英文的列表（用于干扰词池）
+	question_queue.clear()
 	all_english_pool.clear()
-	for key in annotation_keys:
-		all_english_pool.append(key)
+	for k in raw_keys:
+		var word = str(k)
+		all_english_pool.append(word)
+		
+		question_queue.append(QuestionItem.new(word, false))  # 模式一
+		if GameManager.current_scene_mode_have_voice:
+			question_queue.append(QuestionItem.new(word, true))   # 模式二
+	question_queue.shuffle()
 
-	await _load_word()
+	await _load_next_question()
 
-func _load_word() -> void:
-	# 队列为空才切换场景
-	if annotation_keys.is_empty():
+func _load_next_question() -> void:
+	if question_queue.is_empty():
 		scene_index += 1
 		await _load_scene(scene_index)
 		return
 
-	# 从队列头部取出第一个单词
-	current_english = annotation_keys.pop_front()
-	var ann: Dictionary = scene_data["annotations"][current_english] as Dictionary
-	current_chinese = str(ann["chinese"])
-
-	word_name.text = current_english
-	word_name.modulate = Color.WHITE
+	current_question = question_queue.pop_front()
+	current_english = current_question.word
+	var ann: Dictionary = scene_data["annotations"][current_english]
 
 	_clear_cards()
-	await _spawn_cards(ann)
+	
+	if current_question.is_listen_mode:
+		# 模式二：听音选英文
+		word_name.text = "听音选词"
+		word_name.modulate = Color.WHITE
+		_speak_word(current_english)
+		await _spawn_audio_cards(ann)
+	else:
+		# 模式一：看英文选中文
+		word_name.text = current_english
+		word_name.modulate = Color.WHITE
+		_speak_word(current_english)  # 可选：播放读音
+		await _spawn_match_cards(ann)
 
 func _clear_cards() -> void:
 	for child in words.get_children():
 		child.queue_free()
 	placed_rects.clear()
 
-# ──────────────────────────────────────────────
-# 核心：生成所有卡片（正确词先放，干扰词基于各自坐标）
-# ──────────────────────────────────────────────
-func _spawn_cards(ann: Dictionary) -> void:
-	# 1. 准备正确词的数据
-	var correct_english = current_english
-	var correct_positions: Array = ann["pos"] as Array
-	var correct_raw = correct_positions[randi() % correct_positions.size()] as Array
-	var correct_anchor = _map_raw_to_global(Vector2(correct_raw[0], correct_raw[1]))
-
-	# 2. 先放置正确词（必须成功）
-	var correct_card = await _try_place_card(
-		correct_english,
-		correct_anchor,
-		true,   # 正确词
-		MAX_CORRECT_OFFSET
-	)
+# ==================== 模式一：看英文选中文（卡片显示中文，基于锚点放置） ====================
+func _spawn_match_cards(ann: Dictionary) -> void:
+	# 正确词卡片
+	var correct_anchor = _get_anchor_from_ann(ann)
+	var correct_card = await _create_card_at_anchor(current_english, correct_anchor)
 	if correct_card == null:
-		push_error("无法放置正确词卡，这不应该发生")
+		push_error("无法放置正确词卡")
 		return
 
-	# 3. 准备干扰词列表（从 all_english_pool 中排除 correct_english）
-	var candidate_distractors: Array[String] = []
-	for en in all_english_pool:
-		if en != correct_english:
-			candidate_distractors.append(en)
-	candidate_distractors.shuffle()
+	# 干扰词
+	var distractors = _get_distractors(current_english, DEFAULT_DISTRACTOR_COUNT)
+	for en in distractors:
+		var dist_anchor = _get_anchor_from_word(en)
+		if dist_anchor != Vector2.INF:
+			await _create_card_at_anchor(en, dist_anchor)
 
-	var distractors_placed = 0
-	var max_attempts = DEFAULT_DISTRACTOR_COUNT * 2   # 避免无限循环
-	for en in candidate_distractors:
-		if distractors_placed >= DEFAULT_DISTRACTOR_COUNT:
-			break
-		if max_attempts <= 0:
-			break
-		max_attempts -= 1
+# ==================== 模式二：听音选英文（卡片显示英文，同样基于锚点放置） ====================
+func _spawn_audio_cards(ann: Dictionary) -> void:
+	# 正确词卡片（显示英文）
+	var correct_anchor = _get_anchor_from_ann(ann)
+	var correct_card = await _create_english_card_at_anchor(current_english, correct_anchor)
+	if correct_card == null:
+		push_error("无法放置正确词卡（英文）")
+		return
 
-		# 获取该干扰词的随机一个坐标
-		var distractor_ann: Dictionary = scene_data["annotations"][en] as Dictionary
-		var dist_positions: Array = distractor_ann["pos"] as Array
-		if dist_positions.is_empty():
-			continue
-		var dist_raw = dist_positions[randi() % dist_positions.size()] as Array
-		var dist_anchor = _map_raw_to_global(Vector2(dist_raw[0], dist_raw[1]))
+	# 干扰词（英文）
+	var distractors = _get_distractors(current_english, DEFAULT_DISTRACTOR_COUNT)
+	for en in distractors:
+		var dist_anchor = _get_anchor_from_word(en)
+		if dist_anchor != Vector2.INF:
+			await _create_english_card_at_anchor(en, dist_anchor)
 
-		# 尝试放置干扰词（如果位置被已有卡片遮挡，则跳过）
-		var card = await _try_place_card(
-			en,
-			dist_anchor,
-			false,   # 干扰词
-			MAX_DISTRACTOR_OFFSET
-		)
-		if card != null:
-			distractors_placed += 1
+# 获取单词的随机一个锚点（全局坐标）
+func _get_anchor_from_word(word: String) -> Vector2:
+	if not scene_data["annotations"].has(word):
+		return Vector2.INF
+	var ann = scene_data["annotations"][word] as Dictionary
+	return _get_anchor_from_ann(ann)
 
-# 尝试放置一张卡片（基于锚点微调）
-# 返回放置成功的 WordCard，如果无法找到合法位置则返回 null
-func _try_place_card(english: String, anchor_global: Vector2, is_correct: bool, max_offset: float) -> WordCard:
-	var top_global_rect = top.get_global_rect()
-	var screen_rect = get_viewport_rect()
+func _get_anchor_from_ann(ann: Dictionary) -> Vector2:
+	var positions: Array = ann["pos"] as Array
+	if positions.is_empty():
+		return Vector2.ZERO
+	var raw = positions[randi() % positions.size()] as Array
+	return _map_raw_to_global(Vector2(raw[0], raw[1]))
 
-	var card = WORD_CARD_SCENE.instantiate() as WordCard
-	card.visible = false
-	words.add_child(card)
-	# 卡片上显示中文
-	var chinese = scene_data["annotations"][english]["chinese"]
-	card.set_text(chinese)
-	card.set_mode(WordCard.Mode.STATIC)
-	card.set_meta("english", english)   # 存储英文标识
-
-	await get_tree().process_frame
-	await get_tree().process_frame
-	var card_size = card.get_card_size()
-
-	# 寻找合法位置（在锚点附近微调）
-	var final_global = anchor_global
-	# 检查最终位置是否真的合法（可能被之前放置的卡片挤占）
-	var half = card_size / 2.0
-	var final_rect = Rect2(final_global - half, card_size)
-	if not _is_position_valid(final_rect, screen_rect, top_global_rect):
-		# 无法找到合法位置，销毁卡片并返回 null
-		card.queue_free()
-		return null
-	card.visible = true
-	card.global_position = final_global
-	placed_rects.append(final_rect)
-	card.modulate = Color(1, 1, 1, CARD_ALPHA)
-
-	# 连接信号，传递英文标识
-	card.clicked.connect(_on_card_clicked.bind(card, english))
-	return card
-
-# 坐标映射（保持不变）
+# 坐标映射（原图坐标 -> 屏幕坐标）
 func _map_raw_to_global(raw: Vector2) -> Vector2:
 	var tex_size = img.texture.get_size()
 	var img_global_rect = img.get_global_rect()
@@ -223,42 +216,86 @@ func _map_raw_to_global(raw: Vector2) -> Vector2:
 	var displayed_origin = img_global_rect.position + offset
 	return displayed_origin + raw * img_scale
 
-# 合法性检查（保持不变）
-func _is_position_valid(rect: Rect2, screen_rect: Rect2, top_rect: Rect2) -> bool:
+# 创建卡片（模式一：显示中文）
+func _create_card_at_anchor(english: String, anchor_global: Vector2) -> WordCard:
+	var chinese = scene_data["annotations"][english]["chinese"]
+	var card = WORD_CARD_SCENE.instantiate() as WordCard
+	card.visible = false
+	words.add_child(card)
+	card.set_text(chinese)
+	card.set_mode(WordCard.Mode.STATIC)
+	card.set_meta("english", english)
+
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var card_size = card.get_card_size()
+	var half = card_size / 2.0
+	var final_rect = Rect2(anchor_global - half, card_size)
+	if not _is_position_valid(final_rect):
+		card.queue_free()
+		return null
+	card.global_position = anchor_global
+	card.visible = true
+	placed_rects.append(final_rect)
+	card.modulate = Color(1,1,1,CARD_ALPHA)
+	
+	card.clicked.connect(_on_card_clicked.bind(card, english))
+	return card
+
+# 创建卡片（模式二：显示英文）
+func _create_english_card_at_anchor(english: String, anchor_global: Vector2) -> WordCard:
+	var card = WORD_CARD_SCENE.instantiate() as WordCard
+	card.visible = false
+	words.add_child(card)
+	card.set_text(english)   # 显示英文
+	card.set_mode(WordCard.Mode.STATIC)
+	card.set_meta("english", english)
+
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var card_size = card.get_card_size()
+	var half = card_size / 2.0
+	var final_rect = Rect2(anchor_global - half, card_size)
+	if not _is_position_valid(final_rect):
+		card.queue_free()
+		return null
+	card.global_position = anchor_global
+	card.visible = true
+	placed_rects.append(final_rect)
+	card.modulate = Color(1,1,1,CARD_ALPHA)
+	
+	card.clicked.connect(_on_card_clicked.bind(card, english))
+	return card
+
+func _is_position_valid(rect: Rect2) -> bool:
 	var expanded = rect.grow(4.0)
 	for placed in placed_rects:
 		if placed.intersects(expanded):
 			return false
 	return true
 
-func _clamp_to_screen(pos: Vector2, card_size: Vector2, screen_rect: Rect2, top_rect: Rect2) -> Vector2:
-	var half = card_size / 2.0
-	var clamped = Vector2(
-		clamp(pos.x, screen_rect.position.x + half.x, screen_rect.end.x - half.x),
-		clamp(pos.y, screen_rect.position.y + half.y, screen_rect.end.y - half.y)
-	)
-	if top_rect.intersects(Rect2(clamped - half, card_size)):
-		clamped.y = top_rect.end.y + half.y + 10.0
-	return clamped
-
-# ──────────────────────────────────────────────
-# 卡片点击处理（通过英文标识判断）
-# ──────────────────────────────────────────────
-func _on_card_clicked(card_text: String, card: WordCard, card_english: String) -> void:
+# 生成干扰词列表（排除当前单词，不重复）
+func _get_distractors(exclude_word: String, count: int) -> Array[String]:
+	var pool = all_english_pool.duplicate()
+	pool.erase(exclude_word)
+	pool.shuffle()
+	# 确保返回类型为 Array[String]
+	var result: Array[String] = []
+	for i in range(min(count, pool.size())):
+		result.append(pool[i])
+	return result
+func _on_card_clicked(card: WordCard, card_english: String) -> void:
 	if card_english == current_english:
-		# 正确：进入下一个单词
-		await _load_word()
+		# 正确		# 错误：移除该卡片，将当前题目追加回队列（重试）
+		card.vanish()
+		await get_tree().create_timer(GameManager.VANISH_ANIMATION_TIME).timeout   # 等待动画执行一部分
+		await _load_next_question()
 	else:
-		# 错误：只移除该卡片
-		card.queue_free()
 		_flash_label_red()
-		# 先把【答错的这个单词】加入队尾
-		if not annotation_keys.has(card_english):
-			annotation_keys.append(card_english)
-
-		# 再把【当前正确单词】加入队尾
-		if not annotation_keys.has(current_english):
-			annotation_keys.append(current_english)
+		# 将当前题目（保留原模式）重新加入队列尾部，以便用户再次尝试
+		_speak_word(current_english)
+		question_queue.append(QuestionItem.new(card_english, current_question.is_listen_mode))
+		question_queue.append(current_question)
 
 func _flash_label_red() -> void:
 	var tween = create_tween()
@@ -266,8 +303,4 @@ func _flash_label_red() -> void:
 	tween.tween_property(word_name, "modulate", Color.WHITE, FLASH_DURATION * 0.7)
 
 func _on_game_over() -> void:
-	var dialog = AcceptDialog.new()
-	dialog.title = "游戏结束"
-	dialog.dialog_text = "🎉 恭喜！你已完成所有场景！"
-	add_child(dialog)
-	dialog.popup_centered()
+	win_panel.visible = true

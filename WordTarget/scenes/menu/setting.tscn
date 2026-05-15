@@ -1,0 +1,408 @@
+[gd_scene format=3 uid="uid://bsnhc00o2ual6"]
+
+[ext_resource type="Script" uid="uid://gbbcmc8cr8wk" path="res://scripts/menu/setting.gd" id="1_g1l4g"]
+[ext_resource type="FontFile" uid="uid://dkfy6qabinps7" path="res://font/SourceHanSansSC-Regular-2.otf" id="1_ng53p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2"]
+resource_name = "white_button_hover"
+bg_color = Color(0.98, 0.98, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4, 0.6, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.4, 0.6, 1, 0.2)
+shadow_size = 8
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
+resource_name = "white_button_normal"
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.85, 0.85, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.08)
+shadow_size = 6
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3"]
+resource_name = "white_button_pressed"
+bg_color = Color(0.92, 0.94, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.5, 0.9, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.3, 0.5, 0.9, 0.15)
+shadow_size = 4
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="Theme" id="Theme_xr0qe"]
+Button/styles/focus = SubResource("StyleBoxFlat_2")
+Button/styles/hover = SubResource("StyleBoxFlat_2")
+Button/styles/normal = SubResource("StyleBoxFlat_1")
+Button/styles/pressed = SubResource("StyleBoxFlat_3")
+
+[sub_resource type="DPITexture" id="DPITexture_g1l4g"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path fill=\"none\" stroke=\"#b2b2b2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\".85\" stroke-width=\"2\" d=\"m2 4 4 4 4-4\"/></svg>
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2uqd1"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7wap"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_me1ah"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9098039, 0.9098039, 0.9098039, 1)
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.53333336, 0.53333336, 0.53333336, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rce5"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9372549, 0.9372549, 0.9372549, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uufu2"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.225, 0.225, 0.225, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4mg6k"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9607843, 0.9607843, 0.9607843, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_so6rv"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dksy"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.8784314, 0.8784314, 0.8784314, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4, 0.4, 0.4, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16r4u"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ng53p"]
+bg_color = Color(0.8980392, 0.8980392, 0.8980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g1l4g"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8666667, 0.8666667, 0.8666667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_2uqd1"]
+color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+
+[sub_resource type="Theme" id="Theme_s6jdy"]
+OptionButton/colors/font_color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+OptionButton/colors/font_disabled_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+OptionButton/colors/font_focus_color = Color(0, 0, 0, 1)
+OptionButton/colors/font_hover_color = Color(0.33333334, 0.33333334, 0.33333334, 1)
+OptionButton/colors/font_hover_pressed_color = Color(0.4, 0.4, 0.4, 1)
+OptionButton/colors/font_outline_color = Color(0, 0, 0, 1)
+OptionButton/colors/font_pressed_color = Color(1, 1, 1, 1)
+OptionButton/constants/arrow_margin = 4
+OptionButton/constants/h_separation = 4
+OptionButton/constants/modulate_arrow = 0
+OptionButton/constants/outline_size = 0
+OptionButton/font_sizes/font_size = 18
+OptionButton/fonts/font = ExtResource("1_ng53p")
+OptionButton/icons/arrow = SubResource("DPITexture_g1l4g")
+OptionButton/styles/disabled = SubResource("StyleBoxFlat_2uqd1")
+OptionButton/styles/disabled_mirrored = SubResource("StyleBoxFlat_o7wap")
+OptionButton/styles/focus = SubResource("StyleBoxFlat_me1ah")
+OptionButton/styles/hover = SubResource("StyleBoxFlat_5rce5")
+OptionButton/styles/hover_mirrored = SubResource("StyleBoxFlat_uufu2")
+OptionButton/styles/normal = SubResource("StyleBoxFlat_4mg6k")
+OptionButton/styles/normal_mirrored = SubResource("StyleBoxFlat_so6rv")
+OptionButton/styles/pressed = SubResource("StyleBoxFlat_6dksy")
+OptionButton/styles/pressed_mirrored = SubResource("StyleBoxFlat_16r4u")
+PopupMenu/colors/font_color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+PopupMenu/colors/font_hover_color = Color(0, 0, 0, 1)
+PopupMenu/colors/font_separator_color = Color(0.53333336, 0.53333336, 0.53333336, 1)
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_ng53p")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_g1l4g")
+PopupMenu/styles/separator = SubResource("StyleBoxLine_2uqd1")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ng53p"]
+
+[node name="Setting" type="Control" unique_id=1257303634]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g1l4g")
+
+[node name="Background" type="ColorRect" parent="." unique_id=382274141]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.96, 0.97, 0.99, 1)
+
+[node name="BackgroundPattern" type="TextureRect" parent="." unique_id=209664241]
+modulate = Color(0.88, 0.92, 0.98, 0.4)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 6
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1887895223]
+
+[node name="MainContainer" type="Control" parent="UI" unique_id=1601392129]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/MainContainer" unique_id=1463879262]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -250.0
+offset_right = 200.0
+offset_bottom = -200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.15, 0.15, 0.15, 1)
+theme_override_colors/font_shadow_color = Color(0.8, 0.85, 0.95, 0.6)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 56
+text = "Setting"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButtons" type="VBoxContainer" parent="UI/MainContainer" unique_id=602127640]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -120.0
+offset_right = 120.0
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_xr0qe")
+
+[node name="VocabLevel" type="HBoxContainer" parent="UI/MainContainer/MenuButtons" unique_id=864366057]
+layout_mode = 2
+
+[node name="Level" type="Label" parent="UI/MainContainer/MenuButtons/VocabLevel" unique_id=1607885622]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "词汇等级："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="UI/MainContainer/MenuButtons/VocabLevel" unique_id=58409490]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_s6jdy")
+alignment = 1
+
+[node name="Cursor" type="HBoxContainer" parent="UI/MainContainer/MenuButtons" unique_id=90408832]
+layout_mode = 2
+
+[node name="Cursor" type="Label" parent="UI/MainContainer/MenuButtons/Cursor" unique_id=1495260016]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "鼠标光标："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="UI/MainContainer/MenuButtons/Cursor" unique_id=1498262682]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_s6jdy")
+alignment = 1
+
+[node name="listen_and_pick_mode" type="HBoxContainer" parent="UI/MainContainer/MenuButtons" unique_id=1533762742]
+layout_mode = 2
+
+[node name="LAPM" type="Label" parent="UI/MainContainer/MenuButtons/listen_and_pick_mode" unique_id=279399881]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "词卡模式："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="UI/MainContainer/MenuButtons/listen_and_pick_mode" unique_id=867443218]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_s6jdy")
+alignment = 1
+
+[node name="scene_mode_has_voice" type="HBoxContainer" parent="UI/MainContainer/MenuButtons" unique_id=1023949991]
+layout_mode = 2
+
+[node name="SMHV" type="Label" parent="UI/MainContainer/MenuButtons/scene_mode_has_voice" unique_id=2112218399]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "沉浸射击音量模式："
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="UI/MainContainer/MenuButtons/scene_mode_has_voice" unique_id=996041520]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VSeparator" type="VSeparator" parent="UI/MainContainer/MenuButtons" unique_id=1711324180]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_ng53p")
+
+[node name="BackBtn" type="Button" parent="UI/MainContainer/MenuButtons" unique_id=1885670850]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_colors/font_focus_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_colors/font_pressed_color = Color(0.7, 0.2, 0.2, 1)
+theme_override_colors/font_hover_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 18
+text = "返回"

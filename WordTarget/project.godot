@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SceneTransition="*uid://f8b53ubvxt5d"
 LayoutSolver2d="*uid://gwy7dsh082xd"
+GameManager="*uid://b0vap1rdfcq5c"
 
 [display]
 
@@ -33,6 +34,10 @@ folder_colors={
 "res://styles/": "yellow"
 }
 
+[gui]
+
+theme/custom_font="uid://dkfy6qabinps7"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -40,3 +45,4 @@ folder_colors={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_etc2_astc=true

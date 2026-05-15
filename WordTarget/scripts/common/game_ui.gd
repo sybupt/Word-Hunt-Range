@@ -4,12 +4,11 @@ class_name GameUI
 # ========== 节点引用（与你场景中的路径一一对应） ==========
 @onready var game_type_label = $TopBar/TopContent/HBox/GameTypeLabel
 @onready var score_label = $TopBar/TopContent/HBox/ScoreLabel
-@onready var back_button = $TopBar/TopContent/HBox/BackButton
 @onready var health_container = $StatusPanel/HealthContainer
 @onready var timer_container = $StatusPanel/TimerContainer
 @onready var timer_label = $StatusPanel/TimerContainer/TimerLabel
 @onready var game_over_panel = $GameOverPanel
-@onready var restart_button = $GameOverPanel/VBox/RestartButton
+@onready var restart_button = $GameOverPanel/VBox/MenuButtons/RestartButton
 @onready var timer_node = $Timer
 
 # ========== 导出变量（可在检查器中调整） ==========
@@ -49,7 +48,6 @@ func _ready():
 	
 
 func _setup_signals():
-	back_button.pressed.connect(_on_back_pressed)
 	restart_button.pressed.connect(_on_restart_clicked)
 	timer_node.timeout.connect(_on_timer_timeout)
 
@@ -177,11 +175,6 @@ func _end_game(reason: String):
 	game_over_panel.visible = true
 	game_over.emit(reason)
 
-# ============================================================
-# 信号回调
-# ============================================================
-func _on_back_pressed():
-	SceneTransition.change_scene("res://scenes/menu/main_menu.tscn")
 
 func _on_restart_clicked():
 	reset_game()

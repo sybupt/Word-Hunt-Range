@@ -4,42 +4,45 @@
 [ext_resource type="PackedScene" uid="uid://b1kmjixg0oo03" path="res://scenes/common/GameUI.tscn" id="2_gameui"]
 [ext_resource type="Texture2D" uid="uid://djsoknkyyf3v3" path="res://assets/LP_BG.png" id="2_usthq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ym3cr"]
-size = Vector2(1148, 453.00003)
-
-[node name="ListenAndPick" type="Node2D" unique_id=1748296556]
+[node name="ListenAndPick" type="Control" unique_id=1929282536]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_ym3cr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1990586594]
-position = Vector2(578, 325)
-scale = Vector2(0.45, 0.45)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1786055419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_usthq")
+expand_mode = 1
 
-[node name="UILayer" type="CanvasLayer" parent="." unique_id=2095243323]
+[node name="GameUI" parent="." unique_id=1576369160 instance=ExtResource("2_gameui")]
+layout_mode = 1
 
-[node name="GameUI" parent="UILayer" unique_id=1576369160 instance=ExtResource("2_gameui")]
-
-[node name="HintLabel" type="Label" parent="UILayer" unique_id=1511389612]
+[node name="HintLabel" type="Label" parent="." unique_id=1511389612]
+layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
+offset_left = 15.0
 offset_top = -202.0
-offset_right = 168.0
+offset_right = 183.0
 offset_bottom = -162.0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 24
 text = "点击正确的单词"
 horizontal_alignment = 1
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=550604048]
+
 [node name="GameArea" type="Node2D" parent="." unique_id=1460004917]
 
 [node name="CardContainer" type="Node2D" parent="GameArea" unique_id=1068312351]
-
-[node name="Boundary" type="StaticBody2D" parent="GameArea" unique_id=270371083]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GameArea/Boundary" unique_id=514999187]
-position = Vector2(575, 420.5)
-rotation = -3.1415925
-shape = SubResource("RectangleShape2D_ym3cr")
-
-[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=550604048]

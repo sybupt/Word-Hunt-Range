@@ -111,7 +111,7 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 56
-text = "Vocabee"
+text = "WordTarget"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -137,9 +137,10 @@ theme_override_colors/font_focus_color = Color(0.4, 0.6, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.3, 0.5, 0.9, 1)
 theme_override_colors/font_hover_color = Color(0.4, 0.6, 1, 1)
 theme_override_font_sizes/font_size = 18
-text = "登录"
+text = "开始"
 
 [node name="RegisterGameBtn" type="Button" parent="UI/MainContainer/MenuButtons" unique_id=36919872]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
 theme_override_colors/font_focus_color = Color(0.4, 0.6, 1, 1)
@@ -164,6 +165,7 @@ text = "设置"
 
 [node name="QuitBtn" type="Button" parent="UI/MainContainer/MenuButtons" unique_id=169246200]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_colors/font_color = Color(0.2, 0.2, 0.2, 1)
 theme_override_colors/font_focus_color = Color(0.8, 0.3, 0.3, 1)
 theme_override_colors/font_pressed_color = Color(0.7, 0.2, 0.2, 1)
@@ -186,7 +188,7 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 0.8)
 theme_override_font_sizes/font_size = 10
-text = "v0.1.0 - Made by Euler"
+text = "v0.1.1 - Made by Euler"
 horizontal_alignment = 2
 
 [node name="AmbientLight" type="ColorRect" parent="." unique_id=1777978767]

@@ -1,11 +1,10 @@
-extends Node2D
+extends Control
 class_name ListenAndPick
 
 @onready var card_container = $GameArea/CardContainer
 @onready var game_area = $GameArea
-@onready var game_ui = $UILayer/GameUI
-@onready var hint_label = $UILayer/HintLabel
-@onready var boundary_shape = $GameArea/Boundary/CollisionShape2D
+@onready var game_ui = $GameUI
+@onready var hint_label = $HintLabel
 
 @export var word_card_scene: PackedScene = preload("res://scenes/common/WordCard.tscn")
 @export var json_path: String = "res://data/TEM-4.json"
@@ -20,6 +19,8 @@ var _tts_voice_id: String = ""
 var use_timer_mode = true
 
 func _ready():
+	use_timer_mode = (GameManager.current_listen_mode == GameManager.ListenMode.TIME)
+	json_path = GameManager.vocab_file_map[GameManager.current_vocab_level]
 	load_words()
 	_setup_signals()
 	_init_tts()
@@ -28,12 +29,24 @@ func _ready():
 		
 
 func _get_boundary_rect() -> Rect2:
-	var shape = boundary_shape.shape as RectangleShape2D
-	if not shape:
-		return Rect2()
-	var size = shape.size
-	var center = boundary_shape.global_position
-	return Rect2(center - size/2, size)
+	 # 获取屏幕大小
+	var screen_size = get_viewport().get_visible_rect().size
+	
+	# 获取 HintLabel 的下边界（全局坐标）
+	# 假设 hint_label 是有效的节点引用，请确保它已在 _ready() 中赋值
+	var hint_bottom = hint_label.get_global_rect().end.y
+	
+	# 上方与 HintLabel 的间距（像素）
+	var top_margin = 20
+	
+	# 计算矩形区域：左右无留白，底部无留白
+	var rect = Rect2(
+		0,                      # left
+		hint_bottom + top_margin,  # top
+		screen_size.x,          # width
+		screen_size.y - (hint_bottom + top_margin)  # height（底部自然贴边）
+	)
+	return rect
 
 func _init_tts():
 	var voices = DisplayServer.tts_get_voices_for_language("en")
@@ -134,12 +147,12 @@ func _start_new_round():
 		card.position = layout[word]     # 直接使用计算好的中心点
 		card.set_mode(card_motion_mode)
 		card.set_boundary(play_area)
-		card.clicked.connect(_on_card_clicked)
+		card.clicked.connect(_on_card_clicked.bind(card, word))
 		card.visible = true
 		current_cards.append(card)
 
 	# 6. 更新 UI 提示，播放语音
-	hint_label.text = "听音选词: " + current_target.get("meaning", "")
+	hint_label.text = current_target.get("meaning", "")
 	_speak_word(current_target["word"])
 
 
@@ -180,13 +193,15 @@ func _speak_word(word: String):
 	else:
 		print("Cannot speak word: no TTS voice")
 
-func _on_card_clicked(word: String):
+func _on_card_clicked(card: WordCard, word: String):
 	if is_waiting_next_round:
 		return
 	if word == current_target["word"]:
 		if game_ui:
 			game_ui.add_score(game_ui.score_per_correct)
 		is_waiting_next_round = true
+		card.vanish()
+		await get_tree().create_timer(GameManager.VANISH_ANIMATION_TIME).timeout
 		_start_new_round()
 	else:
 		if game_ui and not game_ui.use_timer_mode:
