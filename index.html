@@ -24,7 +24,7 @@
             --border-color: #e2e8f0;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
-            --video-radius: 28px;
+            --video-radius: 20px;
         }
 
         .dark-theme {
@@ -173,6 +173,13 @@
             background: rgba(255, 255, 255, 0.06);
         }
 
+        /* ===== 视频标签标注 ===== */
+        .dark-theme .video-label {
+            background: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             color: var(--text-dark);
@@ -280,45 +287,78 @@
             color: white;
         }
 
-        /* ===== Hero Section ===== */
+        /* ===== Hero Section — 视频背景版 ===== */
         .hero {
             margin-top: 70px;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            text-align: center;
             position: relative;
             overflow: hidden;
+            min-height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .hero::before {
-            content: '';
+        /* 背景视频 */
+        .hero-bg-video {
             position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.55;
+            pointer-events: none;
+            transition: opacity 0.6s ease;
+        }
+
+        /* 渐变蒙层：确保文字可读，与品牌色融合 */
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,
+                    rgba(102, 126, 234, 0.82) 0%,
+                    rgba(118, 75, 162, 0.88) 100%);
+            z-index: 1;
+        }
+
+        /* 底部羽化过渡，自然衔接下方区域 */
+        .hero-fade {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, var(--bg-light));
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .dark-theme .hero-fade {
+            background: linear-gradient(to bottom, transparent, #10131c);
         }
 
         .hero-content {
             position: relative;
-            z-index: 1;
+            z-index: 3;
             max-width: 800px;
             margin: 0 auto;
+            padding: 100px 20px 120px;
+            text-align: center;
+            color: white;
         }
 
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
             font-weight: 700;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
             font-size: 20px;
             margin-bottom: 30px;
-            opacity: 0.95;
+            opacity: 0.96;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
         }
 
         .hero-buttons {
@@ -366,6 +406,7 @@
             color: var(--primary-color);
         }
 
+        /* ===== 下载区域 ===== */
         .download {
             padding: 100px 20px;
             background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
@@ -380,7 +421,6 @@
             line-height: 1.8;
         }
 
-        /* 下载网格：桌面端4列，中等屏2列，手机1列（原样保留） */
         .download-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -448,7 +488,7 @@
         .section-title {
             text-align: center;
             font-size: 36px;
-            margin-bottom: 50px;
+            margin-bottom: 16px;
             color: var(--text-dark);
         }
 
@@ -462,7 +502,14 @@
             border-radius: 2px;
         }
 
-        /* 关键修改：固定三列，保证三个卡片一行 */
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 16px;
+            margin-bottom: 50px;
+            margin-top: 8px;
+        }
+
         .products-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -539,28 +586,66 @@
             flex-shrink: 0;
         }
 
-        /* ===== 视频展示区 ===== */
+        /* ===== 视频展示区 — 双栏设计 ===== */
         .video-showcase {
-            padding: 80px 20px;
-            background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+            padding: 90px 20px 100px;
+            background: linear-gradient(160deg, #f8faff 0%, #f0f4ff 100%);
             position: relative;
         }
 
-        .video-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #0000000c;
-            border-radius: var(--video-radius);
-            box-shadow: var(--shadow);
-            transition: transform 0.2s ease;
+        .dark-theme .video-showcase {
+            background: linear-gradient(160deg, #0e1120 0%, #12182e 100%);
         }
 
+        .video-showcase-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 16px;
+            margin-top: -30px;
+            margin-bottom: 56px;
+        }
+
+        /* 双栏视频网格 */
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        /* 单个视频卡片 */
+        .video-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.13);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .dark-theme .video-card {
+            background: rgba(20, 26, 45, 0.92);
+            border-color: rgba(255, 255, 255, 0.07);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        }
+
+        .video-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.2);
+        }
+
+        .dark-theme .video-card:hover {
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+        }
+
+        /* 视频播放区域 */
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            border-radius: var(--video-radius);
             background: #0a0f1e;
         }
 
@@ -571,25 +656,66 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: var(--video-radius);
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.25);
         }
 
-        .video-caption {
-            text-align: center;
-            margin-top: 24px;
-            font-size: 1.1rem;
-            color: var(--text-light);
-            font-weight: 500;
-            letter-spacing: 0.3px;
+        /* 视频卡片底部信息 */
+        .video-card-body {
+            padding: 22px 26px 26px;
         }
 
-        .video-caption span {
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        /* 顶部标签行 */
+        .video-label-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .video-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
             font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--primary-color);
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .video-card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .video-card-desc {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* 分割线装饰 */
+        .video-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(102, 126, 234, 0.2), transparent);
         }
 
         /* ===== 功能特性 ===== */
@@ -809,9 +935,14 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 25px;
             }
-            /* 平板下产品卡片改为两列 */
+
             .products-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
             }
         }
 
@@ -861,17 +992,22 @@
             .video-showcase {
                 padding: 60px 20px;
             }
+
+            .hero {
+                min-height: 460px;
+            }
         }
 
         @media (max-width: 550px) {
             .download-grid {
                 grid-template-columns: 1fr;
             }
+
             .tech-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            /* 手机下产品卡片改为一列 */
+
             .products-grid {
                 grid-template-columns: 1fr;
             }
@@ -901,6 +1037,11 @@
                 padding: 28px;
             }
         }
+
+        /* 无视频时的 hero 回退样式 */
+        .hero-bg-video[data-error="true"] {
+            display: none;
+        }
     </style>
 </head>
 
@@ -924,8 +1065,20 @@
         </nav>
     </header>
 
-    <!-- Hero 主视觉 -->
+    <!-- ===== Hero 主视觉 — 视频背景 ===== -->
     <section class="hero">
+        <!-- 背景视频：循环、静音、自动播放 -->
+        <video class="hero-bg-video" autoplay loop muted playsinline preload="metadata">
+            <source src="./assets/video/WordHuntIntro.mp4" type="video/mp4">
+        </video>
+
+        <!-- 品牌色渐变蒙层 -->
+        <div class="hero-overlay"></div>
+
+        <!-- 底部羽化过渡 -->
+        <div class="hero-fade"></div>
+
+        <!-- 正文内容 -->
         <div class="hero-content">
             <h1>智能硬件 × 趣味游戏</h1>
             <p>结合 AirGun 无线交互设备与 WordTarget 英语学习平台，打造全新的词汇学习体验</p>
@@ -933,6 +1086,7 @@
                 <a href="#products" class="btn-primary">了解产品</a>
                 <a href="#download" class="btn-secondary">下载体验</a>
                 <a href="https://github.com/sybupt/Word-Hunt-Range" target="_blank" class="btn-secondary">查看代码</a>
+                <a href="#contact" class="btn-secondary">关于我们</a>
             </div>
         </div>
     </section>
@@ -942,7 +1096,6 @@
         <div class="container">
             <h2 class="section-title">我们的产品</h2>
             <div class="products-grid">
-                <!-- AirGun -->
                 <div class="product-card">
                     <div class="product-icon">🔫</div>
                     <h2>AirGun</h2>
@@ -955,8 +1108,6 @@
                         <li>PlatformIO 开发框架</li>
                     </ul>
                 </div>
-
-                <!-- WordTarget -->
                 <div class="product-card">
                     <div class="product-icon">🎯</div>
                     <h2>WordTarget Godot版本</h2>
@@ -969,7 +1120,6 @@
                         <li>智能布局算法</li>
                     </ul>
                 </div>
-                <!-- WordTarget Python 版本 -->
                 <div class="product-card">
                     <div class="product-icon">🎯</div>
                     <h2>WordTarget Python 版本</h2>
@@ -986,20 +1136,47 @@
         </div>
     </section>
 
-    <!-- 视频展示区 -->
+    <!-- ===== 视频展示区 — 双栏 ===== -->
     <section class="video-showcase" id="demo-video">
         <div class="container">
-            <h2 class="section-title">产品实机演示</h2>
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <video controls preload="metadata" poster="./assets/imgs/demo.jpeg">
-                        <source src="./assets/video/demo.mp4" type="video/mp4">
-                        您的浏览器不支持 video 标签，请升级浏览器以观看演示。
-                    </video>
+            <h2 class="section-title">视频展示</h2>
+
+            <div class="video-grid">
+
+                <!-- 左栏：项目介绍视频 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="./assets/video/WordHuntIntro.mp4" type="video/mp4">
+                            您的浏览器不支持 video 标签。
+                        </video>
+                    </div>
+                    <div class="video-card-body">
+                        <div class="video-label-row">
+                            <span class="video-label">🎬 项目介绍</span>
+                        </div>
+                        <div class="video-card-title">Word Hunt Range — 项目概览</div>
+                        <div class="video-card-desc">深入了解我们的设计理念、核心功能与整体架构，快速掌握项目全貌。</div>
+                    </div>
                 </div>
-                <div class="video-caption">
-                    🎬 <span>AirGun + WordTarget 联动体验</span> | 沉浸式英语学习新维度
+
+                <!-- 右栏：实机演示视频 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" poster="./assets/imgs/demo.jpeg">
+                            <source src="./assets/video/demo.mp4" type="video/mp4">
+                            您的浏览器不支持 video 标签，请升级浏览器以观看演示。
+                        </video>
+                    </div>
+                    <div class="video-card-body">
+                        <div class="video-label-row">
+                            <span class="video-label">🕹️ 实机演示</span>
+                        </div>
+                        <div class="video-card-title">AirGun + WordTarget 联动体验</div>
+                        <div class="video-card-desc">真实设备运行画面，展示 AirGun 无线控制与 WordTarget 游戏的完整互动流程。</div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -1008,7 +1185,6 @@
     <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">核心功能</h2>
-            <!-- AirGun 特性 -->
             <div class="features-container">
                 <div>
                     <h3>🎮 AirGun - 智能交互</h3>
@@ -1028,12 +1204,11 @@
                     </div>
                 </div>
             </div>
-            <!-- WordTarget 特性 -->
             <div class="features-container">
                 <div class="feature-image">
                     <div style="text-align: center;">
                         <div style="font-size: 60px;">🎯</div>
-                        <div style="font-size: 14px; margin-top: 10px;">Godot 4.6 引擎 互动学习</div>
+                        <div style="font-size: 14px; margin-top: 10px;">单词射击 互动学习</div>
                     </div>
                 </div>
                 <div>
@@ -1068,7 +1243,7 @@
                     <tr>
                         <td><strong>开发框架</strong></td>
                         <td>PlatformIO / Arduino</td>
-                        <td>Godot 4.6</td>
+                        <td>Godot 4.6 / Python</td>
                     </tr>
                     <tr>
                         <td><strong>主要硬件</strong></td>
@@ -1154,14 +1329,12 @@
                 <div class="download-card">
                     <h3>Windows 版下载</h3>
                     <p>获取适配 Windows 的 WordTarget 安装包，直接运行游戏即可开始词汇挑战。</p>
-                    <a href="./assets/releases/Windows.7z" target="_blank"
-                        class="btn-download">前往下载</a>
+                    <a href="./assets/releases/Windows.7z" target="_blank" class="btn-download">前往下载</a>
                 </div>
                 <div class="download-card">
                     <h3>Android 版下载</h3>
                     <p>适合移动端用户的版本入口。随时随地打开手机，体验轻量化的英语词汇学习。</p>
-                    <a href="./assets/releases/Vocabee.apk" target="_blank"
-                        class="btn-download">直接下载</a>
+                    <a href="./assets/releases/Vocabee.apk" target="_blank" class="btn-download">直接下载</a>
                 </div>
                 <div class="download-card">
                     <h3>网页版体验</h3>
@@ -1169,10 +1342,9 @@
                     <a href="./assets/releases/Web/Vocabee.html" target="_blank" class="btn-download">访问在线页面</a>
                 </div>
                 <div class="download-card">
-                    <h3>Python 版本 Windows 版下载</h3>
+                    <h3>Python 版本 Windows 下载</h3>
                     <p>获取适配 Windows 的 WordTarget Python安装包。</p>
-                    <a href="./assets/releases/WordTarget-Python.exe" target="_blank"
-                        class="btn-download">前往下载</a>
+                    <a href="./assets/releases/WordTarget-Python.exe" target="_blank" class="btn-download">前往下载</a>
                 </div>
             </div>
         </div>
@@ -1210,7 +1382,8 @@
                 <ul>
                     <li><a href="https://github.com/PzkpfwIVH/AirGun.git" target="_blank">AirGun (硬件)</a></li>
                     <li><a href="https://github.com/Euler-lne/Vocabulary_Bee" target="_blank">WordTarget →</a></li>
-                    <li><a href="https://github.com/PzkpfwIVH/WordTarget-Python.git" target="_blank">WordTarget Python版</a></li>
+                    <li><a href="https://github.com/PzkpfwIVH/WordTarget-Python.git" target="_blank">WordTarget
+                            Python版</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -1233,7 +1406,7 @@
     <script defer src="https://events.vercount.one/js"></script>
 
     <script>
-        // 平滑滚动（支持所有锚点）
+        // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const targetId = this.getAttribute('href');
@@ -1241,41 +1414,39 @@
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        // 导航栏滚动阴影效果
+        // 导航栏滚动阴影
         window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.08)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
-            }
+            header.style.boxShadow = window.scrollY > 50
+                ? '0 8px 25px rgba(0, 0, 0, 0.08)'
+                : '0 2px 10px rgba(0, 0, 0, 0.05)';
         });
 
-        const demoVideo = document.querySelector('.video-wrapper video');
-        if (demoVideo) {
-            demoVideo.addEventListener('error', () => {
-                console.log("视频资源加载提示: 请确保 assets/video/demo.mp4 文件存在");
-                const caption = document.querySelector('.video-caption');
-                if (caption) {
-                    const warnSpan = document.createElement('span');
-                    warnSpan.style.color = '#e53e3e';
-                    warnSpan.style.fontSize = '14px';
-                    warnSpan.innerHTML = '  ⚠️ 未找到演示视频，请将 demo.mp4 放置于 assets/video/ 目录下';
-                    caption.appendChild(warnSpan);
-                }
+        // Hero 背景视频：加载失败时回退到纯渐变背景
+        const heroBgVideo = document.querySelector('.hero-bg-video');
+        if (heroBgVideo) {
+            heroBgVideo.addEventListener('error', () => {
+                heroBgVideo.setAttribute('data-error', 'true');
+                // 回退：让 hero 变回纯渐变，无需 JS 额外处理，CSS 已覆盖
+                document.querySelector('.hero').style.background =
+                    'linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%)';
             });
         }
 
+        // 演示视频加载失败提示（保留原逻辑）
+        document.querySelectorAll('.video-wrapper video').forEach(vid => {
+            vid.addEventListener('error', () => {
+                console.log("视频加载提示: 请确认视频文件路径正确");
+            });
+        });
+
+        // 深色/浅色主题切换
         const themeToggle = document.getElementById('theme-toggle');
-        const currentTheme = localStorage.getItem('wh-theme');
         const body = document.body;
 
         function updateTheme(name) {
@@ -1289,9 +1460,7 @@
             localStorage.setItem('wh-theme', name);
         }
 
-        if (currentTheme === 'dark') {
-            updateTheme('dark');
-        }
+        if (localStorage.getItem('wh-theme') === 'dark') updateTheme('dark');
 
         themeToggle.addEventListener('click', () => {
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
@@ -1300,4 +1469,3 @@
 </body>
 
 </html>
-
