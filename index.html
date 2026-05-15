@@ -1044,7 +1044,8 @@
         }
     </style>
 </head>
-
+<img src="https://hits.dwyl.com/sybupt/Word-Hunt-Range.svg" 
+     style="display:none;" alt="" aria-hidden="true" />
 <body>
     <!-- 导航栏 -->
     <header>
@@ -1464,33 +1465,19 @@
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
         });
 
-        // ===== CounterAPI 页面访问量统计（使用查询参数认证） =====
-        (async function loadCounterAPI() {
+        // ===== Hits 访问量统计 =====
+        (async function () {
             const pvSpan = document.getElementById('site-pv');
-            const WORKSPACE = 'word-hunt-range';
-            const COUNTER_NAME = 'word-hunt-views';
-            const BASE_URL = `https://api.counterapi.dev/v2/${WORKSPACE}/${COUNTER_NAME}`;
-            const API_KEY = 'ut_MXcjNujsgTCTAxkDO4nKqXKDeYKFdoqHCRxVcLbf'; // 替换为你的 Key
-
             try {
-                // 1. 读取当前计数（在 URL 上拼接 apikey）
-                const getUrl = `${BASE_URL}?apikey=${encodeURIComponent(API_KEY)}`;
-                const getResponse = await fetch(getUrl);
-                
-                if (getResponse.ok) {
-                    const data = await getResponse.json();
-                    const count = data.count ?? data.value ?? 0;
-                    pvSpan.textContent = parseInt(count, 10).toLocaleString();
+                const res = await fetch('https://hits.dwyl.com/sybupt/Word-Hunt-Range.json');
+                if (res.ok) {
+                    const data = await res.json();
+                    pvSpan.textContent = parseInt(data.count || 0, 10).toLocaleString();
                 } else {
                     pvSpan.textContent = '---';
                 }
-
-                // 2. 递增计数（同样使用查询参数，避免自定义头）
-                const upUrl = `${BASE_URL}/up?apikey=${encodeURIComponent(API_KEY)}`;
-                fetch(upUrl, { method: 'POST' }).catch(() => {});
-                
             } catch (e) {
-                console.warn('访问量统计暂不可用', e);
+                console.warn('访问量统计暂时不可用', e);
                 pvSpan.textContent = '---';
             }
         })();
