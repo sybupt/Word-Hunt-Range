@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bgqre1jnuofub"]
+
+[ext_resource type="Texture2D" uid="uid://blw4xxa5vrj7b" path="res://assets/textures/particle_circle.tres" id="1_o047p"]
+
+[sub_resource type="Gradient" id="Gradient_qf8dl"]
+offsets = PackedFloat32Array(0, 0.3, 0.6, 1)
+colors = PackedColorArray(1, 0.85098, 0.4, 1, 1, 0.54902, 0.25882, 1, 0.94118, 0.29804, 0.13725, 1, 0.54510, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_o047p"]
+gradient = SubResource("Gradient_qf8dl")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qf8dl"]
+particle_flag_disable_z = true
+direction = Vector3(0, 0, 0)
+spread = 360.0
+initial_velocity_min = 100.0
+initial_velocity_max = 250.0
+angular_velocity_min = -30.0
+angular_velocity_max = 30.0
+gravity = Vector3(0, 400, 0)
+scale_min = 0.15
+scale_max = 0.35
+color_ramp = SubResource("GradientTexture1D_o047p")
+
+[node name="Firework" type="GPUParticles2D"]
+emitting = false
+amount = 30
+texture = ExtResource("1_o047p")
+lifetime = 0.6
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_qf8dl")

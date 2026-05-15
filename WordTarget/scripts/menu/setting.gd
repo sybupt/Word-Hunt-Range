@@ -5,12 +5,14 @@ extends Control
 @onready var listen_and_pick_mode = $UI/MainContainer/MenuButtons/listen_and_pick_mode/OptionButton
 @onready var back_btn = $UI/MainContainer/MenuButtons/BackBtn
 @onready var scene_mode_has_voice = $UI/MainContainer/MenuButtons/scene_mode_has_voice/CheckButton
+@onready var has_fx = $UI/MainContainer/MenuButtons/fx/CheckButton
 
 func _ready() -> void:
 	init_vocab_level_option()
 	init_cursor_option()
 	init_listen_mode_option()
 	init_scene_mode_has_voice()
+	init_has_fx()
 	
 	if back_btn:
 		back_btn.pressed.connect(_on_back_btn)
@@ -26,6 +28,14 @@ func init_scene_mode_has_voice():
 	# 读取 GameManager 中的值，设置 CheckButton 状态
 	scene_mode_has_voice.button_pressed = GameManager.current_scene_mode_have_voice
 	scene_mode_has_voice.toggled.connect(_on_scene_mode_voice_toggled)
+	
+func init_has_fx():
+	has_fx.button_pressed = GameManager.current_has_fx
+	has_fx.toggled.connect(_on_has_fx)
+	
+func _on_has_fx(button_pressed: bool):
+	GameManager.current_has_fx = button_pressed
+	print("开启特效开关：", button_pressed)
 
 func _on_scene_mode_voice_toggled(button_pressed: bool):
 	GameManager.current_scene_mode_have_voice = button_pressed

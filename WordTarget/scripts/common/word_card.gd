@@ -6,7 +6,7 @@ enum Mode { STATIC, BOUNCE, FALL }
 @onready var panel: Panel = $Panel
 @onready var label: Label = $Panel/Label
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
-
+@export var firework_scene: PackedScene = preload("res://scenes/fx/firework.tscn")
 var word_text: String = "apple"
 var current_mode: Mode = Mode.STATIC
 signal clicked(card_text: String)
@@ -203,7 +203,8 @@ func vanish():
 	angular_velocity = 0
 
 	# ⭐ 粒子先爆
-	_spawn_fireworks()
+	if GameManager.current_has_fx:
+		_spawn_fireworks()
 
 	# ⭐ 震屏
 	if get_tree().current_scene.has_method("shake_camera"):
@@ -247,80 +248,20 @@ func vanish():
 	queue_free()
 
 func _spawn_fireworks():
-	var root = get_tree().root
-
-	# 顶层 CanvasLayer
-	var fx_layer := CanvasLayer.new()
-	fx_layer.layer = 128
-	root.add_child(fx_layer)
-
-	var particles := GPUParticles2D.new()
-	fx_layer.add_child(particles)
-	particles.global_position = global_position
-
-	particles.amount = 100
-	particles.lifetime = 0.8
-	particles.one_shot = true
-	particles.explosiveness = 1.0
-	particles.speed_scale = 1.2
-
-	# ⭐ 粒子材质
-	var particle_material := ParticleProcessMaterial.new()
-
-	particle_material.spread = 360.0
-	particle_material.initial_velocity_min = 200
-	particle_material.initial_velocity_max = 500
-
-	particle_material.gravity = Vector3(0, 900, 0)
-
-	# ⭐ 尺寸变小（关键）
-	particle_material.scale_min = 0.08
-	particle_material.scale_max = 0.25
-
-	# ⭐ 旋转
-	particle_material.angular_velocity_min = -20
-	particle_material.angular_velocity_max = 20
-
-	# ⭐ 颜色渐变（更亮一点）
-	var gradient := Gradient.new()
-	gradient.add_point(0.0, Color(1.0, 1.0, 0.6))   # 亮黄
-	gradient.add_point(0.3, Color(1.0, 0.6, 0.1))   # 橙
-	gradient.add_point(1.0, Color(0.8, 0.1, 0.05))  # 红
-
-	var gradient_tex := GradientTexture2D.new()
-	gradient_tex.gradient = gradient
-	particle_material.color_ramp = gradient_tex
-
-	# ⭐ 尺寸随时间缩小（非常关键）
-	var scale_curve := Curve.new()
-	scale_curve.add_point(Vector2(0.0, 1.0))
-	scale_curve.add_point(Vector2(1.0, 0.0))
-
-	var scale_tex := CurveTexture.new()
-	scale_tex.curve = scale_curve
-	particle_material.scale_curve = scale_tex
-
-	particles.process_material = particle_material
-
-	# ❗❗❗关键：用“圆形柔边贴图”，不是方块
-	var img := Image.create(32, 32, false, Image.FORMAT_RGBA8)
-
-	for x in range(32):
-		for y in range(32):
-			var dx = x - 16
-			var dy = y - 16
-			var dist = sqrt(dx * dx + dy * dy) / 16.0
-			var alpha = clamp(1.0 - dist, 0.0, 1.0)
-			img.set_pixel(x, y, Color(1, 1, 1, alpha))
-
-	var tex := ImageTexture.create_from_image(img)
-	particles.texture = tex
-
-	# ⭐ 加一点发光（高级感直接上来）
-	particles.material = CanvasItemMaterial.new()
-	particles.material.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD
-
-	particles.emitting = true
-
-	await get_tree().create_timer(1.0).timeout
-	fx_layer.queue_free()
+	if not firework_scene:
+		return
+	var fx = firework_scene.instantiate()
+	get_tree().current_scene.add_child(fx)
+	fx.global_position = global_position
+	fx.emitting = true
+	
+	# 自动清理（防止内存残留）
+	var timer = Timer.new()
+	timer.one_shot = true
+	timer.wait_time = fx.lifetime + 0.2
+	fx.add_child(timer)
+	timer.start()
+	timer.timeout.connect(func():
+		if is_instance_valid(fx):
+			fx.queue_free()
+	)

@@ -78,6 +78,7 @@ var current_listen_mode: ListenMode = ListenMode.TIME
 var current_cursor_type: CursorType = CursorType.CURSOR1
 
 var current_scene_mode_have_voice = false
+var current_has_fx = false
 const VANISH_ANIMATION_TIME := 0.3
 # ==============================
 # 动态光标专用（CanvasLayer + Sprite2D）
@@ -87,6 +88,7 @@ var _cursor_sprite: Sprite2D
 var _dynamic_frames: Array[Texture2D] = []
 var _frame_idx := 0
 var _frame_timer := 0.0
+var _tts_voice_id: String = ""
 const DYNAMIC_FPS := 12.0
 
 # ==============================
@@ -96,6 +98,19 @@ func _ready():
 	_create_cursor_layer()
 	call_deferred("_apply_cursor")
 	set_process(true)
+	_init_tts()
+	
+func _init_tts() -> void:
+	var voices = DisplayServer.tts_get_voices_for_language("en")
+	if voices.size() > 0:
+		_tts_voice_id = voices[0]
+	else:
+		var all_voices = DisplayServer.tts_get_voices()
+		if all_voices.size() > 0:
+			_tts_voice_id = all_voices[0]
+		else:
+			printerr("No TTS voice available")
+			_tts_voice_id = ""
 
 # ==============================
 # 创建独立层（确保动态光标显示在所有 UI 之上）
