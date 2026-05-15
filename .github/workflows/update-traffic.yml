@@ -1,0 +1,57 @@
+name: Update Total Page Views
+
+on:
+  schedule:
+    # 每天 UTC 0 点执行一次（一天只跑一次就够）
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-total-views:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update total page views
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_PAT }}
+        run: |
+          # 1. 获取最近 14 天流量数据
+          RESPONSE=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/traffic/views)
+
+          # 2. 提取今天的浏览量（API 返回的最后一条通常就是今天）
+          TODAY_COUNT=$(echo "$RESPONSE" | jq '[.views[-1].count] | add // 0')
+
+          echo "Today's views: $TODAY_COUNT"
+
+          # 3. 读取已有的累计值（文件不存在则默认为 0）
+          TOTAL_FILE="total_views.json"
+          if [ -f "$TOTAL_FILE" ]; then
+            CUMULATIVE=$(jq '.total_views // 0' "$TOTAL_FILE")
+          else
+            CUMULATIVE=0
+          fi
+
+          # 4. 加上今天的浏览量，更新累计值
+          NEW_TOTAL=$((CUMULATIVE + TODAY_COUNT))
+          echo "New cumulative total: $NEW_TOTAL"
+
+          # 5. 写入 JSON 文件（保留最后更新日期）
+          echo "{\"total_views\": $NEW_TOTAL, \"last_updated\": \"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\"}" > "$TOTAL_FILE"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add total_views.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "📊 Update total page views [skip ci]"
+            git push
+          fi

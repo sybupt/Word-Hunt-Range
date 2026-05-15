@@ -1059,7 +1059,7 @@
                 <li><a href="#contact">联系</a></li>
                 <li><a href="https://github.com/sybupt/Word-Hunt-Range" class="cta-button" target="_blank">GitHub</a>
                 </li>
-                <li>访问量：<span id="vercount_value_site_pv">Loading</span></li>
+                <li>📈 访问量：<span id="site-pv">---</span></li>
             </ul>
             <button id="theme-toggle" class="theme-toggle" type="button">深色模式</button>
         </nav>
@@ -1403,8 +1403,6 @@
         </div>
     </footer>
 
-    <script defer src="https://events.vercount.one/js"></script>
-
     <script>
         // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1465,6 +1463,52 @@
         themeToggle.addEventListener('click', () => {
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
         });
+
+        // ===== CountAPI 页面访问量统计 =====
+        (async function loadCountAPI() {
+            const pvSpan = document.getElementById('site-pv');
+            // 自定义命名空间与键，确保该项目独立计数
+            // 建议使用项目名作为 namespace，避免与其他项目混淆
+            const NAMESPACE = 'word-hunt-range';
+            const KEY = 'main-site';
+
+            try {
+                // 先获取当前累计访问量
+                const getRes = await fetch(
+                    `https://api.countapi.xyz/get/${NAMESPACE}/${KEY}`
+                );
+                const data = await getRes.json();
+
+                if (data && data.value !== undefined) {
+                    pvSpan.textContent = data.value.toLocaleString();
+                } else {
+                    pvSpan.textContent = '0';
+                }
+
+                // 异步递增访问量（不影响页面渲染，且自带去重）
+                fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
+                    .catch(() => {});
+            } catch (e) {
+                console.warn('访问量统计暂不可用', e);
+                pvSpan.textContent = '---';
+            }
+        })();
+
+        // // 加载本地 traffic.json 显示访问量
+        // (async function loadPageViews() {
+        //     const pvSpan = document.getElementById('site-pv');
+        //     try {
+        //         const res = await fetch('./total_views.json');
+        //         if (!res.ok) throw new Error('数据文件加载失败');
+        //         const data = await res.json();
+        //         if (pvSpan && data.total_views !== undefined) {
+        //             pvSpan.textContent = data.total_views.toLocaleString();
+        //         }
+        //     } catch (e) {
+        //         console.warn('访问量数据暂时不可用', e);
+        //         if (pvSpan) pvSpan.textContent = '---';
+        //     }
+        // })();
     </script>
 </body>
 
