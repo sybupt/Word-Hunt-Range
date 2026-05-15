@@ -1464,45 +1464,33 @@
             updateTheme(body.classList.contains('dark-theme') ? 'light' : 'dark');
         });
 
-        // ===== CounterAPI 页面访问量统计 =====
+        // ===== CounterAPI 页面访问量统计（使用查询参数认证） =====
         (async function loadCounterAPI() {
             const pvSpan = document.getElementById('site-pv');
-            
-            // 配置：直接使用你创建的端点信息
-            const WORKSPACE = 'word-hunt-range'; // 你的工作区名称
-            const COUNTER_NAME = 'word-hunt-views'; // 你的计数器名称
+            const WORKSPACE = 'word-hunt-range';
+            const COUNTER_NAME = 'word-hunt-views';
             const BASE_URL = `https://api.counterapi.dev/v2/${WORKSPACE}/${COUNTER_NAME}`;
-            
-            // 【重要】生产环境中，不应在客户端代码中硬编码 API Key。
-            // 请务必将其替换为你的真实 API Key。
-            const API_KEY = 'ut_MXcjNujsgTCTAxkDO4nKqXKDeYKFdoqHCRxVcLbf';
+            const API_KEY = 'ut_MXcjNujsgTCTAxkDO4nKqXKDeYKFdoqHCRxVcLbf'; // 替换为你的 Key
 
             try {
-                // 1. 先获取当前计数并立即显示，保证页面加载速度
-                const getResponse = await fetch(BASE_URL, {
-                    headers: { 'Authorization': `Bearer ${API_KEY}` }
-                });
+                // 1. 读取当前计数（在 URL 上拼接 apikey）
+                const getUrl = `${BASE_URL}?apikey=${encodeURIComponent(API_KEY)}`;
+                const getResponse = await fetch(getUrl);
                 
                 if (getResponse.ok) {
-                    const getData = await getResponse.json();
-                    // 假设 API 返回的计数在 'count' 字段中，根据实际响应调整
-                    if (getData.count !== undefined) {
-                        pvSpan.textContent = parseInt(getData.count, 10).toLocaleString();
-                    } else {
-                        pvSpan.textContent = '0';
-                    }
+                    const data = await getResponse.json();
+                    const count = data.count ?? data.value ?? 0;
+                    pvSpan.textContent = parseInt(count, 10).toLocaleString();
                 } else {
                     pvSpan.textContent = '---';
                 }
 
-                // 2. 异步递增访问量（不阻塞页面显示，且静默失败）
-                fetch(`${BASE_URL}/up`, {
-                    method: 'POST',
-                    headers: { 'Authorization': `Bearer ${API_KEY}` }
-                }).catch(() => {});
+                // 2. 递增计数（同样使用查询参数，避免自定义头）
+                const upUrl = `${BASE_URL}/up?apikey=${encodeURIComponent(API_KEY)}`;
+                fetch(upUrl, { method: 'POST' }).catch(() => {});
                 
             } catch (e) {
-                console.warn('访问量统计暂时不可用', e);
+                console.warn('访问量统计暂不可用', e);
                 pvSpan.textContent = '---';
             }
         })();
