@@ -20,7 +20,7 @@
 ```
 Word-Hunt-Range
 ├── AirGun                    # 硬件层：ESP32 体感枪，通过 BLE HID 模拟鼠标
-├── WordTarget                   # 应用层（主力）：Godot 游戏，支持 Windows/macOS/Linux
+├── WordTarget                # 应用层（主力）：Godot 游戏，支持 Windows/macOS/Linux
 └── WordTarget-Python         # 应用层（轻量）：Python 游戏，适合快速体验和二次开发
 ```
 
