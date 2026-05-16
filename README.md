@@ -4,7 +4,7 @@
 
 [English](README_EG.md) | [中文](README.md)
 
-**Word-Hunt-Range** 是一个完整的单词学习生态系统，由三个子项目组成：蓝牙体感枪硬件驱动 `AirGun`、基于 Godot 引擎的跨平台游戏 `VocaBee`，以及基于 Python/Pygame 的轻量级游戏 `WordTarget-Python`。  
+**Word-Hunt-Range** 是一个完整的单词学习生态系统，由三个子项目组成：蓝牙体感枪硬件驱动 `AirGun`、基于 Godot 引擎的跨平台游戏 `WordTarget`，以及基于 Python/Pygame 的轻量级游戏 `WordTarget-Python`。  
 该项目旨在通过体感交互和趣味游戏，让英语词汇学习变得生动、高效。
 
 ## 📦 子项目一览
@@ -20,12 +20,12 @@
 ```
 Word-Hunt-Range
 ├── AirGun                    # 硬件层：ESP32 体感枪，通过 BLE HID 模拟鼠标
-├── WordTarget                   # 应用层（主力）：Godot 游戏，支持 Windows/macOS/Linux
+├── WordTarget                # 应用层（主力）：Godot 游戏，支持 Windows/macOS/Linux
 └── WordTarget-Python         # 应用层（轻量）：Python 游戏，适合快速体验和二次开发
 ```
 
 - **AirGun** 与任意一个游戏配合使用：游戏通过鼠标左键识别射击，AirGun 的移动控制光标位置，扣下扳机即触发左键点击。
-- **VocaBee** 和 **WordTarget-Python** 的数据格式（词库 JSON、场景标注 JSON）完全兼容，可以共用 `resource/` 目录下的学习资源。
+- **WordTarget** 和 **WordTarget-Python** 的数据格式（词库 JSON、场景标注 JSON）完全兼容，可以共用 `resource/` 目录下的学习资源。
 
 ## 🔫 子项目详细介绍
 
@@ -109,10 +109,10 @@ python wordhunt.py
 
 1. **制作 AirGun 体感枪**：按照 [AirGun 硬件需求](AirGun/README.md#️-硬件需求) 连接组件，烧录固件。
 2. **选择游戏客户端**：
-   - 若追求跨平台和更丰富的场景体验，推荐 **VocaBee**。
+   - 若追求跨平台和更丰富的场景体验，推荐 **WordTarget**。
    - 若希望轻量级运行或二次开发，使用 **WordTarget-Python**。
 3. **准备词库与场景**：
-   - 词库 JSON 文件放入 `data/`（VocaBee）或 `resource/`（WordTarget-Python）。
+   - 词库 JSON 文件放入 `data/`（WordTarget）或 `resource/`（WordTarget-Python）。
    - 场景图片与标注文件放入相应目录。
 4. **配对蓝牙**：在电脑/手机蓝牙设置中连接名为 “AirMouse” 的设备。
 5. **开始游戏**：
@@ -129,7 +129,7 @@ python wordhunt.py
 ## 📖 更多信息
 
 - **AirGun 参数调校**：见 [AirGun/README.md#-参数调校](AirGun/README.md#-参数调校)
-- **VocaBee 添加新内容**：见 [WordTarget/README.md#添加新内容](WordTarget/README.md#添加新内容)
+- **WordTarget 添加新内容**：见 [WordTarget/README.md#添加新内容](WordTarget/README.md#添加新内容)
 - **WordTarget-Python 场景制作**：见 [WordTarget-Python/README.md#-场景模式制作](WordTarget-Python/README.md#-场景模式制作)
 
 ---
