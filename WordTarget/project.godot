@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 SceneTransition="*uid://f8b53ubvxt5d"
 LayoutSolver2d="*uid://gwy7dsh082xd"
 GameManager="*uid://b0vap1rdfcq5c"
+SoundManager="*uid://chq1t14roylp3"
 
 [display]
 

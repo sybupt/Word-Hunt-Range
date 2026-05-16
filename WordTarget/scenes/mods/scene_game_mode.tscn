@@ -199,5 +199,3 @@ theme_override_colors/font_pressed_color = Color(0.7, 0.2, 0.2, 1)
 theme_override_colors/font_hover_color = Color(0.8, 0.3, 0.3, 1)
 theme_override_font_sizes/font_size = 18
 text = "返回"
-
-[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=962034623]

@@ -41,8 +41,6 @@ theme_override_font_sizes/font_size = 24
 text = "点击正确的单词"
 horizontal_alignment = 1
 
-[node name="AudioPlayer" type="AudioStreamPlayer" parent="." unique_id=550604048]
-
 [node name="GameArea" type="Node2D" parent="." unique_id=1460004917]
 
 [node name="CardContainer" type="Node2D" parent="GameArea" unique_id=1068312351]

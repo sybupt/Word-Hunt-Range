@@ -1,4 +1,3 @@
-# GameController.gd
 extends Control
 
 # 题目结构体
@@ -37,31 +36,11 @@ var current_question: QuestionItem = null
 var current_english: String = ""
 var placed_rects: Array[Rect2] = []   # 存储已放置卡片的矩形（用于碰撞检测）
 
-# TTS 语音
-var _tts_voice_id: String = ""
-
 func _ready() -> void:
 	restart_btn.pressed.connect(_on_restart_btn)
 	back_btn.pressed.connect(_on_back_btn)
-	_init_tts()
 	_load_scene_list()
 	await _load_scene(scene_index)
-
-func _init_tts() -> void:
-	var voices = DisplayServer.tts_get_voices_for_language("en")
-	if voices.size() > 0:
-		_tts_voice_id = voices[0]
-	else:
-		var all_voices = DisplayServer.tts_get_voices()
-		if all_voices.size() > 0:
-			_tts_voice_id = all_voices[0]
-		else:
-			printerr("No TTS voice available")
-			_tts_voice_id = ""
-
-func _speak_word(word: String) -> void:
-	if _tts_voice_id != "":
-		DisplayServer.tts_speak(word, _tts_voice_id)
 
 func _on_restart_btn():
 	win_panel.visible = false
@@ -146,13 +125,13 @@ func _load_next_question() -> void:
 		# 模式二：听音选英文
 		word_name.text = "听音选词"
 		word_name.modulate = Color.WHITE
-		_speak_word(current_english)
+		SoundManager.speak_word(current_english)
 		await _spawn_audio_cards(ann)
 	else:
 		# 模式一：看英文选中文
 		word_name.text = current_english
 		word_name.modulate = Color.WHITE
-		_speak_word(current_english)  # 可选：播放读音
+		SoundManager.speak_word(current_english)
 		await _spawn_match_cards(ann)
 
 func _clear_cards() -> void:
@@ -279,21 +258,25 @@ func _get_distractors(exclude_word: String, count: int) -> Array[String]:
 	var pool = all_english_pool.duplicate()
 	pool.erase(exclude_word)
 	pool.shuffle()
-	# 确保返回类型为 Array[String]
 	var result: Array[String] = []
 	for i in range(min(count, pool.size())):
 		result.append(pool[i])
 	return result
+
 func _on_card_clicked(card: WordCard, card_english: String) -> void:
 	if card_english == current_english:
-		# 正确		# 错误：移除该卡片，将当前题目追加回队列（重试）
+		# ========== 正确 ==========
+		SoundManager.play_correct()
+		
 		card.vanish()
-		await get_tree().create_timer(GameManager.VANISH_ANIMATION_TIME).timeout   # 等待动画执行一部分
+		await get_tree().create_timer(GameManager.VANISH_ANIMATION_TIME).timeout
 		await _load_next_question()
 	else:
+		# ========== 错误 ==========
+		SoundManager.play_wrong()
+		
 		_flash_label_red()
-		# 将当前题目（保留原模式）重新加入队列尾部，以便用户再次尝试
-		_speak_word(current_english)
+		SoundManager.speak_word(current_english)
 		question_queue.append(QuestionItem.new(card_english, current_question.is_listen_mode))
 		question_queue.append(current_question)
 
@@ -303,4 +286,7 @@ func _flash_label_red() -> void:
 	tween.tween_property(word_name, "modulate", Color.WHITE, FLASH_DURATION * 0.7)
 
 func _on_game_over() -> void:
+	# ========== 游戏结束 ==========
+	SoundManager.play_game_over()
+	
 	win_panel.visible = true
